@@ -50,8 +50,16 @@ class LinkedInClient:
     def create_post(self, text: str, image_urn: str = None) -> str:
         """Step 3: Create the UGC Post"""
         
+        # Convert urn:li:member to urn:li:person if needed
+        # LinkedIn UGC API sometimes requires person URN for personal profiles
+        author_urn_for_post = self.author_urn
+        if "urn:li:member:" in self.author_urn:
+            member_id = self.author_urn.split(":")[-1]
+            author_urn_for_post = f"urn:li:person:{member_id}"
+            print(f"Converting member URN to person URN: {author_urn_for_post}")
+        
         post_data = {
-            "author": self.author_urn,
+            "author": author_urn_for_post,
             "lifecycleState": "PUBLISHED",
             "specificContent": {
                 "com.linkedin.ugc.ShareContent": {
