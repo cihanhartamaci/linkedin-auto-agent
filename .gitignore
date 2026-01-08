@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+# drafts/  <-- Commented out because we want to commit drafts in the workflow
+
+# Keeping drafts in repo history acts as a archive.
+venv/
+.DS_Store

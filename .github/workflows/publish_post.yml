@@ -1,0 +1,58 @@
+name: Publish Post
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  publish:
+    # Only run if the comment contains /publish and it's on an issue (not PR)
+    if: contains(github.event.comment.body, '/publish') && !github.event.issue.pull_request
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Publish to LinkedIn
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} # Needed if main.py initializes genai even in publish mode
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_AUTHOR_URN: ${{ secrets.LINKEDIN_AUTHOR_URN }}
+        run: |
+          # Extract date from Issue Title "Review Post: YYYY-MM-DD"
+          TITLE="${{ github.event.issue.title }}"
+          DATE=$(echo $TITLE | grep -oP '\d{4}-\d{2}-\d{2}')
+          
+          echo "Publishing for date: $DATE"
+          python main.py publish --date $DATE
+
+      - name: Close Issue
+        uses: actions/github-script@v6
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "✅ Successfully published to LinkedIn!"
+            });
+            
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });

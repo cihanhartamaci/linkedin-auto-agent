@@ -1,0 +1,77 @@
+name: Generate Daily Draft
+
+on:
+  schedule:
+    # Runs at 09:00 UTC daily (Adjust as needed)
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Generate Content
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python main.py draft
+
+      - name: Get Date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Commit Draft
+        run: |
+          git config --global user.name 'LinkedIn Bot'
+          git config --global user.email 'bot@noreply.github.com'
+          git add drafts/
+          git commit -m "Add draft for ${{ steps.date.outputs.date }}"
+          git push
+
+      - name: Create Review Issue
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const date = "${{ steps.date.outputs.date }}";
+            const repo = context.repo;
+            const imageLink = `https://github.com/${repo.owner}/${repo.repo}/blob/main/drafts/image_${date}.png?raw=true`;
+            
+            // Read the text content (This is a bit tricky in actions script, simpler to just link it or cat it locally)
+            // But let's just make a generic body.
+            
+            const body = `
+            ### 🤖 New LinkedIn Post Draft (${date})
+            
+            **Action Required**:
+            - Review the attached image and content.
+            - To publish, comment: \`/publish\`
+            - To discard, close this issue.
+            
+            ![Generated Image](${imageLink})
+            
+            [View Text Content](../blob/main/drafts/post_${date}.md)
+            `;
+            
+            await github.rest.issues.create({
+              owner: repo.owner,
+              repo: repo.repo,
+              title: `Review Post: ${date}`,
+              body: body,
+              labels: ['draft']
+            });
