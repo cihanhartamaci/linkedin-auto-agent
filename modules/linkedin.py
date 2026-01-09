@@ -93,7 +93,14 @@ class LinkedInClient:
         if response.status_code not in [200, 201]:
             raise Exception(f"Failed to publish post: {response.text}")
             
-        return response.json().get('id', 'Unknown ID')
+        # REST API returns 201 Created with EMPTY body. 
+        # The Post ID is in the 'x-restli-id' header.
+        post_id = response.headers.get('x-restli-id')
+        if not post_id:
+             # Fallback to x-linkedin-id just in case
+             post_id = response.headers.get('x-linkedin-id', 'Unknown ID')
+
+        return post_id
 
     def post_image_and_text(self, text: str, image_file_path: str):
         # 1. Register Image (New REST Way)
