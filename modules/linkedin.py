@@ -75,7 +75,8 @@ class LinkedInClient:
 
         # Use new REST API endpoint (base URL is different for REST API)
         headers_for_rest = self.headers.copy()
-        # Don't specify version - use latest by default
+        # Specifying a modern version (202501)
+        headers_for_rest['LinkedIn-Version'] = '202501'
         
         # REST API uses https://api.linkedin.com/rest/* not /v2/rest/*
         rest_api_url = "https://api.linkedin.com/rest/posts"
