@@ -84,6 +84,11 @@ class LinkedInClient:
                 }
             }
 
+        # DEBUG: Print actual text length and first/last chars
+        print(f"[DEBUG] Text length: {len(text)} chars")
+        print(f"[DEBUG] First 100 chars: {text[:100]}")
+        print(f"[DEBUG] Last 100 chars: {text[-100:]}")
+        
         response = requests.post(
             "https://api.linkedin.com/rest/posts",
             headers=self.headers,
