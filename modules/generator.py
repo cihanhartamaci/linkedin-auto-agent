@@ -76,9 +76,8 @@ class ContentGenerator:
             post_text = extract("[POST_START]", "[POST_END]", content)
             image_prompt = extract("[IMAGE_PROMPT_START]", "[IMAGE_PROMPT_END]", content)
             
-            # Formatting: Convert Markdown **Bold** to Unicode Bold for LinkedIn
-            # TEMPORARILY DISABLED TO TEST TRUNCATION ISSUE
-            # post_text = self._convert_markdown_bold(post_text)
+            # Formatting: Strip Markdown **markers** (LinkedIn doesn't support formatting)
+            post_text = self._convert_markdown_bold(post_text)
 
             # Fallbacks if parsing fails (rare with strict prompting)
             if not topic: topic = "Logistics Tech Update"
@@ -97,15 +96,9 @@ class ContentGenerator:
 
     def _convert_markdown_bold(self, text: str) -> str:
         """
-        Converts markdown **bold** syntax to Unicode bold characters 
-        which are supported by LinkedIn plain text posts.
+        Removes markdown **bold** syntax since LinkedIn doesn't support it.
+        Unicode bold characters cause rendering issues, so we just strip the markers.
         """
-        normal = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-        bold = "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇𝟬𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵"
-        mapping = str.maketrans(normal, bold)
-        
         import re
-        def replace(match):
-            return match.group(1).translate(mapping)
-            
-        return re.sub(r'\*\*(.*?)\*\*', replace, text)
+        # Simply remove the ** markers, keeping the text
+        return re.sub(r'\*\*(.*?)\*\*', r'\1', text)
