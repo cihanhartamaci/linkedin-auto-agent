@@ -96,25 +96,8 @@ class ContentGenerator:
 
     def _convert_markdown_bold(self, text: str) -> str:
         """
-        Smart Unicode bold conversion:
-        - Phrases with 5 words or less: Convert to Unicode bold
-        - Longer phrases: Just strip ** markers (to avoid rendering issues)
+        Simply removes **markdown** markers from text.
+        LinkedIn doesn't support formatting, so we keep it clean.
         """
         import re
-        
-        def smart_replace(match):
-            content = match.group(1)
-            word_count = len(content.split())
-            
-            # Only convert short phrases to Unicode bold
-            if word_count <= 5:
-                # Unicode bold character mapping
-                normal = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-                bold = "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇𝟬𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵"
-                mapping = str.maketrans(normal, bold)
-                return content.translate(mapping)
-            else:
-                # Long phrases: just return without ** markers
-                return content
-        
-        return re.sub(r'\*\*(.*?)\*\*', smart_replace, text)
+        return re.sub(r'\*\*(.*?)\*\*', r'\1', text)
