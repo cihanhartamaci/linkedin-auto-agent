@@ -28,14 +28,18 @@ class ContentGenerator:
         context_cats = ", ".join(categories)
         
         prompt = f"""
-        Act as a Logistics Technology Expert.
+        Act as a Logistics Technology Thought Leader.
         
         Task 1: Randomly select a specific, niche, and interesting sub-topic based on these categories: [{context_cats}].
         
-        Task 2: Write a professional, insightful LinkedIn post in English about that specific selected topic.
-        - Structure: Hook -> Insight -> Call to Action.
-        - Tone: Professional but engaging.
-        - Length: ~150-200 words.
+        Task 2: Write a high-quality "Short Article" style LinkedIn post (300-500 words) about that specific selected topic.
+        - Structure: 
+            1. Strong Hook Headline (Use only text, no markdown #)
+            2. The Problem/Context (Deep insight into industry challenges)
+            3. The Solution/Innovation (Technical depth)
+            4. Strategic Takeaway/Call to Action.
+        - Tone: Professional, authoritative, yet accessible. Avoid generic AI fluff.
+        - Formatting: Use **double asterisks** for ANY key phrases or headlines you want to be BOLD. My code will convert them to real bold text.
         
         Task 3: Write a short image generation prompt (max 40 words) that describes a modern, photorealistic image for this post.
         
@@ -69,6 +73,9 @@ class ContentGenerator:
             post_text = extract("[POST_START]", "[POST_END]", content)
             image_prompt = extract("[IMAGE_PROMPT_START]", "[IMAGE_PROMPT_END]", content)
             
+            # Formatting: Convert Markdown **Bold** to Unicode Bold for LinkedIn
+            post_text = self._convert_markdown_bold(post_text)
+
             # Fallbacks if parsing fails (rare with strict prompting)
             if not topic: topic = "Logistics Tech Update"
             if not post_text: post_text = content # If tags missing, assume whole text is post
@@ -79,6 +86,21 @@ class ContentGenerator:
                 "text": post_text,
                 "image_prompt": image_prompt
             }
+
+    def _convert_markdown_bold(self, text: str) -> str:
+        """
+        Converts markdown **bold** syntax to Unicode bold characters 
+        which are supported by LinkedIn plain text posts.
+        """
+        normal = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+        bold = "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇𝟬𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵"
+        mapping = str.maketrans(normal, bold)
+        
+        import re
+        def replace(match):
+            return match.group(1).translate(mapping)
+            
+        return re.sub(r'\*\*(.*?)\*\*', replace, text)
             
         except Exception as e:
             print(f"Error during generation: {e}")
