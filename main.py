@@ -71,19 +71,33 @@ def publish_post(draft_date=None):
         print(f"Error: Draft not found at {text_path}")
         exit(1)
         
-    # Read Text (Skip frontmatter)
+    # Read Text (Robust Skip Frontmatter)
     with open(text_path, 'r', encoding="utf-8") as f:
         content = f.read()
         
-    # Simple split to remove frontmatter if present
-    if content.startswith("---"):
+    print(f"File total length: {len(content)} chars")
+    
+    # Use regex to find frontmatter more reliably
+    import re
+    # Match from start, find --- and another ---
+    match = re.split(r'^---.*?\n---\s*', content, flags=re.DOTALL | re.MULTILINE)
+    
+    if len(match) > 1:
+        # The content after the second ---
+        final_text = match[1].strip()
+    else:
+        # Fallback to the split method if regex fails
         parts = content.split("---", 2)
         if len(parts) >= 3:
             final_text = parts[2].strip()
         else:
             final_text = content
+            
+    print(f"Final text length to send: {len(final_text)} chars")
+    if len(final_text) > 0:
+        print(f"Content Sample: {final_text[:100]}...{final_text[-100:]}")
     else:
-        final_text = content
+        print("WARNING: Final text is EMPTY!")
         
     # Publish
     access_token = os.getenv("LINKEDIN_ACCESS_TOKEN")
