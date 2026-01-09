@@ -55,6 +55,8 @@ jobs:
             // Read the text content (This is a bit tricky in actions script, simpler to just link it or cat it locally)
             // But let's just make a generic body.
             
+            const postLink = `https://github.com/${repo.owner}/${repo.repo}/blob/main/drafts/post_${date}.md`;
+            
             const body = `
             ### 🤖 New LinkedIn Post Draft (${date})
             
@@ -65,7 +67,7 @@ jobs:
             
             ![Generated Image](${imageLink})
             
-            [View Text Content](../blob/main/drafts/post_${date}.md)
+            [View Text Content](${postLink})
             `;
             
             await github.rest.issues.create({
