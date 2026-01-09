@@ -2,8 +2,8 @@ name: Generate Daily Draft
 
 on:
   schedule:
-    # Runs at 09:00 UTC daily (Adjust as needed)
-    - cron: '0 9 * * *'
+    # Runs at 11:00 AM Turkey Time (UTC+3 = 08:00 UTC)
+    - cron: '0 8 * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
