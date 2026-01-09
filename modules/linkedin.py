@@ -48,43 +48,41 @@ class LinkedInClient:
             raise Exception(f"Failed to upload image binary: {response.text}")
 
     def create_post(self, text: str, image_urn: str = None) -> str:
-        """Step 3: Create the UGC Post"""
+        """Step 3: Create Post using new REST API"""
         
-        # Convert urn:li:member to urn:li:person if needed
-        # LinkedIn UGC API sometimes requires person URN for personal profiles
-        author_urn_for_post = self.author_urn
-        if "urn:li:member:" in self.author_urn:
-            member_id = self.author_urn.split(":")[-1]
-            author_urn_for_post = f"urn:li:person:{member_id}"
-            print(f"Converting member URN to person URN: {author_urn_for_post}")
-        
+        # New LinkedIn REST API format (supports member posting!)
         post_data = {
-            "author": author_urn_for_post,
-            "lifecycleState": "PUBLISHED",
-            "specificContent": {
-                "com.linkedin.ugc.ShareContent": {
-                    "shareCommentary": {
-                        "text": text
-                    },
-                    "shareMediaCategory": "NONE" if not image_urn else "IMAGE"
-                }
+            "author": self.author_urn,
+            "commentary": text,
+            "visibility": "PUBLIC",
+            "distribution": {
+                "feedDistribution": "MAIN_FEED",
+                "targetEntities": [],
+                "thirdPartyDistributionChannels": []
             },
-            "visibility": {
-                "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
-            }
+            "lifecycleState": "PUBLISHED",
+            "isReshareDisabledByAuthor": False
         }
 
         if image_urn:
-            post_data['specificContent']['com.linkedin.ugc.ShareContent']['media'] = [{
-                "status": "READY",
-                "description": {"text": "Generated Image"},
-                "media": image_urn,
-                "title": {"text": "Content Image"}
-            }]
+            post_data['content'] = {
+                "media": {
+                    "title": "Generated Content",
+                    "id": image_urn
+                }
+            }
 
-        response = requests.post(f"{self.api_url}/ugcPosts", headers=self.headers, json=post_data)
+        # Use new REST API endpoint
+        headers_for_rest = self.headers.copy()
+        headers_for_rest['LinkedIn-Version'] = '202401'  # API version from docs
         
-        if response.status_code != 201:
+        response = requests.post(
+            f"{self.api_url}/rest/posts",
+            headers=headers_for_rest,
+            json=post_data
+        )
+        
+        if response.status_code not in [200, 201]:
             raise Exception(f"Failed to publish post: {response.text}")
             
         return response.json().get('id', 'Unknown ID')
