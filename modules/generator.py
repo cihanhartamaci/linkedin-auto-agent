@@ -77,7 +77,8 @@ class ContentGenerator:
             image_prompt = extract("[IMAGE_PROMPT_START]", "[IMAGE_PROMPT_END]", content)
             
             # Formatting: Convert Markdown **Bold** to Unicode Bold for LinkedIn
-            post_text = self._convert_markdown_bold(post_text)
+            # TEMPORARILY DISABLED TO TEST TRUNCATION ISSUE
+            # post_text = self._convert_markdown_bold(post_text)
 
             # Fallbacks if parsing fails (rare with strict prompting)
             if not topic: topic = "Logistics Tech Update"
