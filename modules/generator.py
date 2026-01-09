@@ -38,6 +38,7 @@ class ContentGenerator:
             2. The Problem/Context (Deep insight into industry challenges)
             3. The Solution/Innovation (Technical depth)
             4. Strategic Takeaway/Call to Action.
+            5. Relevant Hashtags (Ensure there are 2 empty lines before the hashtags).
         - Tone: Professional, authoritative, yet accessible. Avoid generic AI fluff.
         - Formatting: Use **double asterisks** for ANY key phrases or headlines you want to be BOLD. My code will convert them to real bold text.
         
