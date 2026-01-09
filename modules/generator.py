@@ -28,18 +28,20 @@ class ContentGenerator:
         context_cats = ", ".join(categories)
         
         prompt = f"""
-        Act as a Logistics Technology Thought Leader.
+        Act as a Senior Integration Developer & Logistics Tech Expert (Specializing in API, EDI, ERP).
         
         Task 1: Randomly select a specific, niche, and interesting sub-topic based on these categories: [{context_cats}].
         
         Task 2: Write a high-quality "Short Article" style LinkedIn post (300-500 words) about that specific selected topic.
+        - **PERSPECTIVE**: Write in the **First Person ("I", "My experience")**. You are sharing YOUR professional insights.
+        - **PERSONA**: You are a hands-on Senior Developer. You don't just talk about trends; you talk about architecture, pain points in implementation, and how you solve complex data problems.
         - Structure: 
             1. Strong Hook Headline (Use only text, no markdown #)
-            2. The Problem/Context (Deep insight into industry challenges)
-            3. The Solution/Innovation (Technical depth)
-            4. Strategic Takeaway/Call to Action.
+            2. The Real-World Challenge (Start with a story or observation: "In a recent project...", "One common issue I see...")
+            3. The Technical Solution (Discuss specific standards, architectural patterns, or logic. Mention API/EDI specifics).
+            4. My Takeaway/Advice (Professional recommendation to peers/CTOs).
             5. Relevant Hashtags (Ensure there are 2 empty lines before the hashtags).
-        - Tone: Professional, authoritative, yet accessible. Avoid generic AI fluff.
+        - Tone: Experienced, practical, technical but clear. Avoid corporate buzzwords; use engineering clarity.
         - Formatting: Use **double asterisks** for ANY key phrases or headlines you want to be BOLD. My code will convert them to real bold text.
         
         Task 3: Write a short image generation prompt (max 40 words) that describes a modern, photorealistic image for this post.
