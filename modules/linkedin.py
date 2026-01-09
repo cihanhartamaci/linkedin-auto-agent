@@ -4,70 +4,110 @@ import os
 
 class LinkedInClient:
     def __init__(self, access_token: str, author_urn: str):
+        """
+        access_token: LinkedIn OAuth2 Access Token
+        author_urn: Should be in format 'urn:li:person:XXXX' (JNVW-03WF1)
+        """
         self.access_token = access_token
         self.author_urn = author_urn
         self.headers = {
             'Authorization': f'Bearer {self.access_token}',
             'Content-Type': 'application/json',
+            'LinkedIn-Version': '202501',
             'X-Restli-Protocol-Version': '2.0.0'
         }
-        self.api_url = "https://api.linkedin.com/v2"
 
     def register_image(self) -> dict:
-        """Register image using V2 Assets API"""
+        """Step 1: Register image upload using REST API /rest/images"""
+        # Ensure author is in person format for REST API
+        owner_urn = self.author_urn
+        
+        # REST API v202501 requires 'urn:li:person' for member profiles
+        if "urn:li:member:" in owner_urn:
+            owner_urn = owner_urn.replace("urn:li:member:", "urn:li:person:")
+
         data = {
-            "registerUploadRequest": {
-                "recipes": ["urn:li:digitalmediaRecipe:feedshare-image"],
-                "owner": self.author_urn,
-                "serviceRelationships": [{
-                    "relationshipType": "OWNER",
-                    "identifier": "urn:li:userGeneratedContent"
-                }]
+            "initializeUploadRequest": {
+                "owner": owner_urn
             }
         }
-        response = requests.post(f"{self.api_url}/assets?action=registerUpload", headers=self.headers, json=data)
-        if response.status_code != 200:
-            raise Exception(f"Failed to register upload: {response.text}")
+        
+        response = requests.post(
+            "https://api.linkedin.com/rest/images?action=initializeUpload", 
+            headers=self.headers, 
+            json=data
+        )
+        
+        if response.status_code not in [200, 201]:
+            raise Exception(f"Failed to register image upload: {response.text}")
+            
         return response.json()
 
     def upload_image(self, upload_url: str, file_path: str):
+        """Step 2: Upload binary file directly to LinkedIn's storage"""
         with open(file_path, 'rb') as f:
-            response = requests.put(upload_url, data=f, headers={"Content-Type": "application/octet-stream"})
+            response = requests.put(
+                upload_url, 
+                data=f, 
+                headers={"Content-Type": "application/octet-stream"}
+            )
+            
         if response.status_code not in [200, 201]:
             raise Exception(f"Failed to upload image binary: {response.text}")
 
     def create_post(self, text: str, image_urn: str = None) -> str:
-        """Create post using V2 ugcPosts API (Most stable for members)"""
+        """Step 3: Create the Post using /rest/posts (2025 Standard)"""
+        
+        # Ensure author uses person URN
+        author_urn = self.author_urn
+        if "urn:li:member:" in author_urn:
+            author_urn = author_urn.replace("urn:li:member:", "urn:li:person:")
+
         post_data = {
-            "author": self.author_urn,
-            "lifecycleState": "PUBLISHED",
-            "specificContent": {
-                "com.linkedin.ugc.ShareContent": {
-                    "shareCommentary": {"text": text},
-                    "shareMediaCategory": "NONE" if not image_urn else "IMAGE"
-                }
+            "author": author_urn,
+            "commentary": text,
+            "visibility": "PUBLIC",
+            "distribution": {
+                "feedDistribution": "MAIN_FEED",
+                "targetEntities": [],
+                "thirdPartyDistributionChannels": []
             },
-            "visibility": {
-                "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
-            }
+            "lifecycleState": "PUBLISHED",
+            "isReshareDisabledByAuthor": False
         }
 
         if image_urn:
-            post_data['specificContent']['com.linkedin.ugc.ShareContent']['media'] = [{
-                "status": "READY",
-                "description": {"text": "Logistics Insight"},
-                "media": image_urn,
-                "title": {"text": "Daily Content"}
-            }]
+            post_data['content'] = {
+                "media": {
+                    "title": "Daily Logistics Insight",
+                    "id": image_urn
+                }
+            }
 
-        response = requests.post(f"{self.api_url}/ugcPosts", headers=self.headers, json=post_data)
-        if response.status_code != 201:
+        response = requests.post(
+            "https://api.linkedin.com/rest/posts",
+            headers=self.headers,
+            json=post_data
+        )
+        
+        if response.status_code not in [200, 201]:
             raise Exception(f"Failed to publish post: {response.text}")
+            
         return response.json().get('id', 'Unknown ID')
 
     def post_image_and_text(self, text: str, image_file_path: str):
+        # 1. Register Image (New REST Way)
+        print("Registering image via REST API...")
         reg_info = self.register_image()
-        upload_url = reg_info['value']['uploadMechanism']['com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest']['uploadUrl']
-        asset_urn = reg_info['value']['asset']
+        upload_url = reg_info['value']['uploadUrl']
+        image_urn = reg_info['value']['image']
+        
+        # 2. Upload Binary
+        print(f"Uploading image binary...")
         self.upload_image(upload_url, image_file_path)
-        return self.create_post(text, asset_urn)
+        
+        # 3. Create Post
+        print(f"Publishing post with image {image_urn}...")
+        post_id = self.create_post(text, image_urn)
+        print(f"Successfully posted! ID: {post_id}")
+        return post_id
