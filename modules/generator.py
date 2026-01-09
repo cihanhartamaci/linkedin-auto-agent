@@ -86,6 +86,10 @@ class ContentGenerator:
                 "text": post_text,
                 "image_prompt": image_prompt
             }
+            
+        except Exception as e:
+            print(f"Error during generation: {e}")
+            raise Exception(f"Failed to generate content. Please check quota or keys.")
 
     def _convert_markdown_bold(self, text: str) -> str:
         """
@@ -101,7 +105,3 @@ class ContentGenerator:
             return match.group(1).translate(mapping)
             
         return re.sub(r'\*\*(.*?)\*\*', replace, text)
-            
-        except Exception as e:
-            print(f"Error during generation: {e}")
-            raise Exception(f"Failed to generate content. Please check quota or keys.")
