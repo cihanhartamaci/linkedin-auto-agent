@@ -33,15 +33,15 @@ class ContentGenerator:
         Task 1: Randomly select a specific, niche, and interesting sub-topic based on these categories: [{context_cats}].
         
         Task 2: Write a high-quality "Short Article" style LinkedIn post (300-500 words) about that specific selected topic.
-        - **PERSPECTIVE**: Write in the **First Person ("I", "My experience")**. You are sharing YOUR professional insights.
-        - **PERSONA**: You are a hands-on Senior Developer. You don't just talk about trends; you talk about architecture, pain points in implementation, and how you solve complex data problems.
+        - **PERSPECTIVE**: Write as an expert sharing knowledge. **DO NOT** make up fake stories like "In my recent project..." or "I built X...". instead, say "Have you ever noticed..." or "A common mistake is...".
+        - **STYLE**: Informative, educational, and engaging. Use **Rhetorical Questions** to guide the reader.
         - Structure: 
-            1. Strong Hook Headline (Use only text, no markdown #)
-            2. The Real-World Challenge (Start with a story or observation: "In a recent project...", "One common issue I see...")
-            3. The Technical Solution (Discuss specific standards, architectural patterns, or logic. Mention API/EDI specifics).
-            4. My Takeaway/Advice (Professional recommendation to peers/CTOs).
+            1. **The provocative question** (Start with a question that makes a developer/CTO think).
+            2. **The Deep Dive** (Explain the concept/problem technically. Why does this existing standard fail? What is the modern approach?).
+            3. **The 'What If'** (Ask a question about the reader's current stack/approach).
+            4. **Strategic Advice** (Solid, actionable recommendation).
             5. Relevant Hashtags (Ensure there are 2 empty lines before the hashtags).
-        - Tone: Experienced, practical, technical but clear. Avoid corporate buzzwords; use engineering clarity.
+        - Tone: Senior, consultative, inquisitive. Not boasting, but teaching/discussing.
         - Formatting: Use **double asterisks** for ANY key phrases or headlines you want to be BOLD. My code will convert them to real bold text.
         
         Task 3: Write a short image generation prompt (max 40 words) that describes a modern, photorealistic image for this post.
