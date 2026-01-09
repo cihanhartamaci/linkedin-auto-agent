@@ -41,9 +41,13 @@ def generate_draft():
         print("Warning: Image generation failed. Proceeding with text only.")
     
     # 3. Save Draft
+    # Sanitize YAML strings: Escape quotes and wrap in quotes to handle colons
+    safe_topic = content['topic'].replace('"', '\\"')
+    safe_prompt = content['image_prompt'].replace('"', '\\"')
+    
     formatted_text = f"""---
-topic: {content['topic']}
-image_prompt: {content['image_prompt']}
+topic: "{safe_topic}"
+image_prompt: "{safe_prompt}"
 ---
 {content['text']}
 """
