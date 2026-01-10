@@ -84,6 +84,12 @@ class LinkedInClient:
         # 2. Fix known LinkedIn API bugs by escaping special characters
         text = self._escape_linkedin_text(text)
         
+        # 3. Hard Limit Check: LinkedIn maximum is 3000 chars for commentary
+        # Use a safe margin for JSON encoding
+        if len(text) > 3000:
+            print(f"Warning: Text too long ({len(text)}). Truncating to 2900.")
+            text = text[:2900] + "... [Full post on profile]"
+
         post_data = {
             "author": author_urn,
             "commentary": text,

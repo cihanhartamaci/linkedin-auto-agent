@@ -32,9 +32,10 @@ class ContentGenerator:
         
         Task 1: Randomly select a specific, niche, and interesting sub-topic based on these categories: [{context_cats}].
         
-        Task 2: Write a high-quality "Short Article" style LinkedIn post (300-500 words) about that specific selected topic.
+        Task 2: Write a high-quality "Short Article" style LinkedIn post (MAX 300 words / ~1800 characters) about that specific selected topic.
         - **PERSPECTIVE**: Write as an expert sharing knowledge. **DO NOT** make up fake stories like "In my recent project..." or "I built X...". instead, say "Have you ever noticed..." or "A common mistake is...".
         - **STYLE**: Informative, educational, and engaging. Use **Rhetorical Questions** to guide the reader.
+        - **LIMIT**: The entire post MUST be under 2000 characters to ensure compatibility with formatting.
         - Structure: 
             1. **The provocative question** (Start with a question that makes a developer/CTO think).
             2. **The Deep Dive** (Explain the concept/problem technically. Why does this existing standard fail? What is the modern approach?).
