@@ -84,15 +84,26 @@ class LinkedInClient:
                 }
             }
 
-        # DEBUG: Print actual text length and first/last chars
-        print(f"[DEBUG] Text length: {len(text)} chars")
-        print(f"[DEBUG] First 100 chars: {text[:100]}")
-        print(f"[DEBUG] Last 100 chars: {text[-100:]}")
+        # DEEP DEBUG: Log everything before sending
+        import sys
+        print(f"\n[DEEP DEBUG] TEXT PREVIEW (Total {len(text)} chars):")
+        print("-" * 40)
+        # Log first 500 characters and last 500 to see if it's all there
+        print(f"START: {text[:500]}")
+        print("...")
+        print(f"END: {text[-500:]}")
+        print("-" * 40)
+        sys.stdout.flush()
+        
+        # Explicitly encode to UTF-8
+        payload = json.dumps(post_data).encode('utf-8')
+        print(f"[DEEP DEBUG] JSON Payload size: {len(payload)} bytes")
+        sys.stdout.flush()
         
         response = requests.post(
             "https://api.linkedin.com/rest/posts",
             headers=self.headers,
-            json=post_data
+            data=payload
         )
         
         if response.status_code not in [200, 201]:

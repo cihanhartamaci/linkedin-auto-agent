@@ -95,7 +95,10 @@ def publish_post(draft_date=None):
             
     print(f"Final text length to send: {len(final_text)} chars")
     if len(final_text) > 0:
-        print(f"Content Sample: {final_text[:100]}...{final_text[-100:]}")
+        import sys
+        print(f"Content Sample (First 300): {final_text[:300]}")
+        print(f"Content Sample (Last 300): {final_text[-300:]}")
+        sys.stdout.flush()
     else:
         print("WARNING: Final text is EMPTY!")
         
