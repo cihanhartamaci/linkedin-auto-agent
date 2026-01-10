@@ -55,6 +55,18 @@ class LinkedInClient:
         if response.status_code not in [200, 201]:
             raise Exception(f"Failed to upload image binary: {response.text}")
 
+    def _escape_linkedin_text(self, text: str) -> str:
+        """
+        LinkedIn's /rest/posts API has a known bug where it truncates text 
+        at special characters like ( ) [ ] { } etc.
+        This helper escapes them to prevent truncation.
+        """
+        # List of characters known to cause issues in some LinkedIn API versions
+        special_chars = ['(', ')', '[', ']', '{', '}', '<', '>', '@', '|', '~', '_']
+        for char in special_chars:
+            text = text.replace(char, f"\\{char}")
+        return text
+
     def create_post(self, text: str, image_urn: str = None) -> str:
         """Step 3: Create the Post using /rest/posts (2025 Standard)"""
         
@@ -66,8 +78,11 @@ class LinkedInClient:
         # 1. Normalize text to prevent truncation bugs
         # Replace Windows line endings (\r\n) with Unix (\n)
         text = text.replace('\r\n', '\n').replace('\r', '\n')
-        # Replace em-dashes or other potential problematic unicode chars
+        # Replace problematic unicode dashes
         text = text.replace('—', '-').replace('–', '-')
+        
+        # 2. Fix known LinkedIn API bugs by escaping special characters
+        text = self._escape_linkedin_text(text)
         
         post_data = {
             "author": author_urn,
