@@ -59,12 +59,13 @@ class LinkedInClient:
         """
         LinkedIn's /rest/posts API has a known bug where it truncates text 
         at special characters like ( ) [ ] { } etc.
-        This helper escapes them to prevent truncation.
+        Since escaping with \\ didn't work, we use similar-looking Unicode characters.
         """
-        # List of characters known to cause issues in some LinkedIn API versions
-        special_chars = ['(', ')', '[', ']', '{', '}', '<', '>', '@', '|', '~', '_']
-        for char in special_chars:
-            text = text.replace(char, f"\\{char}")
+        # Replace normal parentheses with Full-width ones (looks similar, hides from parser)
+        text = text.replace('(', '（').replace(')', '）')
+        # Replace other potentially problematic chars with non-breaking versions or similar
+        text = text.replace('[', '［').replace(']', '］')
+        text = text.replace('{', '｛').replace('}', '｝')
         return text
 
     def create_post(self, text: str, image_urn: str = None) -> str:
