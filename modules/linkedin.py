@@ -12,7 +12,7 @@ class LinkedInClient:
         self.author_urn = author_urn
         self.headers = {
             'Authorization': f'Bearer {self.access_token}',
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json; charset=utf-8',
             'LinkedIn-Version': '202501',
             'X-Restli-Protocol-Version': '2.0.0'
         }
@@ -63,14 +63,18 @@ class LinkedInClient:
         if "urn:li:member:" in author_urn:
             author_urn = author_urn.replace("urn:li:member:", "urn:li:person:")
 
+        # 1. Normalize text to prevent truncation bugs
+        # Replace Windows line endings (\r\n) with Unix (\n)
+        text = text.replace('\r\n', '\n').replace('\r', '\n')
+        # Replace em-dashes or other potential problematic unicode chars
+        text = text.replace('—', '-').replace('–', '-')
+        
         post_data = {
             "author": author_urn,
             "commentary": text,
             "visibility": "PUBLIC",
             "distribution": {
                 "feedDistribution": "MAIN_FEED",
-                "targetEntities": [],
-                "thirdPartyDistributionChannels": []
             },
             "lifecycleState": "PUBLISHED",
             "isReshareDisabledByAuthor": False
@@ -88,21 +92,24 @@ class LinkedInClient:
         import sys
         print(f"\n[DEEP DEBUG] TEXT PREVIEW (Total {len(text)} chars):")
         print("-" * 40)
-        # Log first 500 characters and last 500 to see if it's all there
         print(f"START: {text[:500]}")
         print("...")
         print(f"END: {text[-500:]}")
         print("-" * 40)
-        sys.stdout.flush()
         
         # Explicitly encode to UTF-8
-        payload = json.dumps(post_data).encode('utf-8')
+        payload = json.dumps(post_data, ensure_ascii=False).encode('utf-8')
+        
+        # Add explicit Content-Length
+        current_headers = self.headers.copy()
+        current_headers['Content-Length'] = str(len(payload))
+        
         print(f"[DEEP DEBUG] JSON Payload size: {len(payload)} bytes")
         sys.stdout.flush()
         
         response = requests.post(
             "https://api.linkedin.com/rest/posts",
-            headers=self.headers,
+            headers=current_headers,
             data=payload
         )
         
