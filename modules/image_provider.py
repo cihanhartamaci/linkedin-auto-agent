@@ -19,31 +19,35 @@ class ImageProvider:
         Attempts to generate image via Gemini (Imagen 3). 
         Falls back to Pollinations.ai if Gemini is unavailable or fails.
         """
-        # 1. Try Gemini (Imagen 3 / "Nano Banana Pro")
+        # 1. Try Gemini (Imagen 3)
         if self.client:
-            try:
-                print(f"Attempting image generation via Gemini Nano Banana Pro...")
-                response = self.client.models.generate_image(
-                    model='nano-banana-pro-preview',
-                    prompt=prompt,
-                    config=types.GenerateImageConfig(
-                        number_of_images=1,
-                        include_rai_reason=True,
-                        output_mime_type='image/png'
+            # Try standard Stable ID and the preferred Preview ID
+            image_models = ["imagen-3.0-generate-001", "nano-banana-pro-preview"]
+            for model_id in image_models:
+                try:
+                    print(f"Attempting image generation via Gemini: {model_id}...")
+                    response = self.client.models.generate_images(
+                        model=model_id,
+                        prompt=prompt,
+                        config=types.GenerateImageConfig(
+                            number_of_images=1,
+                            include_rai_reason=True,
+                            output_mime_type='image/png'
+                        )
                     )
-                )
-                
-                if response.generated_images:
-                    image_bytes = response.generated_images[0].image.image_bytes
-                    os.makedirs(os.path.dirname(save_path), exist_ok=True)
-                    with open(save_path, 'wb') as f:
-                        f.write(image_bytes)
-                    print("Successfully generated image via Gemini.")
-                    return True
-                else:
-                    print("Gemini returned no images.")
-            except Exception as e:
-                print(f"Gemini image generation failed: {e}. Falling back to Pollinations...")
+                    
+                    if response.generated_images:
+                        image_bytes = response.generated_images[0].image.image_bytes
+                        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+                        with open(save_path, 'wb') as f:
+                            f.write(image_bytes)
+                        print(f"Successfully generated image via Gemini ({model_id}).")
+                        return True
+                    else:
+                        print(f"Gemini ({model_id}) returned no images.")
+                except Exception as e:
+                    print(f"Gemini image generation ({model_id}) failed: {e}")
+                    continue
         else:
             print("No Gemini API Key provided for images. Using Pollinations...")
 

@@ -59,12 +59,32 @@ class ContentGenerator:
         [IMAGE_PROMPT_END]
         """
         
-        try:
-            response = self.client.models.generate_content(
-                model=self.model_name,
-                contents=prompt
-            )
-            content = response.text.strip()
+        # Priority list of models (User preference first, then working previews, then stable)
+        model_fallbacks = [
+            "nano-banana-pro-preview",
+            "gemini-3-flash-preview",
+            "gemini-2.0-flash-exp",
+            "gemini-1.5-flash-latest"
+        ]
+        
+        last_exception = None
+        for current_model in model_fallbacks:
+            try:
+                print(f"Generating content with model: {current_model}...")
+                response = self.client.models.generate_content(
+                    model=current_model,
+                    contents=prompt
+                )
+                content = response.text.strip()
+                # If we got here, it worked. Break the loop.
+                break
+            except Exception as e:
+                print(f"Model {current_model} failed: {e}")
+                last_exception = e
+                continue
+        else:
+            # If the loop finished without breaking
+            raise Exception(f"All models failed. Last error: {last_exception}")
             
             # Helper to extract content between tags
             def extract(tag_start, tag_end, text):
