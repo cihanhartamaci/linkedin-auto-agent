@@ -22,9 +22,9 @@ class ImageProvider:
         # 1. Try Gemini (Imagen 3 / "Nano Banana Pro")
         if self.client:
             try:
-                print(f"Attempting image generation via Gemini Imagen 3...")
+                print(f"Attempting image generation via Gemini Nano Banana Pro...")
                 response = self.client.models.generate_image(
-                    model='imagen-3.0-generate-001',
+                    model='nano-banana-pro-preview',
                     prompt=prompt,
                     config=types.GenerateImageConfig(
                         number_of_images=1,
