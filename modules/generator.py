@@ -46,11 +46,13 @@ class ContentGenerator:
             5. Relevant Hashtags (2 empty lines before them).
         - Formatting: Use **double asterisks** for emphasis on critical technical terms only (max 5-6 per post).
         
-        Task 3: Write a sophisticated image prompt (max 50 words).
-        - **GOAL**: Conceptually represent the specific topic without being generic.
-        - **RANDOM STYLE**: For EACH post, choose a DIFFERENT style from: [Bauhaus Illustration, Macro Industrial Photography, Abstract Geometric Neon, Vintage Technical Blueprint, High-Contrast 3D Render, Retro-Futurism].
-        - **COMPOSITION**: Specify an angle (e.g., "Extreme low angle", "Top-down blueprint view", "Close-up with soft bokeh").
-        - **CONTENT**: No people. Represent the logic or the physical warehouse environment artistically.
+        Task 3: Write a realistic and technological image prompt (max 50 words).
+        - **GOAL**: Create a high-end, professional visual that looks like it belongs in a tech journal.
+        - **FORBIDDEN**: No painterly styles, no "artist-drawn" looks, no generic sketches.
+        - **MANDATORY STYLES**: For EACH post, rotate through: [High-end Industrial Photography, 4K Detailed 3D Tech Render, Clean Modern Blueprint, Futuristic Data Interface, Close-up Macro of Advanced Electronics, Isometric Logistics Network Visualization].
+        - **VIBE**: Cinematic lighting, sharp focus, professional color grading (deep blues, teals, or clean whites).
+        - **COMPOSITION**: Specify a professional camera angle (e.g., "Shallow depth of field", "Wide-angle industrial shot", "Macro lens detail").
+        - **CONTENT**: No people. Focus on the machinery, the code-data interface, or the architectural logic of logistics.
         """
         Output Format (STRICT):
         [TOPIC_START]
