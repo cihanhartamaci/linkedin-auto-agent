@@ -86,34 +86,30 @@ class ContentGenerator:
             # If the loop finished without breaking
             raise Exception(f"All models failed. Last error: {last_exception}")
             
-            # Helper to extract content between tags
-            def extract(tag_start, tag_end, text):
-                try:
-                    return text.split(tag_start)[1].split(tag_end)[0].strip()
-                except IndexError:
-                    return ""
+        # Helper to extract content between tags
+        def extract(tag_start, tag_end, text):
+            try:
+                return text.split(tag_start)[1].split(tag_end)[0].strip()
+            except IndexError:
+                return ""
 
-            topic = extract("[TOPIC_START]", "[TOPIC_END]", content)
-            post_text = extract("[POST_START]", "[POST_END]", content)
-            image_prompt = extract("[IMAGE_PROMPT_START]", "[IMAGE_PROMPT_END]", content)
-            
-            # Formatting: Strip Markdown **markers** (LinkedIn doesn't support formatting)
-            post_text = self._convert_markdown_bold(post_text)
+        topic = extract("[TOPIC_START]", "[TOPIC_END]", content)
+        post_text = extract("[POST_START]", "[POST_END]", content)
+        image_prompt = extract("[IMAGE_PROMPT_START]", "[IMAGE_PROMPT_END]", content)
+        
+        # Formatting: Strip Markdown **markers** (LinkedIn doesn't support formatting)
+        post_text = self._convert_markdown_bold(post_text)
 
-            # Fallbacks if parsing fails (rare with strict prompting)
-            if not topic: topic = "Logistics Tech Update"
-            if not post_text: post_text = content # If tags missing, assume whole text is post
-            if not image_prompt: image_prompt = f"Futuristic logistics technology visualization related to {topic}"
+        # Fallbacks if parsing fails (rare with strict prompting)
+        if not topic: topic = "Logistics Tech Update"
+        if not post_text: post_text = content # If tags missing, assume whole text is post
+        if not image_prompt: image_prompt = f"Futuristic logistics technology visualization related to {topic}"
 
-            return {
-                "topic": topic,
-                "text": post_text,
-                "image_prompt": image_prompt
-            }
-            
-        except Exception as e:
-            print(f"Error during generation: {e}")
-            raise Exception(f"Failed to generate content. Please check quota or keys.")
+        return {
+            "topic": topic,
+            "text": post_text,
+            "image_prompt": image_prompt
+        }
 
     def _convert_markdown_bold(self, text: str) -> str:
         """
