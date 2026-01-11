@@ -18,7 +18,7 @@ def generate_draft():
         exit(1)
 
     generator = ContentGenerator(gemini_key)
-    image_provider = ImageProvider()
+    image_provider = ImageProvider(gemini_key)
     
     # 1. Generate Topic & Text & Image Prompt (Single Call)
     print("Generating full content (Topic + Text + Image Prompt)...")

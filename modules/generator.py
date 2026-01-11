@@ -9,8 +9,8 @@ class ContentGenerator:
             raise ValueError("Gemini API Key is required")
         
         self.client = genai.Client(api_key=api_key)
-        # Switching to gemini-flash-latest to avoid 2.0-flash quota limits
-        self.model_name = "gemini-flash-latest"
+        # Using gemini-2.0-flash-exp (community nickname "Nano Banana")
+        self.model_name = "gemini-2.0-flash-exp"
         
     def generate_full_content(self) -> Dict[str, str]:
         """
