@@ -53,7 +53,7 @@ class ContentGenerator:
         - **VIBE**: Cinematic lighting, sharp focus, professional color grading (deep blues, teals, or clean whites).
         - **COMPOSITION**: Specify a professional camera angle (e.g., "Shallow depth of field", "Wide-angle industrial shot", "Macro lens detail").
         - **CONTENT**: No people. Focus on the machinery, the code-data interface, or the architectural logic of logistics.
-        """
+        
         Output Format (STRICT):
         [TOPIC_START]
         Topic Title
