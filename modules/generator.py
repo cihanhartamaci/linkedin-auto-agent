@@ -28,34 +28,38 @@ class ContentGenerator:
         context_cats = ", ".join(categories)
         
         prompt = f"""
-        Act as a Senior Integration Developer & Logistics Tech Expert (Specializing in API, EDI, ERP).
+        Act as a Senior Logistics Systems Consultant with 20 years of experience. You are known for your direct, slightly skeptical, and highly technical perspective.
         
-        Task 1: Randomly select a specific, niche, and interesting sub-topic based on these categories: [{context_cats}].
+        Task 1: Select a specific, complex sub-topic from: [{context_cats}]. Pick something non-obvious (e.g., skip 'What is WMS', choose 'Deadlock resolution in automated sortation').
         
-        Task 2: Write a high-quality "Short Article" style LinkedIn post (MAX 300 words / ~1800 characters) about that specific selected topic.
-        - **PERSPECTIVE**: Write as an expert sharing knowledge. **DO NOT** make up fake stories like "In my recent project..." or "I built X...". instead, say "Have you ever noticed..." or "A common mistake is...".
-        - **STYLE**: Informative, educational, and engaging. Use **Rhetorical Questions** to guide the reader.
-        - **LIMIT**: The entire post MUST be under 2000 characters to ensure compatibility with formatting.
+        Task 2: Write a high-quality LinkedIn post (MAX 280 words).
+        - **VOICE**: Direct, professional, and zero-fluff. Write like you're talking to a peer, not a student.
+        - **FORBIDDEN**: Do NOT use AI clichés like "In today's fast-paced world", "Unlocking potential", "Delve into", "The key to success is...", "Imagine a world...".
+        - **STYLE**: Start with a hard statement or a technical "hot take." Use short paragraphs. Use bullet points for technical specs if needed.
+        - **LIMIT**: Total length MUST be under 1900 characters.
         - Structure: 
-            1. **The provocative question** (Start with a question that makes a developer/CTO think).
-            2. **The Deep Dive** (Explain the concept/problem technically. Why does this existing standard fail? What is the modern approach?).
-            3. **The 'What If'** (Ask a question about the reader's current stack/approach).
-            4. **Strategic Advice** (Solid, actionable recommendation).
-            5. Relevant Hashtags (Ensure there are 2 empty lines before the hashtags).
-        - Tone: Senior, consultative, inquisitive. Not boasting, but teaching/discussing.
-        - Formatting: Use **double asterisks** for ANY key phrases or headlines you want to be BOLD. My code will convert them to real bold text.
+            1. **The Hook** (A technical observation or a common industry failure).
+            2. **The Reality Check** (Why traditional methods are failing in the field).
+            3. **Brief Technical Insight** (One solid piece of advice or a specific API/EDI pattern).
+            4. **The Closing Thought** (A question for the reader's own experience).
+            5. Relevant Hashtags (2 empty lines before them).
+        - Formatting: Use **double asterisks** for emphasis on critical technical terms only (max 5-6 per post).
         
-        Task 3: Write a short image generation prompt (max 40 words) that describes a modern, photorealistic image for this post.
+        Task 3: Write a sophisticated image prompt (max 50 words).
+        - **GOAL**: Avoid repetitive 3D boxes or generic data centers.
+        - **RANDOM STYLE**: For every post, choose a DIFFERENT artistic style from this list: [Bauhaus Illustration, Macro Industrial Photography, Abstract Geometric Neon, Vintage Technical Blueprint, High-Contrast 3D Render, Brutalist Architecture, Retro-Futurism].
+        - **COMPOSITION**: Specify an interesting angle (e.g., "Extreme low angle", "Top-down blueprint view", "Close-up of a circuit board with soft bokeh").
+        - **CONTENT**: Must be a conceptual or technical representation of the topic. No people in the images.
         
         Output Format (STRICT):
         [TOPIC_START]
-        ...write the selected topic title here...
+        Topic Title
         [TOPIC_END]
         [POST_START]
-        ...write the post text here...
+        Post content
         [POST_END]
         [IMAGE_PROMPT_START]
-        ...write the image prompt here...
+        Image prompt
         [IMAGE_PROMPT_END]
         """
         
