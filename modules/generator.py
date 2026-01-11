@@ -28,30 +28,30 @@ class ContentGenerator:
         context_cats = ", ".join(categories)
         
         prompt = f"""
-        Act as a Senior Logistics Systems Consultant with 20 years of experience. You are known for your direct, slightly skeptical, and highly technical perspective.
+        Act as a Senior Logistics Systems Consultant (Specializing in WMS, FMS, EDI, and API Integrations).
         
-        Task 1: Select a specific, complex sub-topic from: [{context_cats}]. Pick something non-obvious (e.g., skip 'What is WMS', choose 'Deadlock resolution in automated sortation').
+        Task 1: Select a specific, interesting sub-topic based on these categories: [{context_cats}]. 
+        Focus strictly on actual warehouse/fulfillment problems or integration patterns.
         
         Task 2: Write a high-quality LinkedIn post (MAX 280 words).
-        - **VOICE**: Direct, professional, and zero-fluff. Write like you're talking to a peer, not a student.
-        - **FORBIDDEN**: Do NOT use AI clichés like "In today's fast-paced world", "Unlocking potential", "Delve into", "The key to success is...", "Imagine a world...".
-        - **STYLE**: Start with a hard statement or a technical "hot take." Use short paragraphs. Use bullet points for technical specs if needed.
+        - **VOICE**: Direct, professional, and zero-fluff. Like a consultant sharing a "lesson learned" with a peer.
+        - **FORBIDDEN**: Do NOT use AI clichés like "In today's fast-paced world", "Unlocking potential", "Delve into", "The key to success is...", "Imagine a world...", "In the ever-evolving...".
+        - **STYLE**: Start with a bold technical observation or a "how-to" tip. Use short paragraphs. Use bullet points for technical specs if needed.
         - **LIMIT**: Total length MUST be under 1900 characters.
         - Structure: 
-            1. **The Hook** (A technical observation or a common industry failure).
-            2. **The Reality Check** (Why traditional methods are failing in the field).
-            3. **Brief Technical Insight** (One solid piece of advice or a specific API/EDI pattern).
-            4. **The Closing Thought** (A question for the reader's own experience).
+            1. **The Hook** (A technical observation or a specific industry challenge).
+            2. **The Insight** (Why this specific detail matters in a real-world WMS/EDI environment).
+            3. **Actionable Advice** (A specific recommendation or technical approach).
+            4. **The Peer Question** (Ask for the reader's opinion on this specific technical area).
             5. Relevant Hashtags (2 empty lines before them).
         - Formatting: Use **double asterisks** for emphasis on critical technical terms only (max 5-6 per post).
         
-        Task 3: Write a sophisticated, hyper-realistic image prompt (max 50 words).
-        - **GOAL**: The image must look like a professional, high-end photograph or a crisp technical render. **Strictly NO paintings, illustrations, or artistic brushstrokes.**
-        - **RANDOM STYLE**: For every post, choose a DIFFERENT technical style from this list: [High-End Product Photography, Cinematic Industrial Interior, Macro Technical Detail, Schematic 3D Visualization, High-Tech Server Room Aesthetic, Minimalist Tech Laboratory, Futuristic Logistics Hub].
-        - **KEYWORDS**: Use "Hyper-realistic, 8k, photorealistic, sharp focus, depth of field, industrial lighting, ray-tracing, clean technical aesthetic."
-        - **COMPOSITION**: Specify an interesting angle (e.g., "Macro close-up with bokeh", "Cinematic wide-angle view", "Isometric technical schematic").
-        - **CONTENT**: Must be a technical representation of the post topic (e.g., automated scanners, server racks, conveyor sensors, data dashboards). No people.
-        
+        Task 3: Write a sophisticated image prompt (max 50 words).
+        - **GOAL**: Conceptually represent the specific topic without being generic.
+        - **RANDOM STYLE**: For EACH post, choose a DIFFERENT style from: [Bauhaus Illustration, Macro Industrial Photography, Abstract Geometric Neon, Vintage Technical Blueprint, High-Contrast 3D Render, Retro-Futurism].
+        - **COMPOSITION**: Specify an angle (e.g., "Extreme low angle", "Top-down blueprint view", "Close-up with soft bokeh").
+        - **CONTENT**: No people. Represent the logic or the physical warehouse environment artistically.
+        """
         Output Format (STRICT):
         [TOPIC_START]
         Topic Title
