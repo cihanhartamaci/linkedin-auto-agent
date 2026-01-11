@@ -45,11 +45,12 @@ class ContentGenerator:
             5. Relevant Hashtags (2 empty lines before them).
         - Formatting: Use **double asterisks** for emphasis on critical technical terms only (max 5-6 per post).
         
-        Task 3: Write a sophisticated image prompt (max 50 words).
-        - **GOAL**: Avoid repetitive 3D boxes or generic data centers.
-        - **RANDOM STYLE**: For every post, choose a DIFFERENT artistic style from this list: [Bauhaus Illustration, Macro Industrial Photography, Abstract Geometric Neon, Vintage Technical Blueprint, High-Contrast 3D Render, Brutalist Architecture, Retro-Futurism].
-        - **COMPOSITION**: Specify an interesting angle (e.g., "Extreme low angle", "Top-down blueprint view", "Close-up of a circuit board with soft bokeh").
-        - **CONTENT**: Must be a conceptual or technical representation of the topic. No people in the images.
+        Task 3: Write a sophisticated, hyper-realistic image prompt (max 50 words).
+        - **GOAL**: The image must look like a professional, high-end photograph or a crisp technical render. **Strictly NO paintings, illustrations, or artistic brushstrokes.**
+        - **RANDOM STYLE**: For every post, choose a DIFFERENT technical style from this list: [High-End Product Photography, Cinematic Industrial Interior, Macro Technical Detail, Schematic 3D Visualization, High-Tech Server Room Aesthetic, Minimalist Tech Laboratory, Futuristic Logistics Hub].
+        - **KEYWORDS**: Use "Hyper-realistic, 8k, photorealistic, sharp focus, depth of field, industrial lighting, ray-tracing, clean technical aesthetic."
+        - **COMPOSITION**: Specify an interesting angle (e.g., "Macro close-up with bokeh", "Cinematic wide-angle view", "Isometric technical schematic").
+        - **CONTENT**: Must be a technical representation of the post topic (e.g., automated scanners, server racks, conveyor sensors, data dashboards). No people.
         
         Output Format (STRICT):
         [TOPIC_START]
