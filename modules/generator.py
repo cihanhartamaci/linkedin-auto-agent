@@ -17,21 +17,27 @@ class ContentGenerator:
         Generates Topic, Post, and Image Prompt in a single API call to avoid 429 Rate Limits.
         """
         categories = [
-            "Warehouse Management Systems (WMS)",
-            "Fulfillment Management Systems (FMS)", 
-            "Electronic Data Interchange (EDI)",
-            "API Integration in Logistics",
-            "Supply Chain Automation"
+            "WMS (Warehouse Management Systems) Architecture",
+            "ERP Integration Patterns (NetSuite, SAP, Microsoft Dynamics)",
+            "OMS (Order Management) & Multi-Channel Fulfillment",
+            "Complex EDI Workflows beyond the 856 (850, 846, 940/945 hierarchy)",
+            "Hybrid API/EDI Integration Strategies",
+            "Real-time Inventory Sync at Scale",
+            "Logistics Middleware & Enterprise Service Bus (ESB)",
+            "Error Handling & Idempotency in High-Volume Logistics APIs",
+            "Cloud-Native Integration Architectures for Supply Chain"
         ]
         
         # We give the LLM the list and ask IT to pick one and expand on it.
         context_cats = ", ".join(categories)
         
         prompt = f"""
-        Act as a Senior Logistics Systems Consultant (Specializing in WMS, FMS, EDI, and API Integrations).
+        Act as a Senior Integration Engineer specializing in high-scale enterprise architectures. 
+        You daily manage complex logic between WMS, OMS, and ERPs like NetSuite or SAP.
         
-        Task 1: Select a specific, interesting sub-topic based on these categories: [{context_cats}]. 
-        Focus strictly on actual warehouse/fulfillment problems or integration patterns.
+        Task 1: Select a specific, advanced technical sub-topic based on these categories: [{context_cats}]. 
+        Focus strictly on actual architectural challenges, hybrid patterns (API + EDI), or scaling issues. 
+        DO NOT write about basic 856/ASN unless it involves a complex hybrid sync or specific ERP-side deadlock resolution.
         
         Task 2: Write a high-quality LinkedIn post (MAX 280 words).
         - **VOICE**: Direct, professional, and zero-fluff. Like a consultant sharing a "lesson learned" with a peer.
