@@ -1,13 +1,12 @@
 from google import genai
 from google.genai import types
+from duckduckgo_search import DDGS
 import requests
-import urllib.parse
 import os
 
 class ImageProvider:
     def __init__(self, api_key: str = None):
         self.api_key = api_key
-        self.pollinations_base_url = "https://image.pollinations.ai/prompt/"
         
         if self.api_key:
             self.client = genai.Client(api_key=self.api_key)
@@ -17,7 +16,7 @@ class ImageProvider:
     def generate_and_save(self, prompt: str, save_path: str) -> bool:
         """
         Attempts to generate image via Gemini (Imagen 3). 
-        Falls back to Pollinations.ai if Gemini is unavailable or fails.
+        Falls back to DuckDuckGo image search if Gemini is unavailable or fails.
         """
         # 1. Try Gemini (Imagen 3)
         if self.client:
@@ -49,24 +48,48 @@ class ImageProvider:
                     print(f"Gemini image generation ({model_id}) failed: {e}")
                     continue
         else:
-            print("No Gemini API Key provided for images. Using Pollinations...")
+            print("No Gemini API Key provided for images. Using DuckDuckGo Search...")
 
-        # 2. Fallback: Pollinations.ai
-        return self._generate_via_pollinations(prompt, save_path)
+        # 2. Fallback: DuckDuckGo Image Search
+        return self._search_via_duckduckgo(prompt, save_path)
 
-    def _generate_via_pollinations(self, prompt: str, save_path: str) -> bool:
+    def _search_via_duckduckgo(self, prompt: str, save_path: str) -> bool:
+        """
+        Searches for a real-world image on DuckDuckGo and downloads it.
+        """
         try:
-            encoded_prompt = urllib.parse.quote(prompt)
-            url = f"{self.pollinations_base_url}{encoded_prompt}?width=1024&height=1024&model=flux&nologo=true"
-            print(f"Downloading fallback image from: {url}")
+            print(f"Searching DuckDuckGo for: {prompt[:100]}...")
+            with DDGS() as ddgs:
+                # Search for high-quality, professional images
+                results = list(ddgs.images(
+                    keywords=prompt,
+                    region="wt-wt",
+                    safesearch="on",
+                    size="Large",
+                    type_image="photo"
+                ))
             
-            response = requests.get(url, timeout=30)
-            if response.status_code == 200:
-                os.makedirs(os.path.dirname(save_path), exist_ok=True)
-                with open(save_path, 'wb') as f:
-                    f.write(response.content)
-                return True
+            if not results:
+                print("No images found on DuckDuckGo.")
+                return False
+            
+            # Try the first few results in case one fails to download
+            for result in results[:5]:
+                try:
+                    img_url = result['image']
+                    print(f"Downloading image from: {img_url}")
+                    response = requests.get(img_url, timeout=15)
+                    if response.status_code == 200:
+                        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+                        with open(save_path, 'wb') as f:
+                            f.write(response.content)
+                        print(f"Successfully downloaded image from DuckDuckGo.")
+                        return True
+                except Exception as e:
+                    print(f"Failed to download from {img_url}: {e}")
+                    continue
+            
             return False
         except Exception as e:
-            print(f"Pollinations fallback failed: {e}")
+            print(f"DuckDuckGo search failed: {e}")
             return False
