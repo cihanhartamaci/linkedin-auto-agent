@@ -1,5 +1,6 @@
 import os
 import random
+import json
 from google import genai
 from typing import Dict
 
@@ -9,8 +10,34 @@ class ContentGenerator:
             raise ValueError("Gemini API Key is required")
         
         self.client = genai.Client(api_key=api_key)
-        # Using nano-banana-pro-preview
         self.model_name = "nano-banana-pro-preview"
+        self.history_file = "drafts/history.json"
+        
+    def _load_topic_history(self) -> list:
+        """Load the last 15 topics from history file"""
+        if not os.path.exists(self.history_file):
+            return []
+        try:
+            with open(self.history_file, 'r', encoding='utf-8') as f:
+                history = json.load(f)
+                return history[-15:]  # Last 15 topics
+        except Exception as e:
+            print(f"Failed to load history: {e}")
+            return []
+    
+    def _save_topic_to_history(self, topic: str):
+        """Save topic to history file, maintaining rolling window of 15"""
+        history = self._load_topic_history()
+        history.append(topic)
+        # Keep only last 15
+        history = history[-15:]
+        
+        os.makedirs(os.path.dirname(self.history_file), exist_ok=True)
+        try:
+            with open(self.history_file, 'w', encoding='utf-8') as f:
+                json.dump(history, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            print(f"Failed to save history: {e}")
         
     def generate_full_content(self) -> Dict[str, str]:
         """
@@ -31,6 +58,18 @@ class ContentGenerator:
         # We give the LLM the list and ask IT to pick one and expand on it.
         context_cats = ", ".join(categories)
         
+        # Load topic history to avoid repetition
+        recent_topics = self._load_topic_history()
+        history_constraint = ""
+        if recent_topics:
+            history_list = "\n".join([f"- {topic}" for topic in recent_topics])
+            history_constraint = f"""
+        **CRITICAL: TOPIC UNIQUENESS REQUIREMENT**
+        You have recently written about the following topics. DO NOT select these or closely related topics:
+        {history_list}
+        Choose something COMPLETELY DIFFERENT from the above list.
+        """
+        
         prompt = f"""
         Act as a Senior Integration Engineer specializing in high-scale enterprise architectures. 
         You daily manage complex logic between WMS, OMS, and ERPs like NetSuite or SAP.
@@ -38,6 +77,7 @@ class ContentGenerator:
         Task 1: Select a specific, advanced technical sub-topic based on these categories: [{context_cats}]. 
         Focus strictly on actual architectural challenges, hybrid patterns (API + EDI), or scaling issues. 
         DO NOT write about basic 856/ASN unless it involves a complex hybrid sync or specific ERP-side deadlock resolution.
+        {history_constraint}
         
         Task 2: Write a high-quality LinkedIn post (MAX 280 words).
         - **VOICE**: Direct, professional, and zero-fluff. Like a consultant sharing a "lesson learned" with a peer.
@@ -117,6 +157,9 @@ class ContentGenerator:
         if not topic: topic = "Logistics Tech Update"
         if not post_text: post_text = content # If tags missing, assume whole text is post
         if not image_prompt: image_prompt = f"Futuristic logistics technology visualization related to {topic}"
+
+        # Save topic to history to avoid future repetition
+        self._save_topic_to_history(topic)
 
         return {
             "topic": topic,
