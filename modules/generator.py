@@ -114,9 +114,9 @@ class ContentGenerator:
         
         # Priority list of models (stable models with guaranteed availability)
         model_fallbacks = [
-            "gemini-1.5-flash",
-            "gemini-1.5-pro",
-            "gemini-1.0-pro"
+            "models/gemini-2.0-flash",
+            "models/gemini-2.5-flash",
+            "models/gemini-2.5-pro"
         ]
         
         last_exception = None
