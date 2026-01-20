@@ -112,12 +112,11 @@ class ContentGenerator:
         [IMAGE_PROMPT_END]
         """
         
-        # Priority list of models (User preference first, then working previews, then stable)
+        # Priority list of models (stable models with guaranteed availability)
         model_fallbacks = [
-            "nano-banana-pro-preview",
-            "gemini-3-flash-preview",
-            "gemini-2.0-flash-exp",
-            "gemini-1.5-flash-latest"
+            "gemini-1.5-flash",
+            "gemini-1.5-pro",
+            "gemini-1.0-pro"
         ]
         
         last_exception = None
@@ -128,9 +127,13 @@ class ContentGenerator:
                     model=current_model,
                     contents=prompt
                 )
-                content = response.text.strip()
-                # If we got here, it worked. Break the loop.
-                break
+                if response and response.text:
+                    content = response.text.strip()
+                    # If we got here, it worked. Break the loop.
+                    break
+                else:
+                    print(f"Model {current_model} returned empty response.")
+                    continue
             except Exception as e:
                 print(f"Model {current_model} failed: {e}")
                 last_exception = e
