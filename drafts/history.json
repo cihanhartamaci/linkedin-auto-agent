@@ -2,5 +2,6 @@
   "Real-time Inventory Sync at Scale",
   "Error Handling & Idempotency in High-Volume Logistics APIs",
   "Orchestrating Complex EDI Workflows (850, 846, 940/945) with Hybrid API Integration",
-  "Cloud-Native Integration Architectures for Supply Chain: Event-Driven Microservices for WMS/OMS/ERP Data Flow"
+  "Cloud-Native Integration Architectures for Supply Chain: Event-Driven Microservices for WMS/OMS/ERP Data Flow",
+  "Dynamic Order Routing & Fulfillment Logic for Complex Multi-Channel Scenarios (BOPIS, Ship-from-Store, Dropship)"
 ]
