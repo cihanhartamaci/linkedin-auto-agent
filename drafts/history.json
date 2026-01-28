@@ -7,5 +7,6 @@
   "Data Streaming Platforms as the Central Nervous System for Logistics Events",
   "Implementing Distributed Transactional Sagas for Cross-System Consistency (WMS, OMS, ERP)",
   "Strategies for Bidirectional Data Consistency & State Reconciliation between Modern WMS/OMS and Legacy ERPs (SAP ECC/NetSuite) in Hybrid Integration Architectures",
-  "Master Data Management (MDM) Integration Challenges in Hybrid WMS/OMS/ERP Architectures: Beyond Simple SKU Sync"
+  "Master Data Management (MDM) Integration Challenges in Hybrid WMS/OMS/ERP Architectures: Beyond Simple SKU Sync",
+  "Implementing Robust Asynchronous Communication with Message Queues in High-Volume WMS/ERP Integrations"
 ]
