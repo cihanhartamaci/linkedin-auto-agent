@@ -9,5 +9,6 @@
   "Strategies for Bidirectional Data Consistency & State Reconciliation between Modern WMS/OMS and Legacy ERPs (SAP ECC/NetSuite) in Hybrid Integration Architectures",
   "Master Data Management (MDM) Integration Challenges in Hybrid WMS/OMS/ERP Architectures: Beyond Simple SKU Sync",
   "Implementing Robust Asynchronous Communication with Message Queues in High-Volume WMS/ERP Integrations",
-  "Optimizing API Call Quotas and Rate Limits for Enterprise ERPs (NetSuite, SAP) in High-Frequency WMS/OMS Interactions"
+  "Optimizing API Call Quotas and Rate Limits for Enterprise ERPs (NetSuite, SAP) in High-Frequency WMS/OMS Interactions",
+  "Middleware Strategies for Protocol Adaptation and Schema Transformation in Heterogeneous Logistics Environments"
 ]
