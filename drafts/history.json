@@ -10,5 +10,6 @@
   "Master Data Management (MDM) Integration Challenges in Hybrid WMS/OMS/ERP Architectures: Beyond Simple SKU Sync",
   "Implementing Robust Asynchronous Communication with Message Queues in High-Volume WMS/ERP Integrations",
   "Optimizing API Call Quotas and Rate Limits for Enterprise ERPs (NetSuite, SAP) in High-Frequency WMS/OMS Interactions",
-  "Middleware Strategies for Protocol Adaptation and Schema Transformation in Heterogeneous Logistics Environments"
+  "Middleware Strategies for Protocol Adaptation and Schema Transformation in Heterogeneous Logistics Environments",
+  "Managing Database Contention and Deadlocks in High-Throughput WMS/ERP Integrations"
 ]
