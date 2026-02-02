@@ -12,5 +12,6 @@
   "Optimizing API Call Quotas and Rate Limits for Enterprise ERPs (NetSuite, SAP) in High-Frequency WMS/OMS Interactions",
   "Middleware Strategies for Protocol Adaptation and Schema Transformation in Heterogeneous Logistics Environments",
   "Managing Database Contention and Deadlocks in High-Throughput WMS/ERP Integrations",
-  "Integrating WMS with Warehouse Automation (WES/WCS) for High-Throughput Material Flow Control"
+  "Integrating WMS with Warehouse Automation (WES/WCS) for High-Throughput Material Flow Control",
+  "Architecting for ERP Customization Resilience: Integrating with NetSuite SuiteScripts & SAP BAdIs"
 ]
