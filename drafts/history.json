@@ -1,5 +1,4 @@
 [
-  "Real-time Inventory Sync at Scale",
   "Error Handling & Idempotency in High-Volume Logistics APIs",
   "Orchestrating Complex EDI Workflows (850, 846, 940/945) with Hybrid API Integration",
   "Cloud-Native Integration Architectures for Supply Chain: Event-Driven Microservices for WMS/OMS/ERP Data Flow",
@@ -13,5 +12,6 @@
   "Middleware Strategies for Protocol Adaptation and Schema Transformation in Heterogeneous Logistics Environments",
   "Managing Database Contention and Deadlocks in High-Throughput WMS/ERP Integrations",
   "Integrating WMS with Warehouse Automation (WES/WCS) for High-Throughput Material Flow Control",
-  "Architecting for ERP Customization Resilience: Integrating with NetSuite SuiteScripts & SAP BAdIs"
+  "Architecting for ERP Customization Resilience: Integrating with NetSuite SuiteScripts & SAP BAdIs",
+  "EDI-Driven Vendor Managed Inventory (VMI) Integration: Processing 852/867 Data for ERP Planning and Master Data Alignment"
 ]
