@@ -10,10 +10,9 @@ class LinkedInClient:
         """
         self.access_token = access_token
         self.author_urn = author_urn
-        self.headers = {
             'Authorization': f'Bearer {self.access_token}',
             'Content-Type': 'application/json; charset=utf-8',
-            'LinkedIn-Version': '202401',
+            'LinkedIn-Version': '202306',
             'X-Restli-Protocol-Version': '2.0.0'
         }
 
