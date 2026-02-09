@@ -1,5 +1,4 @@
 [
-  "Orchestrating Complex EDI Workflows (850, 846, 940/945) with Hybrid API Integration",
   "Cloud-Native Integration Architectures for Supply Chain: Event-Driven Microservices for WMS/OMS/ERP Data Flow",
   "Dynamic Order Routing & Fulfillment Logic for Complex Multi-Channel Scenarios (BOPIS, Ship-from-Store, Dropship)",
   "Data Streaming Platforms as the Central Nervous System for Logistics Events",
@@ -13,5 +12,6 @@
   "Integrating WMS with Warehouse Automation (WES/WCS) for High-Throughput Material Flow Control",
   "Architecting for ERP Customization Resilience: Integrating with NetSuite SuiteScripts & SAP BAdIs",
   "EDI-Driven Vendor Managed Inventory (VMI) Integration: Processing 852/867 Data for ERP Planning and Master Data Alignment",
-  "High-Scale Inventory Synchronization: Leveraging Change Data Capture (CDC) and Smart Aggregation for ERP Resilience"
+  "High-Scale Inventory Synchronization: Leveraging Change Data Capture (CDC) and Smart Aggregation for ERP Resilience",
+  "Implementing Idempotency and Deduplication Strategies for High-Volume Logistics API Integrations"
 ]
