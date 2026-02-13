@@ -13,7 +13,7 @@ class LinkedInClient:
         self.headers = {
             'Authorization': f'Bearer {self.access_token}',
             'Content-Type': 'application/json; charset=utf-8',
-            'LinkedIn-Version': '202510',
+            'LinkedIn-Version': '20240401',
             'X-Restli-Protocol-Version': '2.0.0'
         }
 
