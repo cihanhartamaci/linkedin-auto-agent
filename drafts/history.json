@@ -1,5 +1,4 @@
 [
-  "Strategies for Bidirectional Data Consistency & State Reconciliation between Modern WMS/OMS and Legacy ERPs (SAP ECC/NetSuite) in Hybrid Integration Architectures",
   "Master Data Management (MDM) Integration Challenges in Hybrid WMS/OMS/ERP Architectures: Beyond Simple SKU Sync",
   "Implementing Robust Asynchronous Communication with Message Queues in High-Volume WMS/ERP Integrations",
   "Optimizing API Call Quotas and Rate Limits for Enterprise ERPs (NetSuite, SAP) in High-Frequency WMS/OMS Interactions",
@@ -13,5 +12,6 @@
   "Hybrid Fulfillment Orchestration: Synchronizing EDI 940/945 with Real-time APIs for Partial Shipments and Backorder Management",
   "Harmonizing Asynchronous EDI Acknowledgments (997) with Real-time API-driven Status Updates for End-to-End B2B Visibility",
   "Integrating EDI 204/990 Freight Tendering with Real-time Carrier APIs for Dynamic Logistics Orchestration",
-  "Integrating Global Trade Management (GTM) Systems with WMS/ERP for Cross-Border Customs Compliance"
+  "Integrating Global Trade Management (GTM) Systems with WMS/ERP for Cross-Border Customs Compliance",
+  "Integrating Edge Computing with WMS for Real-time Device Orchestration and Low-Latency Data Processing in High-Scale Warehousing"
 ]
