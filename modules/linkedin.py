@@ -80,8 +80,8 @@ class LinkedInClient:
             text = text.replace(char, f"\\{char}")
         return text
 
-    def create_post(self, text: str, image_urn: str = None) -> str:
-        """Step 3: Create the Post using /rest/posts (2025 Standard)"""
+    def create_post(self, text: str, asset_urn: str = None) -> str:
+        """Step 3: Create the Post using v2/ugcPosts (Compatible with v2/assets)"""
         
         # Ensure author uses person URN
         author_urn = self.author_urn
@@ -89,38 +89,45 @@ class LinkedInClient:
             author_urn = author_urn.replace("urn:li:member:", "urn:li:person:")
 
         # 1. Normalize text to prevent truncation bugs
-        # Replace Windows line endings (\r\n) with Unix (\n)
         text = text.replace('\r\n', '\n').replace('\r', '\n')
-        # Replace problematic unicode dashes
         text = text.replace('—', '-').replace('–', '-')
-        
-        # 2. Fix known LinkedIn API bugs by escaping special characters
         text = self._escape_linkedin_text(text)
         
-        # 3. Hard Limit Check: LinkedIn maximum is 3000 chars for commentary
-        # Use a safe margin for JSON encoding
         if len(text) > 3000:
             print(f"Warning: Text too long ({len(text)}). Truncating to 2900.")
             text = text[:2900] + "... [Full post on profile]"
 
+        # Construct v2/ugcPosts payload
         post_data = {
             "author": author_urn,
-            "commentary": text,
-            "visibility": "PUBLIC",
-            "distribution": {
-                "feedDistribution": "MAIN_FEED",
-            },
             "lifecycleState": "PUBLISHED",
-            "isReshareDisabledByAuthor": False
+            "specificContent": {
+                "com.linkedin.ugc.ShareContent": {
+                    "shareCommentary": {
+                        "text": text
+                    },
+                    "shareMediaCategory": "NONE"
+                }
+            },
+            "visibility": {
+                "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
+            }
         }
 
-        if image_urn:
-            post_data['content'] = {
-                "media": {
-                    "title": "Daily Logistics Insight",
-                    "id": image_urn
+        if asset_urn:
+            post_data["specificContent"]["com.linkedin.ugc.ShareContent"]["shareMediaCategory"] = "IMAGE"
+            post_data["specificContent"]["com.linkedin.ugc.ShareContent"]["media"] = [
+                {
+                    "status": "READY",
+                    "description": {
+                        "text": "Image from LinkedIn Automation"
+                    },
+                    "media": asset_urn,
+                    "title": {
+                        "text": "LinkedIn Post Image"
+                    }
                 }
-            }
+            ]
 
         # DEEP DEBUG: Log everything before sending
         import sys
@@ -131,18 +138,19 @@ class LinkedInClient:
         print(f"END: {text[-500:]}")
         print("-" * 40)
         
-        # Explicitly encode to UTF-8
         payload = json.dumps(post_data, ensure_ascii=False).encode('utf-8')
         
-        # Add explicit Content-Length
         current_headers = self.headers.copy()
         current_headers['Content-Length'] = str(len(payload))
+        
+        # v2/ugcPosts doesn't strictly need LinkedIn-Version, but it's safer to keep or remove if issues arise.
+        # We'll use the existing headers for now.
         
         print(f"[DEEP DEBUG] JSON Payload size: {len(payload)} bytes")
         sys.stdout.flush()
         
         response = requests.post(
-            "https://api.linkedin.com/rest/posts",
+            "https://api.linkedin.com/v2/ugcPosts",
             headers=current_headers,
             data=payload
         )
@@ -150,13 +158,7 @@ class LinkedInClient:
         if response.status_code not in [200, 201]:
             raise Exception(f"Failed to publish post: {response.text}")
             
-        # REST API returns 201 Created with EMPTY body. 
-        # The Post ID is in the 'x-restli-id' header.
-        post_id = response.headers.get('x-restli-id')
-        if not post_id:
-             # Fallback to x-linkedin-id just in case
-             post_id = response.headers.get('x-linkedin-id', 'Unknown ID')
-
+        post_id = response.json().get('id')
         return post_id
 
     def post_image_and_text(self, text: str, image_file_path: str):
