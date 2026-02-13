@@ -160,18 +160,24 @@ class LinkedInClient:
         return post_id
 
     def post_image_and_text(self, text: str, image_file_path: str):
-        # 1. Register Image (New REST Way)
-        print("Registering image via REST API...")
+        # 1. Register Image (v2/assets Way)
+        print("Registering image via v2/assets API...")
         reg_info = self.register_image()
-        upload_url = reg_info['value']['uploadUrl']
-        image_urn = reg_info['value']['image']
+        
+        # Parse v2/assets response
+        try:
+            upload_url = reg_info['value']['uploadMechanism']['com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest']['uploadUrl']
+            asset_urn = reg_info['value']['asset']
+        except KeyError:
+             print(f"Unexpected response structure: {reg_info}")
+             raise Exception("Could not parse upload URL or Asset URN from v2/assets response")
         
         # 2. Upload Binary
-        print(f"Uploading image binary...")
+        print(f"Uploading image binary to {upload_url[:50]}...")
         self.upload_image(upload_url, image_file_path)
         
         # 3. Create Post
-        print(f"Publishing post with image {image_urn}...")
-        post_id = self.create_post(text, image_urn)
+        print(f"Publishing post with asset {asset_urn}...")
+        post_id = self.create_post(text, asset_urn)
         print(f"Successfully posted! ID: {post_id}")
         return post_id
