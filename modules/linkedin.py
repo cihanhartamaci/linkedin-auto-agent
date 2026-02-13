@@ -13,27 +13,36 @@ class LinkedInClient:
         self.headers = {
             'Authorization': f'Bearer {self.access_token}',
             'Content-Type': 'application/json; charset=utf-8',
-            'LinkedIn-Version': '202404',
+            'LinkedIn-Version': '202510',
             'X-Restli-Protocol-Version': '2.0.0'
         }
 
     def register_image(self) -> dict:
-        """Step 1: Register image upload using REST API /rest/images"""
-        # Ensure author is in person format for REST API
+        """Step 1: Register image upload using v2/assets API"""
+        # Ensure author is in person format for v2 API
         owner_urn = self.author_urn
         
-        # REST API v202501 requires 'urn:li:person' for member profiles
+        # v2 API uses urn:li:person or urn:li:organization
         if "urn:li:member:" in owner_urn:
             owner_urn = owner_urn.replace("urn:li:member:", "urn:li:person:")
 
         data = {
-            "initializeUploadRequest": {
-                "owner": owner_urn
+            "registerUploadRequest": {
+                "recipes": [
+                    "urn:li:digitalmediaRecipe:feedshare-image"
+                ],
+                "owner": owner_urn,
+                "serviceRelationships": [
+                    {
+                        "relationshipType": "OWNER",
+                        "identifier": "urn:li:userGeneratedContent"
+                    }
+                ]
             }
         }
         
         response = requests.post(
-            "https://api.linkedin.com/rest/images?action=initializeUpload", 
+            "https://api.linkedin.com/v2/assets?action=registerUpload", 
             headers=self.headers, 
             json=data
         )
@@ -43,15 +52,19 @@ class LinkedInClient:
             
         return response.json()
 
-    def upload_image(self, upload_url: str, file_path: str):
-        """Step 2: Upload binary file directly to LinkedIn's storage"""
-        with open(file_path, 'rb') as f:
-            response = requests.put(
-                upload_url, 
-                data=f, 
-                headers={"Content-Type": "application/octet-stream"}
-            )
+    def upload_image(self, upload_url: str, image_path: str):
+        """Step 2: Upload binary image data"""
+        with open(image_path, "rb") as f:
+            image_data = f.read()
             
+        headers = {
+            "Authorization": f"Bearer {self.access_token}",
+            "Content-Type": "application/octet-stream"
+        }
+        
+        # v2/assets uploadUrl is usually a single URL
+        response = requests.put(upload_url, headers=headers, data=image_data)
+        
         if response.status_code not in [200, 201]:
             raise Exception(f"Failed to upload image binary: {response.text}")
 
