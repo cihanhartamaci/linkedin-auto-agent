@@ -1,5 +1,4 @@
 [
-  "Optimizing API Call Quotas and Rate Limits for Enterprise ERPs (NetSuite, SAP) in High-Frequency WMS/OMS Interactions",
   "Middleware Strategies for Protocol Adaptation and Schema Transformation in Heterogeneous Logistics Environments",
   "Managing Database Contention and Deadlocks in High-Throughput WMS/ERP Integrations",
   "Integrating WMS with Warehouse Automation (WES/WCS) for High-Throughput Material Flow Control",
@@ -13,5 +12,6 @@
   "Integrating Global Trade Management (GTM) Systems with WMS/ERP for Cross-Border Customs Compliance",
   "Integrating Edge Computing with WMS for Real-time Device Orchestration and Low-Latency Data Processing in High-Scale Warehousing",
   "Serverless Functions for Micro-Integrations in High-Scale Supply Chain Architectures",
-  "Architecting for EDI 846 Inventory Discrepancy Reconciliation in Multi-Source Logistics Networks"
+  "Architecting for EDI 846 Inventory Discrepancy Reconciliation in Multi-Source Logistics Networks",
+  "Architecting for EDI Document Versioning and Schema Evolution Management in High-Scale Multi-Partner Integrations"
 ]
