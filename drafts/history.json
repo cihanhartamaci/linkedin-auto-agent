@@ -1,5 +1,4 @@
 [
-  "Managing Database Contention and Deadlocks in High-Throughput WMS/ERP Integrations",
   "Integrating WMS with Warehouse Automation (WES/WCS) for High-Throughput Material Flow Control",
   "Architecting for ERP Customization Resilience: Integrating with NetSuite SuiteScripts & SAP BAdIs",
   "EDI-Driven Vendor Managed Inventory (VMI) Integration: Processing 852/867 Data for ERP Planning and Master Data Alignment",
@@ -13,5 +12,6 @@
   "Serverless Functions for Micro-Integrations in High-Scale Supply Chain Architectures",
   "Architecting for EDI 846 Inventory Discrepancy Reconciliation in Multi-Source Logistics Networks",
   "Architecting for EDI Document Versioning and Schema Evolution Management in High-Scale Multi-Partner Integrations",
-  "Dynamic Multi-Warehouse & 3PL Order Fulfillment Orchestration"
+  "Dynamic Multi-Warehouse & 3PL Order Fulfillment Orchestration",
+  "Architecting Canonical Data Models for Seamless Integration across Heterogeneous WMS, OMS, and ERP Systems within a High-Scale Logistics Middleware"
 ]
