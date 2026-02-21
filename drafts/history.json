@@ -1,5 +1,4 @@
 [
-  "EDI-Driven Vendor Managed Inventory (VMI) Integration: Processing 852/867 Data for ERP Planning and Master Data Alignment",
   "High-Scale Inventory Synchronization: Leveraging Change Data Capture (CDC) and Smart Aggregation for ERP Resilience",
   "Implementing Idempotency and Deduplication Strategies for High-Volume Logistics API Integrations",
   "Hybrid Fulfillment Orchestration: Synchronizing EDI 940/945 with Real-time APIs for Partial Shipments and Backorder Management",
@@ -13,5 +12,6 @@
   "Dynamic Multi-Warehouse & 3PL Order Fulfillment Orchestration",
   "Architecting Canonical Data Models for Seamless Integration across Heterogeneous WMS, OMS, and ERP Systems within a High-Scale Logistics Middleware",
   "Achieving High-Fidelity ATP (Available-to-Promise) Accuracy with Hybrid Inventory Feeds and Dynamic Allocation across WMS, OMS, and ERP",
-  "Architecting for Multi-Directional Master Data Synchronization and Golden Record Management across WMS, OMS, and ERP Systems"
+  "Architecting for Multi-Directional Master Data Synchronization and Golden Record Management across WMS, OMS, and ERP Systems",
+  "Mitigating ERP API Governance and Throughput Bottlenecks in High-Volume Logistics Integrations (NetSuite/SAP)"
 ]
