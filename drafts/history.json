@@ -1,5 +1,4 @@
 [
-  "Implementing Idempotency and Deduplication Strategies for High-Volume Logistics API Integrations",
   "Hybrid Fulfillment Orchestration: Synchronizing EDI 940/945 with Real-time APIs for Partial Shipments and Backorder Management",
   "Harmonizing Asynchronous EDI Acknowledgments (997) with Real-time API-driven Status Updates for End-to-End B2B Visibility",
   "Integrating EDI 204/990 Freight Tendering with Real-time Carrier APIs for Dynamic Logistics Orchestration",
@@ -13,5 +12,6 @@
   "Achieving High-Fidelity ATP (Available-to-Promise) Accuracy with Hybrid Inventory Feeds and Dynamic Allocation across WMS, OMS, and ERP",
   "Architecting for Multi-Directional Master Data Synchronization and Golden Record Management across WMS, OMS, and ERP Systems",
   "Mitigating ERP API Governance and Throughput Bottlenecks in High-Volume Logistics Integrations (NetSuite/SAP)",
-  "Event Stream Processing for Real-time Anomaly Detection and Dynamic Routing in High-Volume Logistics"
+  "Event Stream Processing for Real-time Anomaly Detection and Dynamic Routing in High-Volume Logistics",
+  "Achieving Transactional Consistency for Complex Order Change Management Across Disparate WMS, OMS, and ERP Systems"
 ]
