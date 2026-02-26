@@ -1,5 +1,4 @@
 [
-  "Integrating EDI 204/990 Freight Tendering with Real-time Carrier APIs for Dynamic Logistics Orchestration",
   "Integrating Global Trade Management (GTM) Systems with WMS/ERP for Cross-Border Customs Compliance",
   "Integrating Edge Computing with WMS for Real-time Device Orchestration and Low-Latency Data Processing in High-Scale Warehousing",
   "Serverless Functions for Micro-Integrations in High-Scale Supply Chain Architectures",
@@ -13,5 +12,6 @@
   "Event Stream Processing for Real-time Anomaly Detection and Dynamic Routing in High-Volume Logistics",
   "Achieving Transactional Consistency for Complex Order Change Management Across Disparate WMS, OMS, and ERP Systems",
   "Implementing Idempotent Event-Driven Updates for High-Volume WMS-to-OMS/ERP Status Synchronization",
-  "Mitigating Inventory Over-Commitment with Distributed Locking Mechanisms in High-Scale Multi-Channel Retail Architectures"
+  "Mitigating Inventory Over-Commitment with Distributed Locking Mechanisms in High-Scale Multi-Channel Retail Architectures",
+  "Architecting for Dead Letter Queues (DLQs) and Automated Re-processing in High-Volume Logistics Integrations"
 ]
