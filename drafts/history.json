@@ -1,5 +1,4 @@
 [
-  "Integrating Edge Computing with WMS for Real-time Device Orchestration and Low-Latency Data Processing in High-Scale Warehousing",
   "Serverless Functions for Micro-Integrations in High-Scale Supply Chain Architectures",
   "Architecting for EDI 846 Inventory Discrepancy Reconciliation in Multi-Source Logistics Networks",
   "Architecting for EDI Document Versioning and Schema Evolution Management in High-Scale Multi-Partner Integrations",
@@ -13,5 +12,6 @@
   "Implementing Idempotent Event-Driven Updates for High-Volume WMS-to-OMS/ERP Status Synchronization",
   "Mitigating Inventory Over-Commitment with Distributed Locking Mechanisms in High-Scale Multi-Channel Retail Architectures",
   "Architecting for Dead Letter Queues (DLQs) and Automated Re-processing in High-Volume Logistics Integrations",
-  "Architecting for Compensatory Transactions and Saga Patterns in High-Scale, Multi-System Logistics Workflows"
+  "Architecting for Compensatory Transactions and Saga Patterns in High-Scale, Multi-System Logistics Workflows",
+  "Automating Three-Way Matching and Payment Processing via Hybrid EDI 810/820 and ERP API Integration"
 ]
