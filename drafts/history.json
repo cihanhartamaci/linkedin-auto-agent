@@ -1,5 +1,4 @@
 [
-  "Architecting for EDI Document Versioning and Schema Evolution Management in High-Scale Multi-Partner Integrations",
   "Dynamic Multi-Warehouse & 3PL Order Fulfillment Orchestration",
   "Architecting Canonical Data Models for Seamless Integration across Heterogeneous WMS, OMS, and ERP Systems within a High-Scale Logistics Middleware",
   "Achieving High-Fidelity ATP (Available-to-Promise) Accuracy with Hybrid Inventory Feeds and Dynamic Allocation across WMS, OMS, and ERP",
@@ -13,5 +12,6 @@
   "Architecting for Compensatory Transactions and Saga Patterns in High-Scale, Multi-System Logistics Workflows",
   "Automating Three-Way Matching and Payment Processing via Hybrid EDI 810/820 and ERP API Integration",
   "Architecting for High-Volume Reverse Logistics (RMA) Orchestration Across WMS, OMS, and ERP with Hybrid API/EDI",
-  "Hybridizing EDI 947 (Inventory Adjustments) with ERP Financial Ledgers: Real-time Reconciliation Challenges"
+  "Hybridizing EDI 947 (Inventory Adjustments) with ERP Financial Ledgers: Real-time Reconciliation Challenges",
+  "Architecting for Dynamic WMS Task Prioritization and Workflow Injection via External APIs in High-Velocity Operations"
 ]
