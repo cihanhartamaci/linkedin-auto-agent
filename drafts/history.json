@@ -1,5 +1,4 @@
 [
-  "Architecting for Multi-Directional Master Data Synchronization and Golden Record Management across WMS, OMS, and ERP Systems",
   "Mitigating ERP API Governance and Throughput Bottlenecks in High-Volume Logistics Integrations (NetSuite/SAP)",
   "Event Stream Processing for Real-time Anomaly Detection and Dynamic Routing in High-Volume Logistics",
   "Achieving Transactional Consistency for Complex Order Change Management Across Disparate WMS, OMS, and ERP Systems",
@@ -13,5 +12,6 @@
   "Architecting for Dynamic WMS Task Prioritization and Workflow Injection via External APIs in High-Velocity Operations",
   "Hybridizing EDI 940/945 for High-Volume Outbound Orders with Real-time WMS API Interactions for Dynamic Order Updates and Status Feedback",
   "EDI 846 (Inventory Advice) Reconciliation with WMS API-Driven Inventory Updates for Supplier-Managed Inventory (VMI) Scenarios",
-  "Leveraging Serverless Architectures for Elastic Micro-Integrations in High-Volume Supply Chain Logistics"
+  "Leveraging Serverless Architectures for Elastic Micro-Integrations in High-Volume Supply Chain Logistics",
+  "Correlating EDI 214 Shipment Status with Real-time GPS/Telematics Data for Proactive Exception Management in Supply Chain Logistics"
 ]
