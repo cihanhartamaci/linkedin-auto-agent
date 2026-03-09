@@ -1,5 +1,4 @@
 [
-  "Event Stream Processing for Real-time Anomaly Detection and Dynamic Routing in High-Volume Logistics",
   "Achieving Transactional Consistency for Complex Order Change Management Across Disparate WMS, OMS, and ERP Systems",
   "Implementing Idempotent Event-Driven Updates for High-Volume WMS-to-OMS/ERP Status Synchronization",
   "Mitigating Inventory Over-Commitment with Distributed Locking Mechanisms in High-Scale Multi-Channel Retail Architectures",
@@ -13,5 +12,6 @@
   "EDI 846 (Inventory Advice) Reconciliation with WMS API-Driven Inventory Updates for Supplier-Managed Inventory (VMI) Scenarios",
   "Leveraging Serverless Architectures for Elastic Micro-Integrations in High-Volume Supply Chain Logistics",
   "Correlating EDI 214 Shipment Status with Real-time GPS/Telematics Data for Proactive Exception Management in Supply Chain Logistics",
-  "Achieving Eventual Consistency for Global Inventory Visibility in Multi-Tenant, Multi-DC Logistics Architectures"
+  "Achieving Eventual Consistency for Global Inventory Visibility in Multi-Tenant, Multi-DC Logistics Architectures",
+  "Architecting for Master Data Management (MDM) of Product & Customer Entities Across WMS, OMS, and ERP Systems"
 ]
