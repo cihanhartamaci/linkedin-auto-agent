@@ -1,5 +1,4 @@
 [
-  "Implementing Idempotent Event-Driven Updates for High-Volume WMS-to-OMS/ERP Status Synchronization",
   "Mitigating Inventory Over-Commitment with Distributed Locking Mechanisms in High-Scale Multi-Channel Retail Architectures",
   "Architecting for Dead Letter Queues (DLQs) and Automated Re-processing in High-Volume Logistics Integrations",
   "Architecting for Compensatory Transactions and Saga Patterns in High-Scale, Multi-System Logistics Workflows",
@@ -13,5 +12,6 @@
   "Correlating EDI 214 Shipment Status with Real-time GPS/Telematics Data for Proactive Exception Management in Supply Chain Logistics",
   "Achieving Eventual Consistency for Global Inventory Visibility in Multi-Tenant, Multi-DC Logistics Architectures",
   "Architecting for Master Data Management (MDM) of Product & Customer Entities Across WMS, OMS, and ERP Systems",
-  "Architecting for Dynamic Order Fulfillment Routing Across Disparate Logistics Networks Based on Real-time Constraints (Cost, Lead Time, Capacity)"
+  "Architecting for Dynamic Order Fulfillment Routing Across Disparate Logistics Networks Based on Real-time Constraints (Cost, Lead Time, Capacity)",
+  "Architecting a Robust API Abstraction Layer for Legacy WMS to Enable Real-time Cloud OMS/ERP Integration"
 ]
