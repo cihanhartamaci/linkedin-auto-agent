@@ -1,5 +1,4 @@
 [
-  "Architecting for Dead Letter Queues (DLQs) and Automated Re-processing in High-Volume Logistics Integrations",
   "Architecting for Compensatory Transactions and Saga Patterns in High-Scale, Multi-System Logistics Workflows",
   "Automating Three-Way Matching and Payment Processing via Hybrid EDI 810/820 and ERP API Integration",
   "Architecting for High-Volume Reverse Logistics (RMA) Orchestration Across WMS, OMS, and ERP with Hybrid API/EDI",
@@ -13,5 +12,6 @@
   "Architecting for Master Data Management (MDM) of Product & Customer Entities Across WMS, OMS, and ERP Systems",
   "Architecting for Dynamic Order Fulfillment Routing Across Disparate Logistics Networks Based on Real-time Constraints (Cost, Lead Time, Capacity)",
   "Architecting a Robust API Abstraction Layer for Legacy WMS to Enable Real-time Cloud OMS/ERP Integration",
-  "Reconciling Hybrid EDI 861 and Real-time WMS API Receipts for Vendor Payment Authorization"
+  "Reconciling Hybrid EDI 861 and Real-time WMS API Receipts for Vendor Payment Authorization",
+  "Real-time Bidirectional Integration of TMS and WMS for Dynamic Freight Optimization and Dock Scheduling"
 ]
