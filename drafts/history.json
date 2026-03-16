@@ -1,5 +1,4 @@
 [
-  "Architecting for High-Volume Reverse Logistics (RMA) Orchestration Across WMS, OMS, and ERP with Hybrid API/EDI",
   "Hybridizing EDI 947 (Inventory Adjustments) with ERP Financial Ledgers: Real-time Reconciliation Challenges",
   "Architecting for Dynamic WMS Task Prioritization and Workflow Injection via External APIs in High-Velocity Operations",
   "Hybridizing EDI 940/945 for High-Volume Outbound Orders with Real-time WMS API Interactions for Dynamic Order Updates and Status Feedback",
@@ -13,5 +12,6 @@
   "Reconciling Hybrid EDI 861 and Real-time WMS API Receipts for Vendor Payment Authorization",
   "Real-time Bidirectional Integration of TMS and WMS for Dynamic Freight Optimization and Dock Scheduling",
   "Hybridizing EDI 204/990 (Load Tender/Response) with Real-time TMS APIs for Dynamic Freight Procurement and Exception Management",
-  "Error Handling & Idempotency in High-Volume Logistics APIs, focusing on challenges in distributed WMS/OMS/ERP environments"
+  "Error Handling & Idempotency in High-Volume Logistics APIs, focusing on challenges in distributed WMS/OMS/ERP environments",
+  "Orchestrating Real-time WMS-to-Automated Material Handling System (AMHS) Integration for High-Throughput Operations"
 ]
