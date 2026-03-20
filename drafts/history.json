@@ -1,5 +1,4 @@
 [
-  "EDI 846 (Inventory Advice) Reconciliation with WMS API-Driven Inventory Updates for Supplier-Managed Inventory (VMI) Scenarios",
   "Leveraging Serverless Architectures for Elastic Micro-Integrations in High-Volume Supply Chain Logistics",
   "Correlating EDI 214 Shipment Status with Real-time GPS/Telematics Data for Proactive Exception Management in Supply Chain Logistics",
   "Achieving Eventual Consistency for Global Inventory Visibility in Multi-Tenant, Multi-DC Logistics Architectures",
@@ -13,5 +12,6 @@
   "Orchestrating Real-time WMS-to-Automated Material Handling System (AMHS) Integration for High-Throughput Operations",
   "Hybridizing EDI 810 (Invoice) Auto-Matching with Real-time ERP/WMS Data for Automated Financial Reconciliation at Scale",
   "Leveraging Event Streaming Platforms (e.g., Kafka) as a High-Volume, Decoupled Integration Backbone for Real-time Logistics Events",
-  "Reverse Logistics Integration: Orchestrating Complex RMA Workflows Across OMS, WMS, and ERP"
+  "Reverse Logistics Integration: Orchestrating Complex RMA Workflows Across OMS, WMS, and ERP",
+  "Architecting Bidirectional Kitting & Assembly Workflow Orchestration Between OMS and WMS for Configurable Products"
 ]
