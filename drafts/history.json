@@ -1,5 +1,4 @@
 [
-  "Achieving Eventual Consistency for Global Inventory Visibility in Multi-Tenant, Multi-DC Logistics Architectures",
   "Architecting for Master Data Management (MDM) of Product & Customer Entities Across WMS, OMS, and ERP Systems",
   "Architecting for Dynamic Order Fulfillment Routing Across Disparate Logistics Networks Based on Real-time Constraints (Cost, Lead Time, Capacity)",
   "Architecting a Robust API Abstraction Layer for Legacy WMS to Enable Real-time Cloud OMS/ERP Integration",
@@ -13,5 +12,6 @@
   "Reverse Logistics Integration: Orchestrating Complex RMA Workflows Across OMS, WMS, and ERP",
   "Architecting Bidirectional Kitting & Assembly Workflow Orchestration Between OMS and WMS for Configurable Products",
   "Implementing Atomic Inventory Allocation and Reservation Across Distributed WMS/OMS Landscapes",
-  "Bridging the Gap: Reconciling EDI 846 Inventory Advice Snapshots with Dynamic ERP/WMS Inventory Status for Accurate Order Promising"
+  "Bridging the Gap: Reconciling EDI 846 Inventory Advice Snapshots with Dynamic ERP/WMS Inventory Status for Accurate Order Promising",
+  "Implementing Advanced Resilience Patterns (Circuit Breakers, Retries, Bulkheads) for High-Volume Logistics API Integrations"
 ]
