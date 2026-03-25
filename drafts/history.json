@@ -1,5 +1,4 @@
 [
-  "Architecting for Master Data Management (MDM) of Product & Customer Entities Across WMS, OMS, and ERP Systems",
   "Architecting for Dynamic Order Fulfillment Routing Across Disparate Logistics Networks Based on Real-time Constraints (Cost, Lead Time, Capacity)",
   "Architecting a Robust API Abstraction Layer for Legacy WMS to Enable Real-time Cloud OMS/ERP Integration",
   "Reconciling Hybrid EDI 861 and Real-time WMS API Receipts for Vendor Payment Authorization",
@@ -13,5 +12,6 @@
   "Architecting Bidirectional Kitting & Assembly Workflow Orchestration Between OMS and WMS for Configurable Products",
   "Implementing Atomic Inventory Allocation and Reservation Across Distributed WMS/OMS Landscapes",
   "Bridging the Gap: Reconciling EDI 846 Inventory Advice Snapshots with Dynamic ERP/WMS Inventory Status for Accurate Order Promising",
-  "Implementing Advanced Resilience Patterns (Circuit Breakers, Retries, Bulkheads) for High-Volume Logistics API Integrations"
+  "Implementing Advanced Resilience Patterns (Circuit Breakers, Retries, Bulkheads) for High-Volume Logistics API Integrations",
+  "Reconciling Real-time Carrier API Status Updates with Batch EDI 214 for Unified Order Visibility Across OMS and ERP"
 ]
