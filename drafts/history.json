@@ -1,5 +1,4 @@
 [
-  "Reconciling Hybrid EDI 861 and Real-time WMS API Receipts for Vendor Payment Authorization",
   "Real-time Bidirectional Integration of TMS and WMS for Dynamic Freight Optimization and Dock Scheduling",
   "Hybridizing EDI 204/990 (Load Tender/Response) with Real-time TMS APIs for Dynamic Freight Procurement and Exception Management",
   "Error Handling & Idempotency in High-Volume Logistics APIs, focusing on challenges in distributed WMS/OMS/ERP environments",
@@ -13,5 +12,6 @@
   "Implementing Advanced Resilience Patterns (Circuit Breakers, Retries, Bulkheads) for High-Volume Logistics API Integrations",
   "Reconciling Real-time Carrier API Status Updates with Batch EDI 214 for Unified Order Visibility Across OMS and ERP",
   "Reconciling NetSuite's Advanced Inventory Commitment Logic with External WMS Real-time Inventory Updates at Scale",
-  "Orchestrating Complex EDI 850-940-945 Workflows for Dynamic Order Changes and Cancellations Across ERP and WMS"
+  "Orchestrating Complex EDI 850-940-945 Workflows for Dynamic Order Changes and Cancellations Across ERP and WMS",
+  "Architecting for Data Consistency in Eventually Consistent Distributed Logistics Systems (WMS, OMS, ERP)"
 ]
