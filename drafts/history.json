@@ -1,5 +1,4 @@
 [
-  "Error Handling & Idempotency in High-Volume Logistics APIs, focusing on challenges in distributed WMS/OMS/ERP environments",
   "Orchestrating Real-time WMS-to-Automated Material Handling System (AMHS) Integration for High-Throughput Operations",
   "Hybridizing EDI 810 (Invoice) Auto-Matching with Real-time ERP/WMS Data for Automated Financial Reconciliation at Scale",
   "Leveraging Event Streaming Platforms (e.g., Kafka) as a High-Volume, Decoupled Integration Backbone for Real-time Logistics Events",
@@ -13,5 +12,6 @@
   "Orchestrating Complex EDI 850-940-945 Workflows for Dynamic Order Changes and Cancellations Across ERP and WMS",
   "Architecting for Data Consistency in Eventually Consistent Distributed Logistics Systems (WMS, OMS, ERP)",
   "Architecting Multi-Domain Product Master Data Synchronization for Complex Hierarchies Across ERP, OMS, and WMS",
-  "Architecting Dynamic Order Sourcing and Fulfillment Routing Across Disparate WMS and 3PL Networks with Hybrid API/EDI Orchestration"
+  "Architecting Dynamic Order Sourcing and Fulfillment Routing Across Disparate WMS and 3PL Networks with Hybrid API/EDI Orchestration",
+  "Architecting for Data Residency & Sovereignty in Multi-Geo Cloud-Native Supply Chain Integrations"
 ]
