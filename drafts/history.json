@@ -1,5 +1,4 @@
 [
-  "Hybridizing EDI 810 (Invoice) Auto-Matching with Real-time ERP/WMS Data for Automated Financial Reconciliation at Scale",
   "Leveraging Event Streaming Platforms (e.g., Kafka) as a High-Volume, Decoupled Integration Backbone for Real-time Logistics Events",
   "Reverse Logistics Integration: Orchestrating Complex RMA Workflows Across OMS, WMS, and ERP",
   "Architecting Bidirectional Kitting & Assembly Workflow Orchestration Between OMS and WMS for Configurable Products",
@@ -13,5 +12,6 @@
   "Architecting Multi-Domain Product Master Data Synchronization for Complex Hierarchies Across ERP, OMS, and WMS",
   "Architecting Dynamic Order Sourcing and Fulfillment Routing Across Disparate WMS and 3PL Networks with Hybrid API/EDI Orchestration",
   "Architecting for Data Residency & Sovereignty in Multi-Geo Cloud-Native Supply Chain Integrations",
-  "Architecting Bidirectional Synchronization of Configurable Bill of Materials (BOMs) between PLM, ERP, and WMS for Dynamic Kitting"
+  "Architecting Bidirectional Synchronization of Configurable Bill of Materials (BOMs) between PLM, ERP, and WMS for Dynamic Kitting",
+  "Architecting for True Idempotency in Hybrid Logistics Integrations (API & EDI) to Prevent Data Duplication at Scale"
 ]
