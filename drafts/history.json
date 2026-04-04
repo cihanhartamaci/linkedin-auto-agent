@@ -1,5 +1,4 @@
 [
-  "Reverse Logistics Integration: Orchestrating Complex RMA Workflows Across OMS, WMS, and ERP",
   "Architecting Bidirectional Kitting & Assembly Workflow Orchestration Between OMS and WMS for Configurable Products",
   "Implementing Atomic Inventory Allocation and Reservation Across Distributed WMS/OMS Landscapes",
   "Bridging the Gap: Reconciling EDI 846 Inventory Advice Snapshots with Dynamic ERP/WMS Inventory Status for Accurate Order Promising",
@@ -13,5 +12,6 @@
   "Architecting for Data Residency & Sovereignty in Multi-Geo Cloud-Native Supply Chain Integrations",
   "Architecting Bidirectional Synchronization of Configurable Bill of Materials (BOMs) between PLM, ERP, and WMS for Dynamic Kitting",
   "Architecting for True Idempotency in Hybrid Logistics Integrations (API & EDI) to Prevent Data Duplication at Scale",
-  "Architecting for Concurrency Control and Deadlock Prevention in High-Volume Real-time Inventory Updates Across Distributed Logistics Systems"
+  "Architecting for Concurrency Control and Deadlock Prevention in High-Volume Real-time Inventory Updates Across Distributed Logistics Systems",
+  "Aggregating and Synchronizing Supplier Performance Metrics Across WMS, OMS, and ERP for Proactive Supply Chain Management"
 ]
