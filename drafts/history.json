@@ -1,5 +1,4 @@
 [
-  "Bridging the Gap: Reconciling EDI 846 Inventory Advice Snapshots with Dynamic ERP/WMS Inventory Status for Accurate Order Promising",
   "Implementing Advanced Resilience Patterns (Circuit Breakers, Retries, Bulkheads) for High-Volume Logistics API Integrations",
   "Reconciling Real-time Carrier API Status Updates with Batch EDI 214 for Unified Order Visibility Across OMS and ERP",
   "Reconciling NetSuite's Advanced Inventory Commitment Logic with External WMS Real-time Inventory Updates at Scale",
@@ -13,5 +12,6 @@
   "Architecting for Concurrency Control and Deadlock Prevention in High-Volume Real-time Inventory Updates Across Distributed Logistics Systems",
   "Aggregating and Synchronizing Supplier Performance Metrics Across WMS, OMS, and ERP for Proactive Supply Chain Management",
   "Architecting Real-time Financial Impact from WMS Ship Confirmations into ERP for Accurate COGS and Revenue Recognition",
-  "Optimizing Data Egress Strategies for High-Volume Logistics Data in Hybrid Cloud Architectures"
+  "Optimizing Data Egress Strategies for High-Volume Logistics Data in Hybrid Cloud Architectures",
+  "Architecting for Robust Schema Evolution in Hybrid API/EDI Logistics Integrations"
 ]
