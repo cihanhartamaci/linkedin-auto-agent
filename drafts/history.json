@@ -1,5 +1,4 @@
 [
-  "Orchestrating Complex EDI 850-940-945 Workflows for Dynamic Order Changes and Cancellations Across ERP and WMS",
   "Architecting for Data Consistency in Eventually Consistent Distributed Logistics Systems (WMS, OMS, ERP)",
   "Architecting Multi-Domain Product Master Data Synchronization for Complex Hierarchies Across ERP, OMS, and WMS",
   "Architecting Dynamic Order Sourcing and Fulfillment Routing Across Disparate WMS and 3PL Networks with Hybrid API/EDI Orchestration",
@@ -13,5 +12,6 @@
   "Architecting for Robust Schema Evolution in Hybrid API/EDI Logistics Integrations",
   "Integrating Real-time RFID/IoT Sensor Data with WMS for Enhanced Inventory Accuracy and Automated Cycle Counting",
   "Implementing Circuit Breakers and Bulkhead Patterns for Downstream ERP/WMS API Calls During Peak Logistics Operations",
-  "Architecting for Accurate Global Stock Visibility: Reconciling Periodic EDI 846 Inventory Advice with Real-time 3PL APIs"
+  "Architecting for Accurate Global Stock Visibility: Reconciling Periodic EDI 846 Inventory Advice with Real-time 3PL APIs",
+  "Optimizing Data Transformation Performance in High-Volume Hybrid Logistics Gateways"
 ]
