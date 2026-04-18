@@ -1,5 +1,4 @@
 [
-  "Architecting for Data Consistency in Eventually Consistent Distributed Logistics Systems (WMS, OMS, ERP)",
   "Architecting Multi-Domain Product Master Data Synchronization for Complex Hierarchies Across ERP, OMS, and WMS",
   "Architecting Dynamic Order Sourcing and Fulfillment Routing Across Disparate WMS and 3PL Networks with Hybrid API/EDI Orchestration",
   "Architecting for Data Residency & Sovereignty in Multi-Geo Cloud-Native Supply Chain Integrations",
@@ -13,5 +12,6 @@
   "Integrating Real-time RFID/IoT Sensor Data with WMS for Enhanced Inventory Accuracy and Automated Cycle Counting",
   "Implementing Circuit Breakers and Bulkhead Patterns for Downstream ERP/WMS API Calls During Peak Logistics Operations",
   "Architecting for Accurate Global Stock Visibility: Reconciling Periodic EDI 846 Inventory Advice with Real-time 3PL APIs",
-  "Optimizing Data Transformation Performance in High-Volume Hybrid Logistics Gateways"
+  "Optimizing Data Transformation Performance in High-Volume Hybrid Logistics Gateways",
+  "Architecting Event-Driven Intelligent Routing & Dynamic Re-orchestration in High-Scale Logistics Middleware"
 ]
