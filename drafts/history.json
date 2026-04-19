@@ -1,5 +1,4 @@
 [
-  "Architecting Multi-Domain Product Master Data Synchronization for Complex Hierarchies Across ERP, OMS, and WMS",
   "Architecting Dynamic Order Sourcing and Fulfillment Routing Across Disparate WMS and 3PL Networks with Hybrid API/EDI Orchestration",
   "Architecting for Data Residency & Sovereignty in Multi-Geo Cloud-Native Supply Chain Integrations",
   "Architecting Bidirectional Synchronization of Configurable Bill of Materials (BOMs) between PLM, ERP, and WMS for Dynamic Kitting",
@@ -13,5 +12,6 @@
   "Implementing Circuit Breakers and Bulkhead Patterns for Downstream ERP/WMS API Calls During Peak Logistics Operations",
   "Architecting for Accurate Global Stock Visibility: Reconciling Periodic EDI 846 Inventory Advice with Real-time 3PL APIs",
   "Optimizing Data Transformation Performance in High-Volume Hybrid Logistics Gateways",
-  "Architecting Event-Driven Intelligent Routing & Dynamic Re-orchestration in High-Scale Logistics Middleware"
+  "Architecting Event-Driven Intelligent Routing & Dynamic Re-orchestration in High-Scale Logistics Middleware",
+  "Architecting Hybrid Inbound Logistics Reconciliation: Synchronizing High-Volume EDI 861 (Receiving Advice) with Real-time ERP PO Match for Financial Closure"
 ]
