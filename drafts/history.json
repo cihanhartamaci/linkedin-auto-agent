@@ -1,5 +1,4 @@
 [
-  "Architecting for Data Residency & Sovereignty in Multi-Geo Cloud-Native Supply Chain Integrations",
   "Architecting Bidirectional Synchronization of Configurable Bill of Materials (BOMs) between PLM, ERP, and WMS for Dynamic Kitting",
   "Architecting for True Idempotency in Hybrid Logistics Integrations (API & EDI) to Prevent Data Duplication at Scale",
   "Architecting for Concurrency Control and Deadlock Prevention in High-Volume Real-time Inventory Updates Across Distributed Logistics Systems",
@@ -13,5 +12,6 @@
   "Optimizing Data Transformation Performance in High-Volume Hybrid Logistics Gateways",
   "Architecting Event-Driven Intelligent Routing & Dynamic Re-orchestration in High-Scale Logistics Middleware",
   "Architecting Hybrid Inbound Logistics Reconciliation: Synchronizing High-Volume EDI 861 (Receiving Advice) with Real-time ERP PO Match for Financial Closure",
-  "Orchestrating Complex Order Change/Cancellation Workflows Post-WMS Release via Hybrid API/EDI (860, 940/945)"
+  "Orchestrating Complex Order Change/Cancellation Workflows Post-WMS Release via Hybrid API/EDI (860, 940/945)",
+  "Architecting for Resilient Inventory Allocation & Reservation Synchronization via EDI 940/945 in High-Volume OMS-WMS Workflows"
 ]
