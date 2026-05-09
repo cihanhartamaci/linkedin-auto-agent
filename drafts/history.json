@@ -1,5 +1,4 @@
 [
-  "Optimizing Data Egress Strategies for High-Volume Logistics Data in Hybrid Cloud Architectures",
   "Architecting for Robust Schema Evolution in Hybrid API/EDI Logistics Integrations",
   "Integrating Real-time RFID/IoT Sensor Data with WMS for Enhanced Inventory Accuracy and Automated Cycle Counting",
   "Implementing Circuit Breakers and Bulkhead Patterns for Downstream ERP/WMS API Calls During Peak Logistics Operations",
@@ -13,5 +12,6 @@
   "Architecting for Scalable and Reliable Drop-Ship Vendor Inventory Synchronization (EDI 846 & API) with OMS",
   "Architecting for Dynamic EDI 850 Ingestion and Multi-Stage Transformation into a Normalized OMS Order Model for High-Volume Multi-Channel Fulfillment",
   "Architecting Multi-Party Order Fulfillment Reconciliation: Consolidating Disparate Shipment Events into a Unified OMS Status",
-  "Architecting Reverse Logistics: Reconciling Complex RMA (Return Merchandise Authorization) Workflows Across OMS, WMS, and ERP via Hybrid API/EDI"
+  "Architecting Reverse Logistics: Reconciling Complex RMA (Return Merchandise Authorization) Workflows Across OMS, WMS, and ERP via Hybrid API/EDI",
+  "Implementing Idempotency for Outbound Logistics API Calls to Prevent Duplicate Partner Actions"
 ]
