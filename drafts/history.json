@@ -1,5 +1,4 @@
 [
-  "Integrating Real-time RFID/IoT Sensor Data with WMS for Enhanced Inventory Accuracy and Automated Cycle Counting",
   "Implementing Circuit Breakers and Bulkhead Patterns for Downstream ERP/WMS API Calls During Peak Logistics Operations",
   "Architecting for Accurate Global Stock Visibility: Reconciling Periodic EDI 846 Inventory Advice with Real-time 3PL APIs",
   "Optimizing Data Transformation Performance in High-Volume Hybrid Logistics Gateways",
@@ -13,5 +12,6 @@
   "Architecting Multi-Party Order Fulfillment Reconciliation: Consolidating Disparate Shipment Events into a Unified OMS Status",
   "Architecting Reverse Logistics: Reconciling Complex RMA (Return Merchandise Authorization) Workflows Across OMS, WMS, and ERP via Hybrid API/EDI",
   "Implementing Idempotency for Outbound Logistics API Calls to Prevent Duplicate Partner Actions",
-  "Architecting for Scalable and Consistent Product Master Data Synchronization Across WMS, OMS, and ERPs via Hybrid API/EDI"
+  "Architecting for Scalable and Consistent Product Master Data Synchronization Across WMS, OMS, and ERPs via Hybrid API/EDI",
+  "Achieving Transactional Consistency and Guaranteed Delivery in High-Volume Asynchronous Logistics Middleware for Cross-System Updates"
 ]
