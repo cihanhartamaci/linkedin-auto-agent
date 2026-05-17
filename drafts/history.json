@@ -1,5 +1,4 @@
 [
-  "Orchestrating Complex Order Change/Cancellation Workflows Post-WMS Release via Hybrid API/EDI (860, 940/945)",
   "Architecting for Resilient Inventory Allocation & Reservation Synchronization via EDI 940/945 in High-Volume OMS-WMS Workflows",
   "Architecting High-Volume EDI 810 (Invoice) Generation and Reconciliation in Hybrid WMS-ERP Ecosystems",
   "Architecting for Scalable and Reliable Drop-Ship Vendor Inventory Synchronization (EDI 846 & API) with OMS",
@@ -13,5 +12,6 @@
   "Architecting Adaptive Real-time Data Quality Enforcement for Inbound Logistics APIs",
   "Implementing Circuit Breakers and Bulkhead Patterns for Resilient ERP Integration in High-Scale Logistics",
   "Architecting Dynamic EDI Partner Onboarding & Mapping Lifecycle Management in High-Scale Hybrid Integration Platforms",
-  "Architectural Patterns for Preserving Referential Integrity and Preventing Data Drift in Hybrid Master Data Ecosystems (WMS, OMS, ERP)"
+  "Architectural Patterns for Preserving Referential Integrity and Preventing Data Drift in Hybrid Master Data Ecosystems (WMS, OMS, ERP)",
+  "Architecting for Deadlock Resolution and Concurrency Control in High-Volume Hybrid WMS/OMS/ERP Integration Workflows"
 ]
