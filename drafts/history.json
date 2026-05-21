@@ -1,5 +1,4 @@
 [
-  "Architecting for Scalable and Reliable Drop-Ship Vendor Inventory Synchronization (EDI 846 & API) with OMS",
   "Architecting for Dynamic EDI 850 Ingestion and Multi-Stage Transformation into a Normalized OMS Order Model for High-Volume Multi-Channel Fulfillment",
   "Architecting Multi-Party Order Fulfillment Reconciliation: Consolidating Disparate Shipment Events into a Unified OMS Status",
   "Architecting Reverse Logistics: Reconciling Complex RMA (Return Merchandise Authorization) Workflows Across OMS, WMS, and ERP via Hybrid API/EDI",
@@ -13,5 +12,6 @@
   "Architectural Patterns for Preserving Referential Integrity and Preventing Data Drift in Hybrid Master Data Ecosystems (WMS, OMS, ERP)",
   "Architecting for Deadlock Resolution and Concurrency Control in High-Volume Hybrid WMS/OMS/ERP Integration Workflows",
   "Architecting for Dynamic Order Fulfillment Orchestration and Intelligent 3PL Routing in Multi-WMS Environments",
-  "Architecting for Real-time High-Volume EDI 940/945 Handshake Optimization in 3PL-Integrated Fulfillment Workflows"
+  "Architecting for Real-time High-Volume EDI 940/945 Handshake Optimization in 3PL-Integrated Fulfillment Workflows",
+  "Architecting High-Volume EDI 810/820 Freight Billing Reconciliation and Payment Automation with ERP (NetSuite/SAP)"
 ]
