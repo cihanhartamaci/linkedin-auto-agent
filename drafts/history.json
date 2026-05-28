@@ -1,5 +1,4 @@
 [
-  "Architecting for Scalable and Consistent Product Master Data Synchronization Across WMS, OMS, and ERPs via Hybrid API/EDI",
   "Achieving Transactional Consistency and Guaranteed Delivery in High-Volume Asynchronous Logistics Middleware for Cross-System Updates",
   "Architecting for Distributed Transactional Atomicity Across WMS, OMS, and ERP in Cloud-Native Logistics using Saga Patterns",
   "Architecting Adaptive Real-time Data Quality Enforcement for Inbound Logistics APIs",
@@ -13,5 +12,6 @@
   "Architecting for Optimistic Inventory Reservation and Conflict Resolution in High-Scale Distributed OMS/WMS/ERP Ecosystems",
   "Sub-Location Inventory Granularity and Reconciliation in Automated WMS-to-ERP Integration",
   "Architecting Real-time Freight Rating and Optimization Engine Integration with OMS/ERP for Multi-Carrier Fulfillment",
-  "Architecting for Complex Reverse Logistics & Returns Management Across WMS, OMS, and ERP"
+  "Architecting for Complex Reverse Logistics & Returns Management Across WMS, OMS, and ERP",
+  "Architecting for Granular Inventory Attribute Synchronization (Lot, Serial, Quality Status) Across WMS, OMS, and ERP for Fulfillment Eligibility and Compliance"
 ]
