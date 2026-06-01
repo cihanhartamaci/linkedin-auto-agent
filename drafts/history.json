@@ -1,5 +1,4 @@
 [
-  "Architecting Adaptive Real-time Data Quality Enforcement for Inbound Logistics APIs",
   "Implementing Circuit Breakers and Bulkhead Patterns for Resilient ERP Integration in High-Scale Logistics",
   "Architecting Dynamic EDI Partner Onboarding & Mapping Lifecycle Management in High-Scale Hybrid Integration Platforms",
   "Architectural Patterns for Preserving Referential Integrity and Preventing Data Drift in Hybrid Master Data Ecosystems (WMS, OMS, ERP)",
@@ -13,5 +12,6 @@
   "Architecting for Complex Reverse Logistics & Returns Management Across WMS, OMS, and ERP",
   "Architecting for Granular Inventory Attribute Synchronization (Lot, Serial, Quality Status) Across WMS, OMS, and ERP for Fulfillment Eligibility and Compliance",
   "Architecting for Continuous Product Master Data Synchronization (Dimensions, Hazmat, Classifications) to Drive Automated Shipping Compliance and Cost Optimization",
-  "Architecting for Hybrid EDI/API-driven Vendor Managed Inventory (VMI) Reconciliation between ERP (NetSuite/SAP) and 3PL WMS"
+  "Architecting for Hybrid EDI/API-driven Vendor Managed Inventory (VMI) Reconciliation between ERP (NetSuite/SAP) and 3PL WMS",
+  "Architecting for Eventual Consistency in High-Scale Distributed Inventory Synchronization (WMS/OMS/ERP)"
 ]
