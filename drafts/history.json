@@ -1,5 +1,4 @@
 [
-  "Architecting Dynamic EDI Partner Onboarding & Mapping Lifecycle Management in High-Scale Hybrid Integration Platforms",
   "Architectural Patterns for Preserving Referential Integrity and Preventing Data Drift in Hybrid Master Data Ecosystems (WMS, OMS, ERP)",
   "Architecting for Deadlock Resolution and Concurrency Control in High-Volume Hybrid WMS/OMS/ERP Integration Workflows",
   "Architecting for Dynamic Order Fulfillment Orchestration and Intelligent 3PL Routing in Multi-WMS Environments",
@@ -13,5 +12,6 @@
   "Architecting for Continuous Product Master Data Synchronization (Dimensions, Hazmat, Classifications) to Drive Automated Shipping Compliance and Cost Optimization",
   "Architecting for Hybrid EDI/API-driven Vendor Managed Inventory (VMI) Reconciliation between ERP (NetSuite/SAP) and 3PL WMS",
   "Architecting for Eventual Consistency in High-Scale Distributed Inventory Synchronization (WMS/OMS/ERP)",
-  "Architecting Multi-Tenant WMS Integration for Client-Specific ERP/OMS Ecosystems"
+  "Architecting Multi-Tenant WMS Integration for Client-Specific ERP/OMS Ecosystems",
+  "Architecting for Idempotency and Deduplication in High-Volume, Asynchronous Logistics API Integrations"
 ]
