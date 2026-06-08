@@ -1,5 +1,4 @@
 [
-  "Architecting for Deadlock Resolution and Concurrency Control in High-Volume Hybrid WMS/OMS/ERP Integration Workflows",
   "Architecting for Dynamic Order Fulfillment Orchestration and Intelligent 3PL Routing in Multi-WMS Environments",
   "Architecting for Real-time High-Volume EDI 940/945 Handshake Optimization in 3PL-Integrated Fulfillment Workflows",
   "Architecting High-Volume EDI 810/820 Freight Billing Reconciliation and Payment Automation with ERP (NetSuite/SAP)",
@@ -13,5 +12,6 @@
   "Architecting for Eventual Consistency in High-Scale Distributed Inventory Synchronization (WMS/OMS/ERP)",
   "Architecting Multi-Tenant WMS Integration for Client-Specific ERP/OMS Ecosystems",
   "Architecting for Idempotency and Deduplication in High-Volume, Asynchronous Logistics API Integrations",
-  "Architecting for Real-time EDI 204/990 Load Tender Integration & Dynamic Dock Scheduling with WMS/ERP"
+  "Architecting for Real-time EDI 204/990 Load Tender Integration & Dynamic Dock Scheduling with WMS/ERP",
+  "Architecting for Dynamic EDI 850/855/860 Purchase Order Lifecycle Management Across ERP and WMS"
 ]
