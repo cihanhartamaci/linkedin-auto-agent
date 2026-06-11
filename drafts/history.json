@@ -1,5 +1,4 @@
 [
-  "Architecting for Real-time High-Volume EDI 940/945 Handshake Optimization in 3PL-Integrated Fulfillment Workflows",
   "Architecting High-Volume EDI 810/820 Freight Billing Reconciliation and Payment Automation with ERP (NetSuite/SAP)",
   "Architecting for Optimistic Inventory Reservation and Conflict Resolution in High-Scale Distributed OMS/WMS/ERP Ecosystems",
   "Sub-Location Inventory Granularity and Reconciliation in Automated WMS-to-ERP Integration",
@@ -13,5 +12,6 @@
   "Architecting for Idempotency and Deduplication in High-Volume, Asynchronous Logistics API Integrations",
   "Architecting for Real-time EDI 204/990 Load Tender Integration & Dynamic Dock Scheduling with WMS/ERP",
   "Architecting for Dynamic EDI 850/855/860 Purchase Order Lifecycle Management Across ERP and WMS",
-  "Leveraging Serverless Architectures for Event-Driven Microservices in High-Volume Logistics Integrations"
+  "Leveraging Serverless Architectures for Event-Driven Microservices in High-Volume Logistics Integrations",
+  "Cross-Border Fulfillment Compliance Automation via Hybrid API/EDI Integration for Trade Data Enrichment"
 ]
