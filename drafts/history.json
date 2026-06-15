@@ -1,5 +1,4 @@
 [
-  "Architecting Real-time Freight Rating and Optimization Engine Integration with OMS/ERP for Multi-Carrier Fulfillment",
   "Architecting for Complex Reverse Logistics & Returns Management Across WMS, OMS, and ERP",
   "Architecting for Granular Inventory Attribute Synchronization (Lot, Serial, Quality Status) Across WMS, OMS, and ERP for Fulfillment Eligibility and Compliance",
   "Architecting for Continuous Product Master Data Synchronization (Dimensions, Hazmat, Classifications) to Drive Automated Shipping Compliance and Cost Optimization",
@@ -13,5 +12,6 @@
   "Cross-Border Fulfillment Compliance Automation via Hybrid API/EDI Integration for Trade Data Enrichment",
   "Architecting Dynamic Order Splitting & Multi-WMS Fulfillment Orchestration with Hybrid API/EDI",
   "Real-time Reconciliation of 940/945 Discrepancies between ERP and 3PL WMS for Financial Accuracy and Inventory Integrity",
-  "Architecting the Transformation and Harmonization of 3PL 846 Inventory Advice for Dynamic OMS Allocation & ERP Financial Control"
+  "Architecting the Transformation and Harmonization of 3PL 846 Inventory Advice for Dynamic OMS Allocation & ERP Financial Control",
+  "Architecting for Real-time Cost of Goods Sold (COGS) & Landed Cost Allocation Across WMS, OMS, and ERP (NetSuite/SAP) with Hybrid API/EDI"
 ]
