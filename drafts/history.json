@@ -1,5 +1,4 @@
 [
-  "Architecting for Hybrid EDI/API-driven Vendor Managed Inventory (VMI) Reconciliation between ERP (NetSuite/SAP) and 3PL WMS",
   "Architecting for Eventual Consistency in High-Scale Distributed Inventory Synchronization (WMS/OMS/ERP)",
   "Architecting Multi-Tenant WMS Integration for Client-Specific ERP/OMS Ecosystems",
   "Architecting for Idempotency and Deduplication in High-Volume, Asynchronous Logistics API Integrations",
@@ -13,5 +12,6 @@
   "Architecting for Real-time Cost of Goods Sold (COGS) & Landed Cost Allocation Across WMS, OMS, and ERP (NetSuite/SAP) with Hybrid API/EDI",
   "Architecting Enterprise-wide In-Transit Inventory Visibility and Financial Reconciliation via Hybrid EDI 943/944 & API for Inter-Warehouse Transfers",
   "Architecting Real-time, Event-Driven Data Fabric for Logistics State Management and Analytics across WMS, OMS, and ERP using Kafka-based Event Streaming",
-  "Architecting Dynamic Routing and Transformation Logic within a Logistics Middleware for Heterogeneous 3PL/Carrier API/EDI Endpoints"
+  "Architecting Dynamic Routing and Transformation Logic within a Logistics Middleware for Heterogeneous 3PL/Carrier API/EDI Endpoints",
+  "Architecting Decentralized Authorization and Data Governance for B2B Logistics Integrations (WMS/OMS/ERP/3PL)"
 ]
