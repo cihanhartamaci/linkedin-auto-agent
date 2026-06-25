@@ -1,5 +1,4 @@
 [
-  "Architecting Multi-Tenant WMS Integration for Client-Specific ERP/OMS Ecosystems",
   "Architecting for Idempotency and Deduplication in High-Volume, Asynchronous Logistics API Integrations",
   "Architecting for Real-time EDI 204/990 Load Tender Integration & Dynamic Dock Scheduling with WMS/ERP",
   "Architecting for Dynamic EDI 850/855/860 Purchase Order Lifecycle Management Across ERP and WMS",
@@ -13,5 +12,6 @@
   "Architecting Real-time, Event-Driven Data Fabric for Logistics State Management and Analytics across WMS, OMS, and ERP using Kafka-based Event Streaming",
   "Architecting Dynamic Routing and Transformation Logic within a Logistics Middleware for Heterogeneous 3PL/Carrier API/EDI Endpoints",
   "Architecting Decentralized Authorization and Data Governance for B2B Logistics Integrations (WMS/OMS/ERP/3PL)",
-  "Architecting for Complex Returns Management (RMA) & Reverse Logistics Across WMS, OMS, and ERP with Hybrid API/EDI"
+  "Architecting for Complex Returns Management (RMA) & Reverse Logistics Across WMS, OMS, and ERP with Hybrid API/EDI",
+  "Architecting High-Volume Master Data Synchronization & Governance Across Distributed WMS, OMS, and ERP Ecosystems (Product, Location, Customer)"
 ]
