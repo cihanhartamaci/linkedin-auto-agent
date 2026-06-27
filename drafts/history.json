@@ -1,5 +1,4 @@
 [
-  "Architecting for Real-time EDI 204/990 Load Tender Integration & Dynamic Dock Scheduling with WMS/ERP",
   "Architecting for Dynamic EDI 850/855/860 Purchase Order Lifecycle Management Across ERP and WMS",
   "Leveraging Serverless Architectures for Event-Driven Microservices in High-Volume Logistics Integrations",
   "Cross-Border Fulfillment Compliance Automation via Hybrid API/EDI Integration for Trade Data Enrichment",
@@ -13,5 +12,6 @@
   "Architecting Decentralized Authorization and Data Governance for B2B Logistics Integrations (WMS/OMS/ERP/3PL)",
   "Architecting for Complex Returns Management (RMA) & Reverse Logistics Across WMS, OMS, and ERP with Hybrid API/EDI",
   "Architecting High-Volume Master Data Synchronization & Governance Across Distributed WMS, OMS, and ERP Ecosystems (Product, Location, Customer)",
-  "Achieving Transactional Integrity and Reliable State Transitions in Hybrid WMS/OMS/ERP Architectures"
+  "Achieving Transactional Integrity and Reliable State Transitions in Hybrid WMS/OMS/ERP Architectures",
+  "Advanced Idempotency Strategies for High-Volume Asynchronous Logistics APIs"
 ]
