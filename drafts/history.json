@@ -1,5 +1,4 @@
 [
-  "Leveraging Serverless Architectures for Event-Driven Microservices in High-Volume Logistics Integrations",
   "Cross-Border Fulfillment Compliance Automation via Hybrid API/EDI Integration for Trade Data Enrichment",
   "Architecting Dynamic Order Splitting & Multi-WMS Fulfillment Orchestration with Hybrid API/EDI",
   "Real-time Reconciliation of 940/945 Discrepancies between ERP and 3PL WMS for Financial Accuracy and Inventory Integrity",
@@ -13,5 +12,6 @@
   "Architecting High-Volume Master Data Synchronization & Governance Across Distributed WMS, OMS, and ERP Ecosystems (Product, Location, Customer)",
   "Achieving Transactional Integrity and Reliable State Transitions in Hybrid WMS/OMS/ERP Architectures",
   "Advanced Idempotency Strategies for High-Volume Asynchronous Logistics APIs",
-  "Architecting for Automated Freight Bill Audit & Payment via EDI 210/214 Integration with ERP/TMS for Cost Control and Shipment Visibility"
+  "Architecting for Automated Freight Bill Audit & Payment via EDI 210/214 Integration with ERP/TMS for Cost Control and Shipment Visibility",
+  "Architecting for Scalable High-Volume Order Ingestion into ERPs (NetSuite/SAP) via Asynchronous Throttling and Intelligent Queueing"
 ]
