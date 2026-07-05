@@ -1,5 +1,4 @@
 [
-  "Architecting for Real-time Cost of Goods Sold (COGS) & Landed Cost Allocation Across WMS, OMS, and ERP (NetSuite/SAP) with Hybrid API/EDI",
   "Architecting Enterprise-wide In-Transit Inventory Visibility and Financial Reconciliation via Hybrid EDI 943/944 & API for Inter-Warehouse Transfers",
   "Architecting Real-time, Event-Driven Data Fabric for Logistics State Management and Analytics across WMS, OMS, and ERP using Kafka-based Event Streaming",
   "Architecting Dynamic Routing and Transformation Logic within a Logistics Middleware for Heterogeneous 3PL/Carrier API/EDI Endpoints",
@@ -13,5 +12,6 @@
   "Architecting Real-time Proactive Supply Chain Synchronization using EDI 830/862 for JIT/JIS Manufacturing",
   "Architecting for Adaptive Resource Provisioning and Autoscaling in Logistics Integration Runtimes",
   "Architecting Optimistic Concurrency Control for Real-time Inventory Reservations Across Distributed WMS, OMS, and ERP Systems",
-  "Harmonizing Disparate Real-time Container Tracking (API) and Manifest Data (EDI 310/315) for End-to-End Visibility in OMS/ERP"
+  "Harmonizing Disparate Real-time Container Tracking (API) and Manifest Data (EDI 310/315) for End-to-End Visibility in OMS/ERP",
+  "Architecting Dynamic Kitting & Assembly-to-Order (ATO) Fulfillment Workflows Across WMS, OMS, and ERP (NetSuite/SAP) with Hybrid API/EDI"
 ]
