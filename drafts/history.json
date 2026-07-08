@@ -1,5 +1,4 @@
 [
-  "Architecting Dynamic Routing and Transformation Logic within a Logistics Middleware for Heterogeneous 3PL/Carrier API/EDI Endpoints",
   "Architecting Decentralized Authorization and Data Governance for B2B Logistics Integrations (WMS/OMS/ERP/3PL)",
   "Architecting for Complex Returns Management (RMA) & Reverse Logistics Across WMS, OMS, and ERP with Hybrid API/EDI",
   "Architecting High-Volume Master Data Synchronization & Governance Across Distributed WMS, OMS, and ERP Ecosystems (Product, Location, Customer)",
@@ -13,5 +12,6 @@
   "Harmonizing Disparate Real-time Container Tracking (API) and Manifest Data (EDI 310/315) for End-to-End Visibility in OMS/ERP",
   "Architecting Dynamic Kitting & Assembly-to-Order (ATO) Fulfillment Workflows Across WMS, OMS, and ERP (NetSuite/SAP) with Hybrid API/EDI",
   "Implementing Saga Patterns for End-to-End Transactional Reliability in Distributed WMS/OMS/ERP Logistics Workflows",
-  "Orchestrating Dynamic Yard Management with Hybrid EDI/API Integrations: Real-time Dock Scheduling and Asset Tracking Across WMS, TMS, and Carrier Networks"
+  "Orchestrating Dynamic Yard Management with Hybrid EDI/API Integrations: Real-time Dock Scheduling and Asset Tracking Across WMS, TMS, and Carrier Networks",
+  "Architecting Resilient Reconciliation of WMS Shipment Confirmations (EDI 945) into ERP/OMS for Complex Partial Fulfillment Scenarios"
 ]
