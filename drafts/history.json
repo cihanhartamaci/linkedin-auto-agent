@@ -1,5 +1,4 @@
 [
-  "Advanced Idempotency Strategies for High-Volume Asynchronous Logistics APIs",
   "Architecting for Automated Freight Bill Audit & Payment via EDI 210/214 Integration with ERP/TMS for Cost Control and Shipment Visibility",
   "Architecting for Scalable High-Volume Order Ingestion into ERPs (NetSuite/SAP) via Asynchronous Throttling and Intelligent Queueing",
   "Architecting Real-time Proactive Supply Chain Synchronization using EDI 830/862 for JIT/JIS Manufacturing",
@@ -13,5 +12,6 @@
   "Architecting Dynamic Fulfillment Orchestration & Intelligent Order Routing Across Heterogeneous WMS/3PLs Using Hybrid EDI (940/945, 846) and Real-time APIs",
   "Optimizing High-Volume EDI 810 (Invoice) Processing and Reconciliation with ERPs (NetSuite/SAP) for Complex Pricing and Chargebacks",
   "Architecting for Near Real-time Inventory Propagation & Data Freshness Across Heterogeneous WMS/OMS Ecosystems via Event Streaming",
-  "Architecting Scalable Master Data Synchronization for Complex Hierarchical Item Data Across Heterogeneous ERP and WMS Systems"
+  "Architecting Scalable Master Data Synchronization for Complex Hierarchical Item Data Across Heterogeneous ERP and WMS Systems",
+  "Implementing Event-Driven EDI Processing for Scalable B2B Integrations: Beyond Batch Schedules to Real-time Transactional Flows"
 ]
