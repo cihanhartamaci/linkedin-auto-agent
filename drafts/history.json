@@ -1,5 +1,4 @@
 [
-  "Architecting Real-time Proactive Supply Chain Synchronization using EDI 830/862 for JIT/JIS Manufacturing",
   "Architecting for Adaptive Resource Provisioning and Autoscaling in Logistics Integration Runtimes",
   "Architecting Optimistic Concurrency Control for Real-time Inventory Reservations Across Distributed WMS, OMS, and ERP Systems",
   "Harmonizing Disparate Real-time Container Tracking (API) and Manifest Data (EDI 310/315) for End-to-End Visibility in OMS/ERP",
@@ -13,5 +12,6 @@
   "Architecting Scalable Master Data Synchronization for Complex Hierarchical Item Data Across Heterogeneous ERP and WMS Systems",
   "Implementing Event-Driven EDI Processing for Scalable B2B Integrations: Beyond Batch Schedules to Real-time Transactional Flows",
   "Architecting for Guaranteed At-Least-Once Delivery with Exactly-Once Processing Semantics in High-Volume WMS/OMS/ERP Integrations",
-  "Architecting Idempotent API Endpoints for Transactional Integrity in High-Volume WMS/OMS/ERP Updates"
+  "Architecting Idempotent API Endpoints for Transactional Integrity in High-Volume WMS/OMS/ERP Updates",
+  "Architecting Reverse Logistics: Integrating Complex RMA Workflows (Grading, Disposition) Across WMS, OMS, and ERP (NetSuite/SAP) with Hybrid API/EDI"
 ]
