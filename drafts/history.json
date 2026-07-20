@@ -1,5 +1,4 @@
 [
-  "Harmonizing Disparate Real-time Container Tracking (API) and Manifest Data (EDI 310/315) for End-to-End Visibility in OMS/ERP",
   "Architecting Dynamic Kitting & Assembly-to-Order (ATO) Fulfillment Workflows Across WMS, OMS, and ERP (NetSuite/SAP) with Hybrid API/EDI",
   "Implementing Saga Patterns for End-to-End Transactional Reliability in Distributed WMS/OMS/ERP Logistics Workflows",
   "Orchestrating Dynamic Yard Management with Hybrid EDI/API Integrations: Real-time Dock Scheduling and Asset Tracking Across WMS, TMS, and Carrier Networks",
@@ -13,5 +12,6 @@
   "Architecting Idempotent API Endpoints for Transactional Integrity in High-Volume WMS/OMS/ERP Updates",
   "Architecting Reverse Logistics: Integrating Complex RMA Workflows (Grading, Disposition) Across WMS, OMS, and ERP (NetSuite/SAP) with Hybrid API/EDI",
   "Architecting for Dynamic Landed Cost Calculation and Propagation Across WMS, TMS, and ERP (NetSuite/SAP) via Hybrid API/EDI",
-  "Strategies for Managing Schema Drift and Versioning in High-Scale WMS/OMS/ERP API Integrations"
+  "Strategies for Managing Schema Drift and Versioning in High-Scale WMS/OMS/ERP API Integrations",
+  "Architecting Real-time Multi-Tier ATP/CTP (Available-to-Promise/Capable-to-Promise) for Complex Allocation Across Distributed WMS, OMS, and ERP"
 ]
