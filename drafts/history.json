@@ -1,5 +1,4 @@
 [
-  "Orchestrating Dynamic Yard Management with Hybrid EDI/API Integrations: Real-time Dock Scheduling and Asset Tracking Across WMS, TMS, and Carrier Networks",
   "Architecting Resilient Reconciliation of WMS Shipment Confirmations (EDI 945) into ERP/OMS for Complex Partial Fulfillment Scenarios",
   "Architecting Dynamic Fulfillment Orchestration & Intelligent Order Routing Across Heterogeneous WMS/3PLs Using Hybrid EDI (940/945, 846) and Real-time APIs",
   "Optimizing High-Volume EDI 810 (Invoice) Processing and Reconciliation with ERPs (NetSuite/SAP) for Complex Pricing and Chargebacks",
@@ -13,5 +12,6 @@
   "Strategies for Managing Schema Drift and Versioning in High-Scale WMS/OMS/ERP API Integrations",
   "Architecting Real-time Multi-Tier ATP/CTP (Available-to-Promise/Capable-to-Promise) for Complex Allocation Across Distributed WMS, OMS, and ERP",
   "Architecting for Multi-Tenancy and Secure Data Isolation in Shared WMS/OMS Environments with Hybrid Integration Patterns",
-  "Orchestrating Containerized Integration Runtimes for Resilient Hybrid WMS/OMS/ERP Connectivity"
+  "Orchestrating Containerized Integration Runtimes for Resilient Hybrid WMS/OMS/ERP Connectivity",
+  "Architecting Cross-Border Logistics: Seamless Customs Declaration and Compliance Data Flow Across WMS, OMS, and ERP"
 ]
