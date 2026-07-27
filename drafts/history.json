@@ -1,5 +1,4 @@
 [
-  "Architecting for Near Real-time Inventory Propagation & Data Freshness Across Heterogeneous WMS/OMS Ecosystems via Event Streaming",
   "Architecting Scalable Master Data Synchronization for Complex Hierarchical Item Data Across Heterogeneous ERP and WMS Systems",
   "Implementing Event-Driven EDI Processing for Scalable B2B Integrations: Beyond Batch Schedules to Real-time Transactional Flows",
   "Architecting for Guaranteed At-Least-Once Delivery with Exactly-Once Processing Semantics in High-Volume WMS/OMS/ERP Integrations",
@@ -13,5 +12,6 @@
   "Architecting Cross-Border Logistics: Seamless Customs Declaration and Compliance Data Flow Across WMS, OMS, and ERP",
   "Architecting for Atomic Transactional Consistency in Multi-System Logistics Workflows via Saga Pattern Implementation",
   "Implementing CQRS for Scalable and Decoupled Data Management in Distributed WMS/OMS/ERP Architectures",
-  "Dynamic Inbound Routing and Contextual Orchestration for High-Volume Multi-WMS Integrations (API/EDI)"
+  "Dynamic Inbound Routing and Contextual Orchestration for High-Volume Multi-WMS Integrations (API/EDI)",
+  "Architecting Self-Healing Integration Pipelines with AI/ML for Anomaly Detection and Proactive Resolution in High-Volume Logistics"
 ]
