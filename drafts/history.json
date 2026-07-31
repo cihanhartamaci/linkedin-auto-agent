@@ -1,5 +1,4 @@
 [
-  "Architecting for Guaranteed At-Least-Once Delivery with Exactly-Once Processing Semantics in High-Volume WMS/OMS/ERP Integrations",
   "Architecting Idempotent API Endpoints for Transactional Integrity in High-Volume WMS/OMS/ERP Updates",
   "Architecting Reverse Logistics: Integrating Complex RMA Workflows (Grading, Disposition) Across WMS, OMS, and ERP (NetSuite/SAP) with Hybrid API/EDI",
   "Architecting for Dynamic Landed Cost Calculation and Propagation Across WMS, TMS, and ERP (NetSuite/SAP) via Hybrid API/EDI",
@@ -13,5 +12,6 @@
   "Dynamic Inbound Routing and Contextual Orchestration for High-Volume Multi-WMS Integrations (API/EDI)",
   "Architecting Self-Healing Integration Pipelines with AI/ML for Anomaly Detection and Proactive Resolution in High-Volume Logistics",
   "Architecting Unified Inventory Visibility Across Highly Distributed WMS, OMS, and ERP Ecosystems via Asynchronous Event Streams and Materialized Views",
-  "Reconciling Multi-Part 945 Warehouse Shipping Advice Responses for Complex Order Fulfillment Status in OMS/ERP Integrations"
+  "Reconciling Multi-Part 945 Warehouse Shipping Advice Responses for Complex Order Fulfillment Status in OMS/ERP Integrations",
+  "Orchestrating EDI 943/944 for Inter-Warehouse Inventory Transfers: Achieving Real-time In-Transit Visibility and Reconciliation in Hybrid Architectures"
 ]
