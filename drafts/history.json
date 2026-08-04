@@ -1,5 +1,4 @@
 [
-  "Strategies for Managing Schema Drift and Versioning in High-Scale WMS/OMS/ERP API Integrations",
   "Architecting Real-time Multi-Tier ATP/CTP (Available-to-Promise/Capable-to-Promise) for Complex Allocation Across Distributed WMS, OMS, and ERP",
   "Architecting for Multi-Tenancy and Secure Data Isolation in Shared WMS/OMS Environments with Hybrid Integration Patterns",
   "Orchestrating Containerized Integration Runtimes for Resilient Hybrid WMS/OMS/ERP Connectivity",
@@ -13,5 +12,6 @@
   "Orchestrating EDI 943/944 for Inter-Warehouse Inventory Transfers: Achieving Real-time In-Transit Visibility and Reconciliation in Hybrid Architectures",
   "Architecting Real-time Carrier Capacity Management: Integrating EDI 204/990 Load Tendering with WMS Outbound Planning and ERP Freight Reconciliation via Hybrid API/EDI",
   "Architecting Global Idempotency Keys and Conflict Resolution for State-Changing API Integrations across WMS, OMS, and ERP",
-  "Architecting for Automated EDI 810 Invoice Reconciliation with ERP (NetSuite/SAP) in Hybrid API/EDI Logistics Workflows"
+  "Architecting for Automated EDI 810 Invoice Reconciliation with ERP (NetSuite/SAP) in Hybrid API/EDI Logistics Workflows",
+  "Architecting Seamless Reverse Logistics: Multi-Channel Returns Orchestration for WMS, OMS, and ERP"
 ]
