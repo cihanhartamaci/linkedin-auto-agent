@@ -1,5 +1,4 @@
 [
-  "Architecting Cross-Border Logistics: Seamless Customs Declaration and Compliance Data Flow Across WMS, OMS, and ERP",
   "Architecting for Atomic Transactional Consistency in Multi-System Logistics Workflows via Saga Pattern Implementation",
   "Implementing CQRS for Scalable and Decoupled Data Management in Distributed WMS/OMS/ERP Architectures",
   "Dynamic Inbound Routing and Contextual Orchestration for High-Volume Multi-WMS Integrations (API/EDI)",
@@ -13,5 +12,6 @@
   "Architecting Seamless Reverse Logistics: Multi-Channel Returns Orchestration for WMS, OMS, and ERP",
   "Optimizing Schema-Agnostic Product Master Data Synchronization (PIM/MDM to ERP/WMS/OMS) for High-Volume Hybrid Architectures",
   "Architecting a Metadata-Driven EDI Partner Onboarding and Dynamic Rule Engine for High-Volume B2B Integrations",
-  "Architecting Hybrid Real-time Consignment & VMI Inventory Consumption Reconciliation Across WMS, OMS, and ERP"
+  "Architecting Hybrid Real-time Consignment & VMI Inventory Consumption Reconciliation Across WMS, OMS, and ERP",
+  "Orchestrating Complex Inventory Allocation and Backorder Fulfillment Across WMS, OMS, and ERP in Hybrid API/EDI Architectures"
 ]
