@@ -1,5 +1,4 @@
 [
-  "Implementing CQRS for Scalable and Decoupled Data Management in Distributed WMS/OMS/ERP Architectures",
   "Dynamic Inbound Routing and Contextual Orchestration for High-Volume Multi-WMS Integrations (API/EDI)",
   "Architecting Self-Healing Integration Pipelines with AI/ML for Anomaly Detection and Proactive Resolution in High-Volume Logistics",
   "Architecting Unified Inventory Visibility Across Highly Distributed WMS, OMS, and ERP Ecosystems via Asynchronous Event Streams and Materialized Views",
@@ -13,5 +12,6 @@
   "Architecting a Metadata-Driven EDI Partner Onboarding and Dynamic Rule Engine for High-Volume B2B Integrations",
   "Architecting Hybrid Real-time Consignment & VMI Inventory Consumption Reconciliation Across WMS, OMS, and ERP",
   "Orchestrating Complex Inventory Allocation and Backorder Fulfillment Across WMS, OMS, and ERP in Hybrid API/EDI Architectures",
-  "Integrating Predictive Demand Forecasting and Supply Planning (API) with Operational Fulfillment & Inbound Systems (EDI/API) for Proactive Inventory Optimization"
+  "Integrating Predictive Demand Forecasting and Supply Planning (API) with Operational Fulfillment & Inbound Systems (EDI/API) for Proactive Inventory Optimization",
+  "Architecting Hybrid EDI 300/301/304/309 Integration for Global Multi-Modal Freight Booking & Real-time Visibility"
 ]
