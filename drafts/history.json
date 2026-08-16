@@ -1,5 +1,4 @@
 [
-  "Architecting Real-time Carrier Capacity Management: Integrating EDI 204/990 Load Tendering with WMS Outbound Planning and ERP Freight Reconciliation via Hybrid API/EDI",
   "Architecting Global Idempotency Keys and Conflict Resolution for State-Changing API Integrations across WMS, OMS, and ERP",
   "Architecting for Automated EDI 810 Invoice Reconciliation with ERP (NetSuite/SAP) in Hybrid API/EDI Logistics Workflows",
   "Architecting Seamless Reverse Logistics: Multi-Channel Returns Orchestration for WMS, OMS, and ERP",
@@ -13,5 +12,6 @@
   "Architecting for Concurrent Inventory Reservation in WMS from Multiple Upstream Systems to Prevent Deadlocks and Ensure Atomicity",
   "Designing a Dynamic Content-Based Routing and Transformation Layer for Hybrid API/EDI Logistics Integrations",
   "Architecting for Proactive Reconciliation of Inventory Discrepancies Across WMS, OMS, and ERP via Hybrid API/EDI for Continuous Inventory Accuracy",
-  "Architecting Event-Sourced Inventory Streams for Ultra-High Fidelity and Auditability Across WMS, OMS, and ERP at Scale"
+  "Architecting Event-Sourced Inventory Streams for Ultra-High Fidelity and Auditability Across WMS, OMS, and ERP at Scale",
+  "Architecting Bidirectional Data Flows for WMS Slotting Optimization and ERP/OMS Strategic Layout Planning"
 ]
