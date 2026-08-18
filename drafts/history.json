@@ -1,5 +1,4 @@
 [
-  "Architecting for Automated EDI 810 Invoice Reconciliation with ERP (NetSuite/SAP) in Hybrid API/EDI Logistics Workflows",
   "Architecting Seamless Reverse Logistics: Multi-Channel Returns Orchestration for WMS, OMS, and ERP",
   "Optimizing Schema-Agnostic Product Master Data Synchronization (PIM/MDM to ERP/WMS/OMS) for High-Volume Hybrid Architectures",
   "Architecting a Metadata-Driven EDI Partner Onboarding and Dynamic Rule Engine for High-Volume B2B Integrations",
@@ -13,5 +12,6 @@
   "Architecting for Proactive Reconciliation of Inventory Discrepancies Across WMS, OMS, and ERP via Hybrid API/EDI for Continuous Inventory Accuracy",
   "Architecting Event-Sourced Inventory Streams for Ultra-High Fidelity and Auditability Across WMS, OMS, and ERP at Scale",
   "Architecting Bidirectional Data Flows for WMS Slotting Optimization and ERP/OMS Strategic Layout Planning",
-  "Architecting Atomic and Auditable Inbound Goods Receipt Processing (EDI 944 / API) into WMS and ERP for High-Volume Operations"
+  "Architecting Atomic and Auditable Inbound Goods Receipt Processing (EDI 944 / API) into WMS and ERP for High-Volume Operations",
+  "Ensuring Cross-System Transactional Integrity in Hybrid API/EDI Logistics Workflows"
 ]
