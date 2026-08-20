@@ -1,5 +1,4 @@
 [
-  "Optimizing Schema-Agnostic Product Master Data Synchronization (PIM/MDM to ERP/WMS/OMS) for High-Volume Hybrid Architectures",
   "Architecting a Metadata-Driven EDI Partner Onboarding and Dynamic Rule Engine for High-Volume B2B Integrations",
   "Architecting Hybrid Real-time Consignment & VMI Inventory Consumption Reconciliation Across WMS, OMS, and ERP",
   "Orchestrating Complex Inventory Allocation and Backorder Fulfillment Across WMS, OMS, and ERP in Hybrid API/EDI Architectures",
@@ -13,5 +12,6 @@
   "Architecting Bidirectional Data Flows for WMS Slotting Optimization and ERP/OMS Strategic Layout Planning",
   "Architecting Atomic and Auditable Inbound Goods Receipt Processing (EDI 944 / API) into WMS and ERP for High-Volume Operations",
   "Ensuring Cross-System Transactional Integrity in Hybrid API/EDI Logistics Workflows",
-  "Implementing Robust Idempotency Keys in High-Volume Logistics APIs for WMS/OMS/ERP State Synchronization"
+  "Implementing Robust Idempotency Keys in High-Volume Logistics APIs for WMS/OMS/ERP State Synchronization",
+  "Architecting Hybrid Return Merchandise Authorization (RMA) Processing for Multi-Channel Retail Across OMS, WMS, and ERP"
 ]
