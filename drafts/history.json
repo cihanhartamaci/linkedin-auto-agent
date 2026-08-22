@@ -1,5 +1,4 @@
 [
-  "Architecting Hybrid Real-time Consignment & VMI Inventory Consumption Reconciliation Across WMS, OMS, and ERP",
   "Orchestrating Complex Inventory Allocation and Backorder Fulfillment Across WMS, OMS, and ERP in Hybrid API/EDI Architectures",
   "Integrating Predictive Demand Forecasting and Supply Planning (API) with Operational Fulfillment & Inbound Systems (EDI/API) for Proactive Inventory Optimization",
   "Architecting Hybrid EDI 300/301/304/309 Integration for Global Multi-Modal Freight Booking & Real-time Visibility",
@@ -13,5 +12,6 @@
   "Ensuring Cross-System Transactional Integrity in Hybrid API/EDI Logistics Workflows",
   "Implementing Robust Idempotency Keys in High-Volume Logistics APIs for WMS/OMS/ERP State Synchronization",
   "Architecting Hybrid Return Merchandise Authorization (RMA) Processing for Multi-Channel Retail Across OMS, WMS, and ERP",
-  "Dynamic Outbound Shipping Capacity Management and Allocation Across WMS, OMS, TMS, and ERP Using Hybrid EDI 940/945 and APIs"
+  "Dynamic Outbound Shipping Capacity Management and Allocation Across WMS, OMS, TMS, and ERP Using Hybrid EDI 940/945 and APIs",
+  "Architecting Real-time Freight Cost Accrual and Allocation from WMS/TMS to ERP for Financial Reporting and Profitability Analysis"
 ]
