@@ -1,5 +1,4 @@
 [
-  "Architecting Hybrid EDI 300/301/304/309 Integration for Global Multi-Modal Freight Booking & Real-time Visibility",
   "Architecting Real-time Inventory Valuation & Financial Posting from WMS Adjustments into ERP (NetSuite/SAP)",
   "Architecting for Concurrent Inventory Reservation in WMS from Multiple Upstream Systems to Prevent Deadlocks and Ensure Atomicity",
   "Designing a Dynamic Content-Based Routing and Transformation Layer for Hybrid API/EDI Logistics Integrations",
@@ -13,5 +12,6 @@
   "Dynamic Outbound Shipping Capacity Management and Allocation Across WMS, OMS, TMS, and ERP Using Hybrid EDI 940/945 and APIs",
   "Architecting Real-time Freight Cost Accrual and Allocation from WMS/TMS to ERP for Financial Reporting and Profitability Analysis",
   "Architecting Dynamic Vendor-Managed (VMI) or Co-Managed Inventory (CMI) Replenishment using Hybrid EDI 846/850 and Real-time API Decisioning",
-  "Architecting Dynamic Billing & Cost Allocation for Value-Added Services (VAS) from WMS/OMS Operational Data into ERP Financials (NetSuite/SAP)"
+  "Architecting Dynamic Billing & Cost Allocation for Value-Added Services (VAS) from WMS/OMS Operational Data into ERP Financials (NetSuite/SAP)",
+  "Architecting Real-time Inventory Status (Quality/Segment) Synchronization Across WMS, OMS, and ERP for Accurate ATP/CTP"
 ]
