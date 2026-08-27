@@ -1,5 +1,4 @@
 [
-  "Architecting for Concurrent Inventory Reservation in WMS from Multiple Upstream Systems to Prevent Deadlocks and Ensure Atomicity",
   "Designing a Dynamic Content-Based Routing and Transformation Layer for Hybrid API/EDI Logistics Integrations",
   "Architecting for Proactive Reconciliation of Inventory Discrepancies Across WMS, OMS, and ERP via Hybrid API/EDI for Continuous Inventory Accuracy",
   "Architecting Event-Sourced Inventory Streams for Ultra-High Fidelity and Auditability Across WMS, OMS, and ERP at Scale",
@@ -13,5 +12,6 @@
   "Architecting Dynamic Vendor-Managed (VMI) or Co-Managed Inventory (CMI) Replenishment using Hybrid EDI 846/850 and Real-time API Decisioning",
   "Architecting Dynamic Billing & Cost Allocation for Value-Added Services (VAS) from WMS/OMS Operational Data into ERP Financials (NetSuite/SAP)",
   "Architecting Real-time Inventory Status (Quality/Segment) Synchronization Across WMS, OMS, and ERP for Accurate ATP/CTP",
-  "Architecting a Unified Product Master Data Hub for WMS, OMS, and ERP in Hybrid Environments"
+  "Architecting a Unified Product Master Data Hub for WMS, OMS, and ERP in Hybrid Environments",
+  "Architecting Dynamic Order Sourcing and Multi-Leg Fulfillment Orchestration Across Distributed OMS, WMS, and Carrier Systems"
 ]
