@@ -1,5 +1,4 @@
 [
-  "Architecting Event-Sourced Inventory Streams for Ultra-High Fidelity and Auditability Across WMS, OMS, and ERP at Scale",
   "Architecting Bidirectional Data Flows for WMS Slotting Optimization and ERP/OMS Strategic Layout Planning",
   "Architecting Atomic and Auditable Inbound Goods Receipt Processing (EDI 944 / API) into WMS and ERP for High-Volume Operations",
   "Ensuring Cross-System Transactional Integrity in Hybrid API/EDI Logistics Workflows",
@@ -13,5 +12,6 @@
   "Architecting a Unified Product Master Data Hub for WMS, OMS, and ERP in Hybrid Environments",
   "Architecting Dynamic Order Sourcing and Multi-Leg Fulfillment Orchestration Across Distributed OMS, WMS, and Carrier Systems",
   "Architecting Robust Data Quality Gateways for Hybrid API/EDI Integrations Across WMS, OMS, and ERP Systems",
-  "Architecting for End-to-End Observability and Traceability in Hybrid WMS/OMS/ERP Integration Landscapes"
+  "Architecting for End-to-End Observability and Traceability in Hybrid WMS/OMS/ERP Integration Landscapes",
+  "Architecting Reliable Asynchronous EDI Data Exchange using Automated 997 Reconciliation for High-Volume ERP/WMS Integrations"
 ]
