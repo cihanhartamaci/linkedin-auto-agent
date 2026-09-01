@@ -1,5 +1,4 @@
 [
-  "Architecting Atomic and Auditable Inbound Goods Receipt Processing (EDI 944 / API) into WMS and ERP for High-Volume Operations",
   "Ensuring Cross-System Transactional Integrity in Hybrid API/EDI Logistics Workflows",
   "Implementing Robust Idempotency Keys in High-Volume Logistics APIs for WMS/OMS/ERP State Synchronization",
   "Architecting Hybrid Return Merchandise Authorization (RMA) Processing for Multi-Channel Retail Across OMS, WMS, and ERP",
@@ -13,5 +12,6 @@
   "Architecting Robust Data Quality Gateways for Hybrid API/EDI Integrations Across WMS, OMS, and ERP Systems",
   "Architecting for End-to-End Observability and Traceability in Hybrid WMS/OMS/ERP Integration Landscapes",
   "Architecting Reliable Asynchronous EDI Data Exchange using Automated 997 Reconciliation for High-Volume ERP/WMS Integrations",
-  "Architecting Dynamic Semantic Translation and Contextual Enrichment for Order and Inventory Data Across Disparate WMS, OMS, and ERP Systems at Scale"
+  "Architecting Dynamic Semantic Translation and Contextual Enrichment for Order and Inventory Data Across Disparate WMS, OMS, and ERP Systems at Scale",
+  "Managing Transactional Backpressure and Flow Control in Hybrid WMS/OMS/ERP Integrations for Burst Order Volumes"
 ]
