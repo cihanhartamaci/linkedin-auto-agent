@@ -1,5 +1,4 @@
 [
-  "Implementing Robust Idempotency Keys in High-Volume Logistics APIs for WMS/OMS/ERP State Synchronization",
   "Architecting Hybrid Return Merchandise Authorization (RMA) Processing for Multi-Channel Retail Across OMS, WMS, and ERP",
   "Dynamic Outbound Shipping Capacity Management and Allocation Across WMS, OMS, TMS, and ERP Using Hybrid EDI 940/945 and APIs",
   "Architecting Real-time Freight Cost Accrual and Allocation from WMS/TMS to ERP for Financial Reporting and Profitability Analysis",
@@ -13,5 +12,6 @@
   "Architecting Reliable Asynchronous EDI Data Exchange using Automated 997 Reconciliation for High-Volume ERP/WMS Integrations",
   "Architecting Dynamic Semantic Translation and Contextual Enrichment for Order and Inventory Data Across Disparate WMS, OMS, and ERP Systems at Scale",
   "Managing Transactional Backpressure and Flow Control in Hybrid WMS/OMS/ERP Integrations for Burst Order Volumes",
-  "Managing Schema Evolution and Backward Compatibility in High-Scale WMS/OMS/ERP API Integrations"
+  "Managing Schema Evolution and Backward Compatibility in High-Scale WMS/OMS/ERP API Integrations",
+  "Architecting High-Throughput, Low-Latency Integration for Lights-Out Automated Warehouses"
 ]
