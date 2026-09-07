@@ -1,5 +1,4 @@
 [
-  "Architecting Dynamic Vendor-Managed (VMI) or Co-Managed Inventory (CMI) Replenishment using Hybrid EDI 846/850 and Real-time API Decisioning",
   "Architecting Dynamic Billing & Cost Allocation for Value-Added Services (VAS) from WMS/OMS Operational Data into ERP Financials (NetSuite/SAP)",
   "Architecting Real-time Inventory Status (Quality/Segment) Synchronization Across WMS, OMS, and ERP for Accurate ATP/CTP",
   "Architecting a Unified Product Master Data Hub for WMS, OMS, and ERP in Hybrid Environments",
@@ -13,5 +12,6 @@
   "Architecting High-Throughput, Low-Latency Integration for Lights-Out Automated Warehouses",
   "Orchestrating Distributed State and Compensation for Long-Running Logistics Business Processes across Hybrid WMS, OMS, and ERP Systems",
   "Achieving True Idempotency in Multi-System Logistics Transactions with Heterogeneous APIs/EDIs",
-  "Architecting Adaptive Inbound Receiving Discrepancy Resolution and Financial Reconciliation Across WMS, ERP, and Trading Partners"
+  "Architecting Adaptive Inbound Receiving Discrepancy Resolution and Financial Reconciliation Across WMS, ERP, and Trading Partners",
+  "Architecting Financial Consolidation and Intercompany Reconciliation for Multi-Entity Operations Across Federated ERPs (NetSuite OneWorld, SAP) from WMS/OMS Operational Flows"
 ]
