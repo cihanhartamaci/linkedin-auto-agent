@@ -1,5 +1,4 @@
 [
-  "Architecting Dynamic Order Sourcing and Multi-Leg Fulfillment Orchestration Across Distributed OMS, WMS, and Carrier Systems",
   "Architecting Robust Data Quality Gateways for Hybrid API/EDI Integrations Across WMS, OMS, and ERP Systems",
   "Architecting for End-to-End Observability and Traceability in Hybrid WMS/OMS/ERP Integration Landscapes",
   "Architecting Reliable Asynchronous EDI Data Exchange using Automated 997 Reconciliation for High-Volume ERP/WMS Integrations",
@@ -13,5 +12,6 @@
   "Architecting Financial Consolidation and Intercompany Reconciliation for Multi-Entity Operations Across Federated ERPs (NetSuite OneWorld, SAP) from WMS/OMS Operational Flows",
   "Architecting Dynamic Inventory Allocation & De-allocation State Management via 846/940/945 EDI for OMS/WMS Consistency",
   "Architecting Bidirectional API/EDI Protocols for Dynamic B2B Order Negotiation & Commitment across WMS, OMS, and ERP",
-  "Architecting for Decentralized Governance and Autonomous Domain Ownership in a Federated Logistics Middleware Architecture"
+  "Architecting for Decentralized Governance and Autonomous Domain Ownership in a Federated Logistics Middleware Architecture",
+  "Architecting Golden Record Management for Master Data Synchronization in Hybrid API/EDI Supply Chain Landscapes"
 ]
