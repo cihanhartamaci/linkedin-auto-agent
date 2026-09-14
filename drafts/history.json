@@ -1,5 +1,4 @@
 [
-  "Architecting Reliable Asynchronous EDI Data Exchange using Automated 997 Reconciliation for High-Volume ERP/WMS Integrations",
   "Architecting Dynamic Semantic Translation and Contextual Enrichment for Order and Inventory Data Across Disparate WMS, OMS, and ERP Systems at Scale",
   "Managing Transactional Backpressure and Flow Control in Hybrid WMS/OMS/ERP Integrations for Burst Order Volumes",
   "Managing Schema Evolution and Backward Compatibility in High-Scale WMS/OMS/ERP API Integrations",
@@ -13,5 +12,6 @@
   "Architecting for Decentralized Governance and Autonomous Domain Ownership in a Federated Logistics Middleware Architecture",
   "Architecting Golden Record Management for Master Data Synchronization in Hybrid API/EDI Supply Chain Landscapes",
   "Architecting Real-time Edge Integration for Distributed WMS/OMS Decisioning",
-  "Architecting for Multi-Tenancy and Data Isolation in Shared WMS/OMS/ERP Integration Platforms"
+  "Architecting for Multi-Tenancy and Data Isolation in Shared WMS/OMS/ERP Integration Platforms",
+  "Architecting for \"Dark Inventory\" Reconciliation & Visibility in Hybrid WMS/OMS/ERP Ecosystems"
 ]
