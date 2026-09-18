@@ -1,5 +1,4 @@
 [
-  "Managing Schema Evolution and Backward Compatibility in High-Scale WMS/OMS/ERP API Integrations",
   "Architecting High-Throughput, Low-Latency Integration for Lights-Out Automated Warehouses",
   "Orchestrating Distributed State and Compensation for Long-Running Logistics Business Processes across Hybrid WMS, OMS, and ERP Systems",
   "Achieving True Idempotency in Multi-System Logistics Transactions with Heterogeneous APIs/EDIs",
@@ -13,5 +12,6 @@
   "Architecting for Multi-Tenancy and Data Isolation in Shared WMS/OMS/ERP Integration Platforms",
   "Architecting for \"Dark Inventory\" Reconciliation & Visibility in Hybrid WMS/OMS/ERP Ecosystems",
   "Integrating Dynamic, Conditional Reverse Logistics Dispositioning Across WMS, OMS, and ERP using Hybrid API/EDI Flows (e.g., EDI 180, Real-time APIs for Disposition, and EDI 810 for Credit Memo)",
-  "Architecting Real-time Bill of Material (BOM) & Kitting Synchronization for Dynamic Assembly Across WMS, OMS, and ERP"
+  "Architecting Real-time Bill of Material (BOM) & Kitting Synchronization for Dynamic Assembly Across WMS, OMS, and ERP",
+  "Architecting for Conflict Resolution in Eventual Consistency Models for High-Volume Inventory Across Hybrid WMS, OMS, and ERP Systems"
 ]
