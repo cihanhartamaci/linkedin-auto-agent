@@ -1,5 +1,4 @@
 [
-  "Orchestrating Distributed State and Compensation for Long-Running Logistics Business Processes across Hybrid WMS, OMS, and ERP Systems",
   "Achieving True Idempotency in Multi-System Logistics Transactions with Heterogeneous APIs/EDIs",
   "Architecting Adaptive Inbound Receiving Discrepancy Resolution and Financial Reconciliation Across WMS, ERP, and Trading Partners",
   "Architecting Financial Consolidation and Intercompany Reconciliation for Multi-Entity Operations Across Federated ERPs (NetSuite OneWorld, SAP) from WMS/OMS Operational Flows",
@@ -13,5 +12,6 @@
   "Integrating Dynamic, Conditional Reverse Logistics Dispositioning Across WMS, OMS, and ERP using Hybrid API/EDI Flows (e.g., EDI 180, Real-time APIs for Disposition, and EDI 810 for Credit Memo)",
   "Architecting Real-time Bill of Material (BOM) & Kitting Synchronization for Dynamic Assembly Across WMS, OMS, and ERP",
   "Architecting for Conflict Resolution in Eventual Consistency Models for High-Volume Inventory Across Hybrid WMS, OMS, and ERP Systems",
-  "Architecting Real-time Landed Cost Management and Dynamic Inventory Valuation Synchronization Across WMS, Freight Systems, and ERPs (NetSuite/SAP)"
+  "Architecting Real-time Landed Cost Management and Dynamic Inventory Valuation Synchronization Across WMS, Freight Systems, and ERPs (NetSuite/SAP)",
+  "Integrating Operational Technology (OT) Data from AGVs/Robotics into WMS/ERP for Dynamic Warehouse Automation"
 ]
