@@ -1,5 +1,4 @@
 [
-  "Architecting Bidirectional API/EDI Protocols for Dynamic B2B Order Negotiation & Commitment across WMS, OMS, and ERP",
   "Architecting for Decentralized Governance and Autonomous Domain Ownership in a Federated Logistics Middleware Architecture",
   "Architecting Golden Record Management for Master Data Synchronization in Hybrid API/EDI Supply Chain Landscapes",
   "Architecting Real-time Edge Integration for Distributed WMS/OMS Decisioning",
@@ -13,5 +12,6 @@
   "Architecting Dynamic Multi-Node Order Routing & Fulfillment Orchestration with Hybrid API/EDI for Global Operations",
   "Architecting for Guaranteed Order of Operations and Resilient Replay in High-Volume Logistics Event Streams with Heterogeneous Systems",
   "Architecting for End-to-End Lot & Serial Number Traceability across WMS, OMS, and ERP in Hybrid API/EDI Environments",
-  "Architecting for Distributed Transactional Consistency (Saga Pattern) and Compensating Actions in High-Volume Hybrid Logistics Integration across WMS, OMS, and ERP"
+  "Architecting for Distributed Transactional Consistency (Saga Pattern) and Compensating Actions in High-Volume Hybrid Logistics Integration across WMS, OMS, and ERP",
+  "Architecting Hybrid API/EDI Flows for Dynamic Consignment and Vendor-Managed Inventory (VMI) Stock Management Across WMS, OMS, and ERP"
 ]
