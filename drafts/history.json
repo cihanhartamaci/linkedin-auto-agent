@@ -1,5 +1,4 @@
 [
-  "Architecting Real-time Bill of Material (BOM) & Kitting Synchronization for Dynamic Assembly Across WMS, OMS, and ERP",
   "Architecting for Conflict Resolution in Eventual Consistency Models for High-Volume Inventory Across Hybrid WMS, OMS, and ERP Systems",
   "Architecting Real-time Landed Cost Management and Dynamic Inventory Valuation Synchronization Across WMS, Freight Systems, and ERPs (NetSuite/SAP)",
   "Integrating Operational Technology (OT) Data from AGVs/Robotics into WMS/ERP for Dynamic Warehouse Automation",
@@ -13,5 +12,6 @@
   "Optimizing Message Pipelining and Backpressure Management in Logistics Integration Platforms for Peak Season Throughput",
   "Architecting for Dynamic Vendor-Specific EDI Compliance and Transformation Orchestration with Hybrid API Augmentation",
   "Architecting for Cross-System Financial Reconciliation & Chargeback Automation in Hybrid 3PL/Dropship Fulfillment Models",
-  "Architecting Real-time Yard Management System (YMS) Integration for Dynamic Dock Scheduling and Gate-to-Receiving Automation"
+  "Architecting Real-time Yard Management System (YMS) Integration for Dynamic Dock Scheduling and Gate-to-Receiving Automation",
+  "Architecting for Consistent Global Item (GTIN) and Location (GLN) Master Data Synchronization Across Hybrid API/EDI Logistics Networks"
 ]
