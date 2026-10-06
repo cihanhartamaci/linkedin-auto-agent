@@ -1,5 +1,4 @@
 [
-  "Architecting Real-time Landed Cost Management and Dynamic Inventory Valuation Synchronization Across WMS, Freight Systems, and ERPs (NetSuite/SAP)",
   "Integrating Operational Technology (OT) Data from AGVs/Robotics into WMS/ERP for Dynamic Warehouse Automation",
   "Architecting Dynamic Multi-Node Order Routing & Fulfillment Orchestration with Hybrid API/EDI for Global Operations",
   "Architecting for Guaranteed Order of Operations and Resilient Replay in High-Volume Logistics Event Streams with Heterogeneous Systems",
@@ -13,5 +12,6 @@
   "Architecting for Cross-System Financial Reconciliation & Chargeback Automation in Hybrid 3PL/Dropship Fulfillment Models",
   "Architecting Real-time Yard Management System (YMS) Integration for Dynamic Dock Scheduling and Gate-to-Receiving Automation",
   "Architecting for Consistent Global Item (GTIN) and Location (GLN) Master Data Synchronization Across Hybrid API/EDI Logistics Networks",
-  "Architecting for Unified State Tracking and Event Correlation in Asynchronous, High-Volume Logistics Workflows across Hybrid WMS, OMS, and ERP Systems"
+  "Architecting for Unified State Tracking and Event Correlation in Asynchronous, High-Volume Logistics Workflows across Hybrid WMS, OMS, and ERP Systems",
+  "Managing State and Asynchronous Transactional Integrity in Complex EDI Document Sequences (846/940/945) within Hybrid API/EDI Architectures"
 ]
