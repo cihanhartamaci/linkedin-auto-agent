@@ -1,5 +1,4 @@
 [
-  "Integrating Operational Technology (OT) Data from AGVs/Robotics into WMS/ERP for Dynamic Warehouse Automation",
   "Architecting Dynamic Multi-Node Order Routing & Fulfillment Orchestration with Hybrid API/EDI for Global Operations",
   "Architecting for Guaranteed Order of Operations and Resilient Replay in High-Volume Logistics Event Streams with Heterogeneous Systems",
   "Architecting for End-to-End Lot & Serial Number Traceability across WMS, OMS, and ERP in Hybrid API/EDI Environments",
@@ -13,5 +12,6 @@
   "Architecting Real-time Yard Management System (YMS) Integration for Dynamic Dock Scheduling and Gate-to-Receiving Automation",
   "Architecting for Consistent Global Item (GTIN) and Location (GLN) Master Data Synchronization Across Hybrid API/EDI Logistics Networks",
   "Architecting for Unified State Tracking and Event Correlation in Asynchronous, High-Volume Logistics Workflows across Hybrid WMS, OMS, and ERP Systems",
-  "Managing State and Asynchronous Transactional Integrity in Complex EDI Document Sequences (846/940/945) within Hybrid API/EDI Architectures"
+  "Managing State and Asynchronous Transactional Integrity in Complex EDI Document Sequences (846/940/945) within Hybrid API/EDI Architectures",
+  "Architecting the Integration Layer for Predictive Demand Signals Across WMS, OMS, and ERP in Hybrid Environments"
 ]
