@@ -1,5 +1,4 @@
 [
-  "Architecting for Distributed Transactional Consistency (Saga Pattern) and Compensating Actions in High-Volume Hybrid Logistics Integration across WMS, OMS, and ERP",
   "Architecting Hybrid API/EDI Flows for Dynamic Consignment and Vendor-Managed Inventory (VMI) Stock Management Across WMS, OMS, and ERP",
   "Implementing Advanced Error Handling & Idempotency Patterns for Inbound WMS API Integrations at High Scale",
   "Architecting Hybrid API/EDI Flows for Real-time Regulatory Compliance Reporting (e.g., Hazmat, Customs, ESG) Across WMS, OMS, and ERP",
@@ -13,5 +12,6 @@
   "Architecting the Integration Layer for Predictive Demand Signals Across WMS, OMS, and ERP in Hybrid Environments",
   "Leveraging Serverless and Event-Driven Architectures for Resilient and Scalable Logistics Integration Workflows in Hybrid Cloud/On-Premise Environments",
   "Architecting for Dynamic, Rule-Driven Message Routing and Contextual Transformation in High-Scale Multi-Party Logistics Networks",
-  "Architecting for Accurate Available-to-Promise (ATP) and Capable-to-Promise (CTP) Calculations in High-Volume Hybrid Logistics Environments"
+  "Architecting for Accurate Available-to-Promise (ATP) and Capable-to-Promise (CTP) Calculations in High-Volume Hybrid Logistics Environments",
+  "Architecting for Real-time In-Transit Visibility and Dynamic Exception Routing via IoT/Sensor Integration in Hybrid WMS/OMS/ERP Ecosystems"
 ]
