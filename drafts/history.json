@@ -1,5 +1,4 @@
 [
-  "Implementing Advanced Error Handling & Idempotency Patterns for Inbound WMS API Integrations at High Scale",
   "Architecting Hybrid API/EDI Flows for Real-time Regulatory Compliance Reporting (e.g., Hazmat, Customs, ESG) Across WMS, OMS, and ERP",
   "Optimizing Message Pipelining and Backpressure Management in Logistics Integration Platforms for Peak Season Throughput",
   "Architecting for Dynamic Vendor-Specific EDI Compliance and Transformation Orchestration with Hybrid API Augmentation",
@@ -13,5 +12,6 @@
   "Architecting for Dynamic, Rule-Driven Message Routing and Contextual Transformation in High-Scale Multi-Party Logistics Networks",
   "Architecting for Accurate Available-to-Promise (ATP) and Capable-to-Promise (CTP) Calculations in High-Volume Hybrid Logistics Environments",
   "Architecting for Real-time In-Transit Visibility and Dynamic Exception Routing via IoT/Sensor Integration in Hybrid WMS/OMS/ERP Ecosystems",
-  "Architecting for Dynamic Costing & Landed Cost Calculation Integration Across WMS, OMS, and ERP"
+  "Architecting for Dynamic Costing & Landed Cost Calculation Integration Across WMS, OMS, and ERP",
+  "Architecting Low-Latency Integration for Robotics & Automation Control Systems (RCS) with WMS in High-Volume Fulfillment Centers"
 ]
