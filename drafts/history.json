@@ -1,5 +1,4 @@
 [
-  "Architecting for Cross-System Financial Reconciliation & Chargeback Automation in Hybrid 3PL/Dropship Fulfillment Models",
   "Architecting Real-time Yard Management System (YMS) Integration for Dynamic Dock Scheduling and Gate-to-Receiving Automation",
   "Architecting for Consistent Global Item (GTIN) and Location (GLN) Master Data Synchronization Across Hybrid API/EDI Logistics Networks",
   "Architecting for Unified State Tracking and Event Correlation in Asynchronous, High-Volume Logistics Workflows across Hybrid WMS, OMS, and ERP Systems",
@@ -13,5 +12,6 @@
   "Architecting Low-Latency Integration for Robotics & Automation Control Systems (RCS) with WMS in High-Volume Fulfillment Centers",
   "Architecting for Automated Inventory Discrepancy Reconciliation Across Hybrid API/EDI Logistics Networks (WMS, OMS, ERP)",
   "Architecting for Idempotency and Deduplication in High-Volume WMS/OMS/ERP API Interactions",
-  "Architecting for Complex Data Model Harmonization and Business Logic Injection in Hybrid WMS/OMS/ERP Integration Flows"
+  "Architecting for Complex Data Model Harmonization and Business Logic Injection in Hybrid WMS/OMS/ERP Integration Flows",
+  "Architecting for Seamless Reverse Logistics & Returns Management Across WMS, OMS, and ERP in High-Volume Environments"
 ]
