@@ -1,5 +1,4 @@
 [
-  "Architecting Real-time Yard Management System (YMS) Integration for Dynamic Dock Scheduling and Gate-to-Receiving Automation",
   "Architecting for Consistent Global Item (GTIN) and Location (GLN) Master Data Synchronization Across Hybrid API/EDI Logistics Networks",
   "Architecting for Unified State Tracking and Event Correlation in Asynchronous, High-Volume Logistics Workflows across Hybrid WMS, OMS, and ERP Systems",
   "Managing State and Asynchronous Transactional Integrity in Complex EDI Document Sequences (846/940/945) within Hybrid API/EDI Architectures",
@@ -13,5 +12,6 @@
   "Architecting for Automated Inventory Discrepancy Reconciliation Across Hybrid API/EDI Logistics Networks (WMS, OMS, ERP)",
   "Architecting for Idempotency and Deduplication in High-Volume WMS/OMS/ERP API Interactions",
   "Architecting for Complex Data Model Harmonization and Business Logic Injection in Hybrid WMS/OMS/ERP Integration Flows",
-  "Architecting for Seamless Reverse Logistics & Returns Management Across WMS, OMS, and ERP in High-Volume Environments"
+  "Architecting for Seamless Reverse Logistics & Returns Management Across WMS, OMS, and ERP in High-Volume Environments",
+  "Architecting for Scalable and Reconcilable Financial Postings from High-Volume Logistics Operations into ERP (NetSuite/SAP)"
 ]
