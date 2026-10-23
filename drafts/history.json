@@ -1,5 +1,4 @@
 [
-  "Architecting for Consistent Global Item (GTIN) and Location (GLN) Master Data Synchronization Across Hybrid API/EDI Logistics Networks",
   "Architecting for Unified State Tracking and Event Correlation in Asynchronous, High-Volume Logistics Workflows across Hybrid WMS, OMS, and ERP Systems",
   "Managing State and Asynchronous Transactional Integrity in Complex EDI Document Sequences (846/940/945) within Hybrid API/EDI Architectures",
   "Architecting the Integration Layer for Predictive Demand Signals Across WMS, OMS, and ERP in Hybrid Environments",
@@ -13,5 +12,6 @@
   "Architecting for Idempotency and Deduplication in High-Volume WMS/OMS/ERP API Interactions",
   "Architecting for Complex Data Model Harmonization and Business Logic Injection in Hybrid WMS/OMS/ERP Integration Flows",
   "Architecting for Seamless Reverse Logistics & Returns Management Across WMS, OMS, and ERP in High-Volume Environments",
-  "Architecting for Scalable and Reconcilable Financial Postings from High-Volume Logistics Operations into ERP (NetSuite/SAP)"
+  "Architecting for Scalable and Reconcilable Financial Postings from High-Volume Logistics Operations into ERP (NetSuite/SAP)",
+  "Architecting for Resilient Distributed Transaction Management Across Hybrid API/EDI Logistics Workflows"
 ]
