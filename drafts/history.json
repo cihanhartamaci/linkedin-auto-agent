@@ -1,5 +1,4 @@
 [
-  "Managing State and Asynchronous Transactional Integrity in Complex EDI Document Sequences (846/940/945) within Hybrid API/EDI Architectures",
   "Architecting the Integration Layer for Predictive Demand Signals Across WMS, OMS, and ERP in Hybrid Environments",
   "Leveraging Serverless and Event-Driven Architectures for Resilient and Scalable Logistics Integration Workflows in Hybrid Cloud/On-Premise Environments",
   "Architecting for Dynamic, Rule-Driven Message Routing and Contextual Transformation in High-Scale Multi-Party Logistics Networks",
@@ -13,5 +12,6 @@
   "Architecting for Seamless Reverse Logistics & Returns Management Across WMS, OMS, and ERP in High-Volume Environments",
   "Architecting for Scalable and Reconcilable Financial Postings from High-Volume Logistics Operations into ERP (NetSuite/SAP)",
   "Architecting for Resilient Distributed Transaction Management Across Hybrid API/EDI Logistics Workflows",
-  "Adaptive Schema Evolution and Contract Governance in High-Scale Hybrid Logistics Integration"
+  "Adaptive Schema Evolution and Contract Governance in High-Scale Hybrid Logistics Integration",
+  "ERP-side Transactional Deadlock Resolution in High-Volume Logistics Integrations (NetSuite/SAP)"
 ]
