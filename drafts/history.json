@@ -1,5 +1,4 @@
 [
-  "Leveraging Serverless and Event-Driven Architectures for Resilient and Scalable Logistics Integration Workflows in Hybrid Cloud/On-Premise Environments",
   "Architecting for Dynamic, Rule-Driven Message Routing and Contextual Transformation in High-Scale Multi-Party Logistics Networks",
   "Architecting for Accurate Available-to-Promise (ATP) and Capable-to-Promise (CTP) Calculations in High-Volume Hybrid Logistics Environments",
   "Architecting for Real-time In-Transit Visibility and Dynamic Exception Routing via IoT/Sensor Integration in Hybrid WMS/OMS/ERP Ecosystems",
@@ -13,5 +12,6 @@
   "Architecting for Resilient Distributed Transaction Management Across Hybrid API/EDI Logistics Workflows",
   "Adaptive Schema Evolution and Contract Governance in High-Scale Hybrid Logistics Integration",
   "ERP-side Transactional Deadlock Resolution in High-Volume Logistics Integrations (NetSuite/SAP)",
-  "Managing State Transitions and Document Sequencing in Complex EDI Hierarchies (850, 846, 940/945) within Hybrid Integration Architectures"
+  "Managing State Transitions and Document Sequencing in Complex EDI Hierarchies (850, 846, 940/945) within Hybrid Integration Architectures",
+  "Optimizing Real-time Inventory Updates for High-Churn SKUs Across Distributed WMS, OMS, and ERP Systems to Prevent Oversells/Undersells While Managing API Rate Limits and Database Contention"
 ]
