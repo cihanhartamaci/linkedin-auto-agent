@@ -1,5 +1,4 @@
 [
-  "Architecting Low-Latency Integration for Robotics & Automation Control Systems (RCS) with WMS in High-Volume Fulfillment Centers",
   "Architecting for Automated Inventory Discrepancy Reconciliation Across Hybrid API/EDI Logistics Networks (WMS, OMS, ERP)",
   "Architecting for Idempotency and Deduplication in High-Volume WMS/OMS/ERP API Interactions",
   "Architecting for Complex Data Model Harmonization and Business Logic Injection in Hybrid WMS/OMS/ERP Integration Flows",
@@ -13,5 +12,6 @@
   "Architecting for Elasticity and Cost-Optimization of Integration Platforms During Seasonal Peak Logistics Volumes",
   "Event-Driven Architectures for Scalable and Resilient Supply Chain Integration (WMS, OMS, ERP)",
   "Achieving Master Data Consistency Across Hybrid API and EDI Integration Channels in High-Scale Logistics (ERP, WMS, OMS)",
-  "Architecting Dynamic Inventory Allocation & Reservation Across Distributed WMS, OMS, and ERP for Multi-Channel Prioritization"
+  "Architecting Dynamic Inventory Allocation & Reservation Across Distributed WMS, OMS, and ERP for Multi-Channel Prioritization",
+  "Achieving Unified Transactional Visibility and State Synchronization Across Hybrid API and Asynchronous EDI Logistics Workflows"
 ]
