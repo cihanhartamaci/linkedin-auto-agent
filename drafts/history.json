@@ -1,5 +1,4 @@
 [
-  "Architecting for Scalable and Reconcilable Financial Postings from High-Volume Logistics Operations into ERP (NetSuite/SAP)",
   "Architecting for Resilient Distributed Transaction Management Across Hybrid API/EDI Logistics Workflows",
   "Adaptive Schema Evolution and Contract Governance in High-Scale Hybrid Logistics Integration",
   "ERP-side Transactional Deadlock Resolution in High-Volume Logistics Integrations (NetSuite/SAP)",
@@ -13,5 +12,6 @@
   "Architecting for Dynamic EDI-to-Canonical-API Transformation and Partner Profile Management in High-Volume Hybrid Logistics",
   "Architecting for Dynamic Context-Aware Routing and Orchestration in High-Volume Multi-Instance Logistics Integration",
   "Architecting Automated Discrepancy Reconciliation for High-Volume Hybrid Logistics (WMS, OMS, ERP)",
-  "Architecting for Multi-Dimensional Inventory Availability & ATP Calculation Across Heterogeneous WMS and OMS"
+  "Architecting for Multi-Dimensional Inventory Availability & ATP Calculation Across Heterogeneous WMS and OMS",
+  "Ensuring Strict Message Ordering and Guaranteed Delivery in High-Volume Hybrid Logistics Integration (API & EDI)"
 ]
