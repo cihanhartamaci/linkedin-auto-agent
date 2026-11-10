@@ -1,5 +1,4 @@
 [
-  "Adaptive Schema Evolution and Contract Governance in High-Scale Hybrid Logistics Integration",
   "ERP-side Transactional Deadlock Resolution in High-Volume Logistics Integrations (NetSuite/SAP)",
   "Managing State Transitions and Document Sequencing in Complex EDI Hierarchies (850, 846, 940/945) within Hybrid Integration Architectures",
   "Optimizing Real-time Inventory Updates for High-Churn SKUs Across Distributed WMS, OMS, and ERP Systems to Prevent Oversells/Undersells While Managing API Rate Limits and Database Contention",
@@ -13,5 +12,6 @@
   "Architecting Automated Discrepancy Reconciliation for High-Volume Hybrid Logistics (WMS, OMS, ERP)",
   "Architecting for Multi-Dimensional Inventory Availability & ATP Calculation Across Heterogeneous WMS and OMS",
   "Ensuring Strict Message Ordering and Guaranteed Delivery in High-Volume Hybrid Logistics Integration (API & EDI)",
-  "Architecting for Backward Compatibility and Phased API/EDI Standard Upgrades in High-Volume Logistics"
+  "Architecting for Backward Compatibility and Phased API/EDI Standard Upgrades in High-Volume Logistics",
+  "Architecting Throttling and Backpressure Mechanisms in High-Volume Hybrid Logistics Integration Pipelines"
 ]
