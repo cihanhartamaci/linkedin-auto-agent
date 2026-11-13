@@ -1,5 +1,4 @@
 [
-  "Optimizing Real-time Inventory Updates for High-Churn SKUs Across Distributed WMS, OMS, and ERP Systems to Prevent Oversells/Undersells While Managing API Rate Limits and Database Contention",
   "Architecting for Elasticity and Cost-Optimization of Integration Platforms During Seasonal Peak Logistics Volumes",
   "Event-Driven Architectures for Scalable and Resilient Supply Chain Integration (WMS, OMS, ERP)",
   "Achieving Master Data Consistency Across Hybrid API and EDI Integration Channels in High-Scale Logistics (ERP, WMS, OMS)",
@@ -13,5 +12,6 @@
   "Architecting for Backward Compatibility and Phased API/EDI Standard Upgrades in High-Volume Logistics",
   "Architecting Throttling and Backpressure Mechanisms in High-Volume Hybrid Logistics Integration Pipelines",
   "Managing Schema Evolution and Versioning for Canonical Logistics Data Models in High-Scale Middleware",
-  "Architecting for Application-Level Idempotency in High-Volume WMS/OMS/ERP API Integrations"
+  "Architecting for Application-Level Idempotency in High-Volume WMS/OMS/ERP API Integrations",
+  "Orchestrating Resilient Business Process State and Compensation in Hybrid API/EDI Logistics Workflows"
 ]
