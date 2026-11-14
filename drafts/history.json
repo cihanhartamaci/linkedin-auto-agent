@@ -1,5 +1,4 @@
 [
-  "Architecting for Elasticity and Cost-Optimization of Integration Platforms During Seasonal Peak Logistics Volumes",
   "Event-Driven Architectures for Scalable and Resilient Supply Chain Integration (WMS, OMS, ERP)",
   "Achieving Master Data Consistency Across Hybrid API and EDI Integration Channels in High-Scale Logistics (ERP, WMS, OMS)",
   "Architecting Dynamic Inventory Allocation & Reservation Across Distributed WMS, OMS, and ERP for Multi-Channel Prioritization",
@@ -13,5 +12,6 @@
   "Architecting Throttling and Backpressure Mechanisms in High-Volume Hybrid Logistics Integration Pipelines",
   "Managing Schema Evolution and Versioning for Canonical Logistics Data Models in High-Scale Middleware",
   "Architecting for Application-Level Idempotency in High-Volume WMS/OMS/ERP API Integrations",
-  "Orchestrating Resilient Business Process State and Compensation in Hybrid API/EDI Logistics Workflows"
+  "Orchestrating Resilient Business Process State and Compensation in Hybrid API/EDI Logistics Workflows",
+  "Implementing Circuit Breaker Patterns with Context-Aware Backoff Strategies for External ERP/WMS API Integration Failures"
 ]
