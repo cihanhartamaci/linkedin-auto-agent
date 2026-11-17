@@ -1,5 +1,4 @@
 [
-  "Achieving Master Data Consistency Across Hybrid API and EDI Integration Channels in High-Scale Logistics (ERP, WMS, OMS)",
   "Architecting Dynamic Inventory Allocation & Reservation Across Distributed WMS, OMS, and ERP for Multi-Channel Prioritization",
   "Achieving Unified Transactional Visibility and State Synchronization Across Hybrid API and Asynchronous EDI Logistics Workflows",
   "Architecting for Dynamic EDI-to-Canonical-API Transformation and Partner Profile Management in High-Volume Hybrid Logistics",
@@ -13,5 +12,6 @@
   "Architecting for Application-Level Idempotency in High-Volume WMS/OMS/ERP API Integrations",
   "Orchestrating Resilient Business Process State and Compensation in Hybrid API/EDI Logistics Workflows",
   "Implementing Circuit Breaker Patterns with Context-Aware Backoff Strategies for External ERP/WMS API Integration Failures",
-  "Reconciling Discrepancies and Ensuring Consistency Between Periodic EDI 846 Inventory Updates and Real-Time API-Driven WMS/OMS Feeds"
+  "Reconciling Discrepancies and Ensuring Consistency Between Periodic EDI 846 Inventory Updates and Real-Time API-Driven WMS/OMS Feeds",
+  "Architecting for End-to-End Observability in High-Volume Hybrid Logistics Integration (API & EDI)"
 ]
