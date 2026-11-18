@@ -1,5 +1,4 @@
 [
-  "Architecting Dynamic Inventory Allocation & Reservation Across Distributed WMS, OMS, and ERP for Multi-Channel Prioritization",
   "Achieving Unified Transactional Visibility and State Synchronization Across Hybrid API and Asynchronous EDI Logistics Workflows",
   "Architecting for Dynamic EDI-to-Canonical-API Transformation and Partner Profile Management in High-Volume Hybrid Logistics",
   "Architecting for Dynamic Context-Aware Routing and Orchestration in High-Volume Multi-Instance Logistics Integration",
@@ -13,5 +12,6 @@
   "Orchestrating Resilient Business Process State and Compensation in Hybrid API/EDI Logistics Workflows",
   "Implementing Circuit Breaker Patterns with Context-Aware Backoff Strategies for External ERP/WMS API Integration Failures",
   "Reconciling Discrepancies and Ensuring Consistency Between Periodic EDI 846 Inventory Updates and Real-Time API-Driven WMS/OMS Feeds",
-  "Architecting for End-to-End Observability in High-Volume Hybrid Logistics Integration (API & EDI)"
+  "Architecting for End-to-End Observability in High-Volume Hybrid Logistics Integration (API & EDI)",
+  "Architecting for Dynamic Order Splitting and Financial Reconciliation Driven by WMS-Initiated Partial Shipments via EDI 945/940 in Hybrid Architectures"
 ]
