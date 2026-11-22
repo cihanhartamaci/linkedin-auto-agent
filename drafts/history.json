@@ -1,5 +1,4 @@
 [
-  "Architecting Automated Discrepancy Reconciliation for High-Volume Hybrid Logistics (WMS, OMS, ERP)",
   "Architecting for Multi-Dimensional Inventory Availability & ATP Calculation Across Heterogeneous WMS and OMS",
   "Ensuring Strict Message Ordering and Guaranteed Delivery in High-Volume Hybrid Logistics Integration (API & EDI)",
   "Architecting for Backward Compatibility and Phased API/EDI Standard Upgrades in High-Volume Logistics",
@@ -13,5 +12,6 @@
   "Architecting for Dynamic Order Splitting and Financial Reconciliation Driven by WMS-Initiated Partial Shipments via EDI 945/940 in Hybrid Architectures",
   "Synchronizing Real-time WMS Execution Updates (API) with Definitive EDI 945 Confirmations for OMS/ERP Consistency",
   "Architecting for Comprehensive Performance and Resiliency Testing in High-Volume Hybrid Logistics Integration",
-  "Architecting for End-to-End Data Security, Encryption, and Auditability in High-Volume Hybrid Logistics Integrations (API & EDI)"
+  "Architecting for End-to-End Data Security, Encryption, and Auditability in High-Volume Hybrid Logistics Integrations (API & EDI)",
+  "Architecting Dynamic Rule-Based Data Transformation Engines for Multi-Partner Hybrid Logistics Integrations"
 ]
