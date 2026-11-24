@@ -1,5 +1,4 @@
 [
-  "Ensuring Strict Message Ordering and Guaranteed Delivery in High-Volume Hybrid Logistics Integration (API & EDI)",
   "Architecting for Backward Compatibility and Phased API/EDI Standard Upgrades in High-Volume Logistics",
   "Architecting Throttling and Backpressure Mechanisms in High-Volume Hybrid Logistics Integration Pipelines",
   "Managing Schema Evolution and Versioning for Canonical Logistics Data Models in High-Scale Middleware",
@@ -13,5 +12,6 @@
   "Architecting for Comprehensive Performance and Resiliency Testing in High-Volume Hybrid Logistics Integration",
   "Architecting for End-to-End Data Security, Encryption, and Auditability in High-Volume Hybrid Logistics Integrations (API & EDI)",
   "Architecting Dynamic Rule-Based Data Transformation Engines for Multi-Partner Hybrid Logistics Integrations",
-  "Architecting for Dynamic Order Routing & Fulfillment Prioritization Across Heterogeneous WMS/3PL Networks"
+  "Architecting for Dynamic Order Routing & Fulfillment Prioritization Across Heterogeneous WMS/3PL Networks",
+  "Architecting Master Data Synchronization and Governance across Heterogeneous ERP, OMS, and WMS Systems"
 ]
