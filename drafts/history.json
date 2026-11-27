@@ -1,5 +1,4 @@
 [
-  "Managing Schema Evolution and Versioning for Canonical Logistics Data Models in High-Scale Middleware",
   "Architecting for Application-Level Idempotency in High-Volume WMS/OMS/ERP API Integrations",
   "Orchestrating Resilient Business Process State and Compensation in Hybrid API/EDI Logistics Workflows",
   "Implementing Circuit Breaker Patterns with Context-Aware Backoff Strategies for External ERP/WMS API Integration Failures",
@@ -13,5 +12,6 @@
   "Architecting for Dynamic Order Routing & Fulfillment Prioritization Across Heterogeneous WMS/3PL Networks",
   "Architecting Master Data Synchronization and Governance across Heterogeneous ERP, OMS, and WMS Systems",
   "Event-Driven Architecture (EDA) for Real-time State Propagation across Hybrid API/EDI Logistics Ecosystems",
-  "Architecting for Distributed Transactional Consistency in Real-time Inventory Reservation & Allocation Across Multi-Channel Fulfillment Systems"
+  "Architecting for Distributed Transactional Consistency in Real-time Inventory Reservation & Allocation Across Multi-Channel Fulfillment Systems",
+  "Architecting Multi-Tenant Logistics Integration Platforms: Balancing Partner Isolation, Data Sovereignty, and Cost-Efficiency in Hybrid Environments"
 ]
